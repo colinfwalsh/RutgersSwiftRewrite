@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFF94E36201F7191001A15BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E35201F7191001A15BD /* AppDelegate.swift */; };
+		AFF94E38201F7191001A15BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E37201F7191001A15BD /* ViewController.swift */; };
+		AFF94E3B201F7191001A15BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF94E39201F7191001A15BD /* Main.storyboard */; };
+		AFF94E3D201F7191001A15BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF94E3C201F7191001A15BD /* Assets.xcassets */; };
+		AFF94E40201F7191001A15BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF94E3E201F7191001A15BD /* LaunchScreen.storyboard */; };
+		AFF94E4B201F7192001A15BD /* RutgersSwiftRewriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E4A201F7192001A15BD /* RutgersSwiftRewriteTests.swift */; };
+		AFF94E56201F7192001A15BD /* RutgersSwiftRewriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E55201F7192001A15BD /* RutgersSwiftRewriteUITests.swift */; };
+		AFF94E67201FB8D7001A15BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E66201FB8D7001A15BD /* HomeViewController.swift */; };
+		AFF94E69201FC3D5001A15BD /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E68201FC3D5001A15BD /* HomeCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFF94E47201F7192001A15BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF94E2A201F7191001A15BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFF94E31201F7191001A15BD;
+			remoteInfo = RutgersSwiftRewrite;
+		};
+		AFF94E52201F7192001A15BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF94E2A201F7191001A15BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFF94E31201F7191001A15BD;
+			remoteInfo = RutgersSwiftRewrite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AFF94E32201F7191001A15BD /* RutgersSwiftRewrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RutgersSwiftRewrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF94E35201F7191001A15BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFF94E37201F7191001A15BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFF94E3A201F7191001A15BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFF94E3C201F7191001A15BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFF94E3F201F7191001A15BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFF94E41201F7191001A15BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF94E46201F7192001A15BD /* RutgersSwiftRewriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RutgersSwiftRewriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF94E4A201F7192001A15BD /* RutgersSwiftRewriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutgersSwiftRewriteTests.swift; sourceTree = "<group>"; };
+		AFF94E4C201F7192001A15BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF94E51201F7192001A15BD /* RutgersSwiftRewriteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RutgersSwiftRewriteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF94E55201F7192001A15BD /* RutgersSwiftRewriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutgersSwiftRewriteUITests.swift; sourceTree = "<group>"; };
+		AFF94E57201F7192001A15BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF94E66201FB8D7001A15BD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AFF94E68201FC3D5001A15BD /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFF94E2F201F7191001A15BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF94E43201F7192001A15BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF94E4E201F7192001A15BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFF94E29201F7191001A15BD = {
+			isa = PBXGroup;
+			children = (
+				AFF94E34201F7191001A15BD /* RutgersSwiftRewrite */,
+				AFF94E49201F7192001A15BD /* RutgersSwiftRewriteTests */,
+				AFF94E54201F7192001A15BD /* RutgersSwiftRewriteUITests */,
+				AFF94E33201F7191001A15BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFF94E33201F7191001A15BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFF94E32201F7191001A15BD /* RutgersSwiftRewrite.app */,
+				AFF94E46201F7192001A15BD /* RutgersSwiftRewriteTests.xctest */,
+				AFF94E51201F7192001A15BD /* RutgersSwiftRewriteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFF94E34201F7191001A15BD /* RutgersSwiftRewrite */ = {
+			isa = PBXGroup;
+			children = (
+				AFF94E35201F7191001A15BD /* AppDelegate.swift */,
+				AFF94E65201FA38E001A15BD /* TEST_MODULES */,
+				AFF94E39201F7191001A15BD /* Main.storyboard */,
+				AFF94E68201FC3D5001A15BD /* HomeCollectionViewCell.swift */,
+				AFF94E66201FB8D7001A15BD /* HomeViewController.swift */,
+				AFF94E3C201F7191001A15BD /* Assets.xcassets */,
+				AFF94E3E201F7191001A15BD /* LaunchScreen.storyboard */,
+				AFF94E41201F7191001A15BD /* Info.plist */,
+			);
+			path = RutgersSwiftRewrite;
+			sourceTree = "<group>";
+		};
+		AFF94E49201F7192001A15BD /* RutgersSwiftRewriteTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFF94E4A201F7192001A15BD /* RutgersSwiftRewriteTests.swift */,
+				AFF94E4C201F7192001A15BD /* Info.plist */,
+			);
+			path = RutgersSwiftRewriteTests;
+			sourceTree = "<group>";
+		};
+		AFF94E54201F7192001A15BD /* RutgersSwiftRewriteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFF94E55201F7192001A15BD /* RutgersSwiftRewriteUITests.swift */,
+				AFF94E57201F7192001A15BD /* Info.plist */,
+			);
+			path = RutgersSwiftRewriteUITests;
+			sourceTree = "<group>";
+		};
+		AFF94E65201FA38E001A15BD /* TEST_MODULES */ = {
+			isa = PBXGroup;
+			children = (
+				AFF94E37201F7191001A15BD /* ViewController.swift */,
+			);
+			path = TEST_MODULES;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFF94E31201F7191001A15BD /* RutgersSwiftRewrite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF94E5A201F7192001A15BD /* Build configuration list for PBXNativeTarget "RutgersSwiftRewrite" */;
+			buildPhases = (
+				AFF94E2E201F7191001A15BD /* Sources */,
+				AFF94E2F201F7191001A15BD /* Frameworks */,
+				AFF94E30201F7191001A15BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RutgersSwiftRewrite;
+			productName = RutgersSwiftRewrite;
+			productReference = AFF94E32201F7191001A15BD /* RutgersSwiftRewrite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFF94E45201F7192001A15BD /* RutgersSwiftRewriteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF94E5D201F7192001A15BD /* Build configuration list for PBXNativeTarget "RutgersSwiftRewriteTests" */;
+			buildPhases = (
+				AFF94E42201F7192001A15BD /* Sources */,
+				AFF94E43201F7192001A15BD /* Frameworks */,
+				AFF94E44201F7192001A15BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFF94E48201F7192001A15BD /* PBXTargetDependency */,
+			);
+			name = RutgersSwiftRewriteTests;
+			productName = RutgersSwiftRewriteTests;
+			productReference = AFF94E46201F7192001A15BD /* RutgersSwiftRewriteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFF94E50201F7192001A15BD /* RutgersSwiftRewriteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF94E60201F7192001A15BD /* Build configuration list for PBXNativeTarget "RutgersSwiftRewriteUITests" */;
+			buildPhases = (
+				AFF94E4D201F7192001A15BD /* Sources */,
+				AFF94E4E201F7192001A15BD /* Frameworks */,
+				AFF94E4F201F7192001A15BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFF94E53201F7192001A15BD /* PBXTargetDependency */,
+			);
+			name = RutgersSwiftRewriteUITests;
+			productName = RutgersSwiftRewriteUITests;
+			productReference = AFF94E51201F7192001A15BD /* RutgersSwiftRewriteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFF94E2A201F7191001A15BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Colin Walsh";
+				TargetAttributes = {
+					AFF94E31201F7191001A15BD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AFF94E45201F7192001A15BD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AFF94E31201F7191001A15BD;
+					};
+					AFF94E50201F7192001A15BD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AFF94E31201F7191001A15BD;
+					};
+				};
+			};
+			buildConfigurationList = AFF94E2D201F7191001A15BD /* Build configuration list for PBXProject "RutgersSwiftRewrite" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFF94E29201F7191001A15BD;
+			productRefGroup = AFF94E33201F7191001A15BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFF94E31201F7191001A15BD /* RutgersSwiftRewrite */,
+				AFF94E45201F7192001A15BD /* RutgersSwiftRewriteTests */,
+				AFF94E50201F7192001A15BD /* RutgersSwiftRewriteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFF94E30201F7191001A15BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF94E40201F7191001A15BD /* LaunchScreen.storyboard in Resources */,
+				AFF94E3D201F7191001A15BD /* Assets.xcassets in Resources */,
+				AFF94E3B201F7191001A15BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF94E44201F7192001A15BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF94E4F201F7192001A15BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFF94E2E201F7191001A15BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF94E38201F7191001A15BD /* ViewController.swift in Sources */,
+				AFF94E36201F7191001A15BD /* AppDelegate.swift in Sources */,
+				AFF94E67201FB8D7001A15BD /* HomeViewController.swift in Sources */,
+				AFF94E69201FC3D5001A15BD /* HomeCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF94E42201F7192001A15BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF94E4B201F7192001A15BD /* RutgersSwiftRewriteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF94E4D201F7192001A15BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF94E56201F7192001A15BD /* RutgersSwiftRewriteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFF94E48201F7192001A15BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFF94E31201F7191001A15BD /* RutgersSwiftRewrite */;
+			targetProxy = AFF94E47201F7192001A15BD /* PBXContainerItemProxy */;
+		};
+		AFF94E53201F7192001A15BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFF94E31201F7191001A15BD /* RutgersSwiftRewrite */;
+			targetProxy = AFF94E52201F7192001A15BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFF94E39201F7191001A15BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFF94E3A201F7191001A15BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFF94E3E201F7191001A15BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFF94E3F201F7191001A15BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFF94E58201F7192001A15BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFF94E59201F7192001A15BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFF94E5B201F7192001A15BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q844VW9UW4;
+				INFOPLIST_FILE = RutgersSwiftRewrite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OSS.RutgersSwiftRewrite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFF94E5C201F7192001A15BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q844VW9UW4;
+				INFOPLIST_FILE = RutgersSwiftRewrite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OSS.RutgersSwiftRewrite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFF94E5E201F7192001A15BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q844VW9UW4;
+				INFOPLIST_FILE = RutgersSwiftRewriteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDrop.RutgersSwiftRewriteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RutgersSwiftRewrite.app/RutgersSwiftRewrite";
+			};
+			name = Debug;
+		};
+		AFF94E5F201F7192001A15BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q844VW9UW4;
+				INFOPLIST_FILE = RutgersSwiftRewriteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDrop.RutgersSwiftRewriteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RutgersSwiftRewrite.app/RutgersSwiftRewrite";
+			};
+			name = Release;
+		};
+		AFF94E61201F7192001A15BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q844VW9UW4;
+				INFOPLIST_FILE = RutgersSwiftRewriteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDrop.RutgersSwiftRewriteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RutgersSwiftRewrite;
+			};
+			name = Debug;
+		};
+		AFF94E62201F7192001A15BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q844VW9UW4;
+				INFOPLIST_FILE = RutgersSwiftRewriteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CDrop.RutgersSwiftRewriteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RutgersSwiftRewrite;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFF94E2D201F7191001A15BD /* Build configuration list for PBXProject "RutgersSwiftRewrite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF94E58201F7192001A15BD /* Debug */,
+				AFF94E59201F7192001A15BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFF94E5A201F7192001A15BD /* Build configuration list for PBXNativeTarget "RutgersSwiftRewrite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF94E5B201F7192001A15BD /* Debug */,
+				AFF94E5C201F7192001A15BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFF94E5D201F7192001A15BD /* Build configuration list for PBXNativeTarget "RutgersSwiftRewriteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF94E5E201F7192001A15BD /* Debug */,
+				AFF94E5F201F7192001A15BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFF94E60201F7192001A15BD /* Build configuration list for PBXNativeTarget "RutgersSwiftRewriteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF94E61201F7192001A15BD /* Debug */,
+				AFF94E62201F7192001A15BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFF94E2A201F7191001A15BD /* Project object */;
+}
