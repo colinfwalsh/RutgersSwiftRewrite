@@ -9,6 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -45,10 +46,14 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = self.collectionView.cellForItem(at: indexPath) as! HomeCollectionViewCell
+        UIView.animate(withDuration: 0.5, animations: {
+            cell.imageView.alpha = 1
+        })
         
-        //Add cell animation here
-        
-        print(indexPath)
+        UIView.animate(withDuration: 0.5, animations: {
+            cell.imageView.alpha = 0.55
+        })
     }
     
     
@@ -59,8 +64,13 @@ extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: self.collectionView.frame.width, height: 50)
     }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 5
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -74,6 +84,19 @@ extension HomeViewController: UICollectionViewDataSource {
         cell.title.text = "Title"
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionElementKindSectionHeader:
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                             withReuseIdentifier: "homeHeader",
+                                                                             for: indexPath) as! HomeHeaderView
+            headerView.label.text = "Header \(indexPath.section + 1)"
+            return headerView
+        default:
+            assert(false, "Unexpected element kind")
+        }
     }
     
     func layoutCell(cell: HomeCollectionViewCell) {
@@ -96,7 +119,5 @@ extension HomeViewController: UICollectionViewDataSource {
 class HomeHeaderView: UICollectionReusableView  {
     
     @IBOutlet weak var label: UILabel!
-   
-    
 }
 
