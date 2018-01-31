@@ -29,7 +29,12 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: self.collectionView.frame.width * 0.85, height: self.collectionView.frame.height/5)
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        //Add cell animation here
+        
+        print(indexPath)
+    }
     
     
 }
@@ -49,6 +54,14 @@ extension HomeViewController: UICollectionViewDataSource {
             collectionView.dequeueReusableCell(withReuseIdentifier: "homeViewCell",
                                                for: indexPath) as! HomeCollectionViewCell
         
+        layoutCell(cell: cell)
+        
+        cell.title.text = "Title"
+        
+        return cell
+    }
+    
+    func layoutCell(cell: HomeCollectionViewCell) {
         cell.contentView.layer.cornerRadius = 10
         cell.contentView.layer.borderWidth = 1.0
         
@@ -62,10 +75,6 @@ extension HomeViewController: UICollectionViewDataSource {
         cell.layer.shadowOpacity = 1.0
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect:cell.bounds, cornerRadius:cell.contentView.layer.cornerRadius).cgPath
-        
-        cell.title.text = "Title"
-        
-        return cell
     }
 }
 

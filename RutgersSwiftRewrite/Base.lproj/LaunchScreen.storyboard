@@ -18,17 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="iOS Rutgers App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo8-0F-zhc">
-                                <rect key="frame" x="61" y="329" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone-5-portrait-1x" translatesAutoresizingMaskIntoConstraints="NO" id="Cm2-Bv-uDD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Yo8-0F-zhc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hIr-6G-9R6"/>
-                            <constraint firstItem="Yo8-0F-zhc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hg1-6K-WNa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cm2-Bv-uDD" secondAttribute="bottom" id="2CY-C6-BAa"/>
+                            <constraint firstItem="Cm2-Bv-uDD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="72s-7Z-2r8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cm2-Bv-uDD" secondAttribute="trailing" id="i8O-Sg-9F5"/>
+                            <constraint firstItem="Cm2-Bv-uDD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="x5u-tQ-2Qq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,4 +37,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iPhone-5-portrait-1x" width="640" height="1136"/>
+    </resources>
 </document>

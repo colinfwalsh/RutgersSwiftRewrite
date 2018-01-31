@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF82EDF7202252C0005916BD /* AcademicsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */; };
+		AF82EDF9202252D7005916BD /* LocationCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */; };
+		AF82EDFB202252E6005916BD /* ServicesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */; };
+		AF82EDFD202252FC005916BD /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDFC202252FC005916BD /* NewsViewController.swift */; };
 		AFF94E36201F7191001A15BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E35201F7191001A15BD /* AppDelegate.swift */; };
 		AFF94E38201F7191001A15BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E37201F7191001A15BD /* ViewController.swift */; };
 		AFF94E3B201F7191001A15BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF94E39201F7191001A15BD /* Main.storyboard */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicsCollectionViewController.swift; sourceTree = "<group>"; };
+		AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionViewController.swift; sourceTree = "<group>"; };
+		AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewController.swift; sourceTree = "<group>"; };
+		AF82EDFC202252FC005916BD /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		AFF94E32201F7191001A15BD /* RutgersSwiftRewrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RutgersSwiftRewrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF94E35201F7191001A15BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFF94E37201F7191001A15BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +112,10 @@
 				AFF94E35201F7191001A15BD /* AppDelegate.swift */,
 				AFF94E65201FA38E001A15BD /* TEST_MODULES */,
 				AFF94E39201F7191001A15BD /* Main.storyboard */,
+				AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */,
+				AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */,
+				AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */,
+				AF82EDFC202252FC005916BD /* NewsViewController.swift */,
 				AFF94E68201FC3D5001A15BD /* HomeCollectionViewCell.swift */,
 				AFF94E66201FB8D7001A15BD /* HomeViewController.swift */,
 				AFF94E3C201F7191001A15BD /* Assets.xcassets */,
@@ -274,9 +286,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF94E38201F7191001A15BD /* ViewController.swift in Sources */,
+				AF82EDFB202252E6005916BD /* ServicesCollectionViewController.swift in Sources */,
 				AFF94E36201F7191001A15BD /* AppDelegate.swift in Sources */,
 				AFF94E67201FB8D7001A15BD /* HomeViewController.swift in Sources */,
+				AF82EDF9202252D7005916BD /* LocationCollectionViewController.swift in Sources */,
 				AFF94E69201FC3D5001A15BD /* HomeCollectionViewCell.swift in Sources */,
+				AF82EDF7202252C0005916BD /* AcademicsCollectionViewController.swift in Sources */,
+				AF82EDFD202252FC005916BD /* NewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
