@@ -14,6 +14,7 @@ class NewsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
     }
 
     override func didReceiveMemoryWarning() {

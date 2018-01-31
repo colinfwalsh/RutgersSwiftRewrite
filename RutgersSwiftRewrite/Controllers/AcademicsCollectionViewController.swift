@@ -1,5 +1,5 @@
 //
-//  ServicesCollectionViewController.swift
+//  AcademicsCollectionViewController.swift
 //  RutgersSwiftRewrite
 //
 //  Created by Colin Walsh on 1/31/18.
@@ -10,7 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class ServicesCollectionViewController: UICollectionViewController {
+class AcademicsCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ class ServicesCollectionViewController: UICollectionViewController {
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
+        HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
         // Do any additional setup after loading the view.
     }
 

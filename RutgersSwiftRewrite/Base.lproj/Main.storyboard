@@ -25,13 +25,13 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OUs-aP-YEg">
                                     <size key="itemSize" width="375" height="88"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="81"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeViewCell" id="wOI-Iw-y6B" customClass="HomeCollectionViewCell" customModule="RutgersSwiftRewrite" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                        <rect key="frame" x="0.0" y="81" width="375" height="88"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
@@ -62,6 +62,27 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="homeHeader" id="l8x-Kh-l6x" customClass="HomeHeaderView" customModule="RutgersSwiftRewrite" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZQ-3Z-mXT">
+                                            <rect key="frame" x="25" y="30" width="342" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="SZQ-3Z-mXT" secondAttribute="bottom" constant="22" id="EOc-so-PuT"/>
+                                        <constraint firstItem="SZQ-3Z-mXT" firstAttribute="top" secondItem="l8x-Kh-l6x" secondAttribute="topMargin" constant="22" id="Ja8-Uv-Mcc"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="SZQ-3Z-mXT" secondAttribute="trailing" id="OLv-bo-GAi"/>
+                                        <constraint firstItem="SZQ-3Z-mXT" firstAttribute="leading" secondItem="l8x-Kh-l6x" secondAttribute="leadingMargin" constant="17" id="dpv-sj-DsX"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="label" destination="SZQ-3Z-mXT" id="5m9-oP-yQY"/>
+                                    </connections>
+                                </collectionReusableView>
                             </collectionView>
                         </subviews>
                         <constraints>
@@ -73,10 +94,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JPn-WB-ymQ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dho-g5-9PY">
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="dho-g5-9PY">
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="caX-6f-NiF"/>
-                            <barButtonItem title="Item" id="5Vb-f6-KSK"/>
+                            <barButtonItem title="Item" image="options" id="caX-6f-NiF"/>
+                            <barButtonItem title="Item" image="user" id="5Vb-f6-KSK"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -85,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJe-xW-4Mx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1244" y="1512"/>
+            <point key="canvasLocation" x="1244" y="1741.9790104947529"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="NWp-qP-RSh">
@@ -108,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="-1180" y="2987"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Location Collection View Controller-->
         <scene sceneID="G70-QG-0Jy">
             <objects>
-                <collectionViewController id="wh2-mp-emM" sceneMemberID="viewController">
+                <collectionViewController id="wh2-mp-emM" customClass="LocationCollectionViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="a2z-tG-IOR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,8 +160,8 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="his-GY-skT">
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="16l-jv-NJL"/>
-                            <barButtonItem title="Item" id="nV1-i5-8fG"/>
+                            <barButtonItem title="Item" image="options" id="16l-jv-NJL"/>
+                            <barButtonItem title="Item" image="user" id="nV1-i5-8fG"/>
                         </rightBarButtonItems>
                     </navigationItem>
                 </collectionViewController>
@@ -148,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="1244" y="3335"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Services Collection View Controller-->
         <scene sceneID="gHh-kh-cVV">
             <objects>
-                <collectionViewController id="eqd-yj-zX6" sceneMemberID="viewController">
+                <collectionViewController id="eqd-yj-zX6" customClass="ServicesCollectionViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="TCt-mJ-I0y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,8 +203,8 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="cDo-q8-Blr">
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="bwH-Xu-kfA"/>
-                            <barButtonItem title="Item" id="rS6-zH-SfW"/>
+                            <barButtonItem title="Item" image="options" id="bwH-Xu-kfA"/>
+                            <barButtonItem title="Item" image="user" id="rS6-zH-SfW"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -192,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="1244" y="5151"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Academics Collection View Controller-->
         <scene sceneID="B7l-cd-c31">
             <objects>
-                <collectionViewController id="Vpe-Mc-Kg5" sceneMemberID="viewController">
+                <collectionViewController id="Vpe-Mc-Kg5" customClass="AcademicsCollectionViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="OY8-7a-dkq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,8 +244,8 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="7Fx-Df-w2N">
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="iFs-Qe-vd1"/>
-                            <barButtonItem title="Item" id="axP-Da-B4O"/>
+                            <barButtonItem title="Item" image="options" id="iFs-Qe-vd1"/>
+                            <barButtonItem title="Item" image="user" id="axP-Da-B4O"/>
                         </rightBarButtonItems>
                     </navigationItem>
                 </collectionViewController>
@@ -238,9 +259,11 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cce-NI-8LO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="Vz3-Ko-Kt9"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TQT-Ka-AgC">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TQT-Ka-AgC">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -249,7 +272,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23u-wN-AyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="535" y="1512"/>
+            <point key="canvasLocation" x="534" y="1742"/>
         </scene>
         <!--Academics-->
         <scene sceneID="qZH-Yc-OcS">
@@ -308,10 +331,10 @@
             </objects>
             <point key="canvasLocation" x="534" y="5152"/>
         </scene>
-        <!--View Controller-->
+        <!--News View Controller-->
         <scene sceneID="rv5-NQ-bBx">
             <objects>
-                <viewController id="FcJ-7w-O2H" sceneMemberID="viewController">
+                <viewController id="FcJ-7w-O2H" customClass="NewsViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2iG-F5-h7p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,8 +343,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="oeG-Hh-yin">
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="3ww-ff-Yfd"/>
-                            <barButtonItem title="Item" id="zKM-ke-VsR"/>
+                            <barButtonItem title="Item" image="options" id="3ww-ff-Yfd"/>
+                            <barButtonItem title="Item" image="user" id="zKM-ke-VsR"/>
                         </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
@@ -354,6 +377,8 @@
         <image name="home" width="48" height="48"/>
         <image name="location" width="48" height="48"/>
         <image name="news" width="48" height="48"/>
+        <image name="options" width="6" height="25"/>
         <image name="studentServices" width="48" height="48"/>
+        <image name="user" width="25" height="25"/>
     </resources>
 </document>

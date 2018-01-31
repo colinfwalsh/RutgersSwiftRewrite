@@ -86,6 +86,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF82EDFE20225DE5005916BD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AFF94E68201FC3D5001A15BD /* HomeCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AF82EDFF20225DFC005916BD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AFF94E66201FB8D7001A15BD /* HomeViewController.swift */,
+				AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */,
+				AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */,
+				AF82EDFC202252FC005916BD /* NewsViewController.swift */,
+				AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		AFF94E29201F7191001A15BD = {
 			isa = PBXGroup;
 			children = (
@@ -112,12 +132,8 @@
 				AFF94E35201F7191001A15BD /* AppDelegate.swift */,
 				AFF94E65201FA38E001A15BD /* TEST_MODULES */,
 				AFF94E39201F7191001A15BD /* Main.storyboard */,
-				AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */,
-				AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */,
-				AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */,
-				AF82EDFC202252FC005916BD /* NewsViewController.swift */,
-				AFF94E68201FC3D5001A15BD /* HomeCollectionViewCell.swift */,
-				AFF94E66201FB8D7001A15BD /* HomeViewController.swift */,
+				AF82EDFF20225DFC005916BD /* Controllers */,
+				AF82EDFE20225DE5005916BD /* Cells */,
 				AFF94E3C201F7191001A15BD /* Assets.xcassets */,
 				AFF94E3E201F7191001A15BD /* LaunchScreen.storyboard */,
 				AFF94E41201F7191001A15BD /* Info.plist */,

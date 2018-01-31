@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -17,7 +17,22 @@ class HomeViewController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
-
+        
+        HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
+    }
+    
+    static func addLeftBarIcon(named:String, navigationItem: UINavigationItem) {
+        
+        let logoImage = UIImage.init(named: named)
+        let logoImageView = UIImageView.init(image: logoImage)
+        logoImageView.frame = CGRect(x:0.0,y:0.0, width:125,height:52)
+        logoImageView.contentMode = .scaleAspectFit
+        let imageItem = UIBarButtonItem.init(customView: logoImageView)
+        let widthConstraint = logoImageView.widthAnchor.constraint(equalToConstant: 125)
+        let heightConstraint = logoImageView.heightAnchor.constraint(equalToConstant: 52)
+        heightConstraint.isActive = true
+        widthConstraint.isActive = true
+        navigationItem.leftBarButtonItem = imageItem
     }
 }
 
@@ -76,5 +91,12 @@ extension HomeViewController: UICollectionViewDataSource {
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect:cell.bounds, cornerRadius:cell.contentView.layer.cornerRadius).cgPath
     }
+}
+
+class HomeHeaderView: UICollectionReusableView  {
+    
+    @IBOutlet weak var label: UILabel!
+   
+    
 }
 
