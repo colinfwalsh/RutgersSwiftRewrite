@@ -85,6 +85,7 @@
                                     <constraints>
                                         <constraint firstItem="prG-pz-226" firstAttribute="leading" secondItem="l8x-Kh-l6x" secondAttribute="leading" constant="50" id="dIV-Kk-MgQ"/>
                                         <constraint firstItem="prG-pz-226" firstAttribute="centerY" secondItem="l8x-Kh-l6x" secondAttribute="centerY" id="fUX-pj-XLF"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="prG-pz-226" secondAttribute="trailing" constant="20" symbolic="YES" id="lFL-JL-cEG"/>
                                     </constraints>
                                     <connections>
                                         <outlet property="label" destination="prG-pz-226" id="nqq-12-5X5"/>
@@ -228,20 +229,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="irn-WV-sXw">
-                            <size key="itemSize" width="50" height="50"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="irn-WV-sXw">
+                            <size key="itemSize" width="112" height="109"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3Xa-t8-C3u">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="academicCell" id="3Xa-t8-C3u" customClass="AcademicsCells" customModule="RutgersSwiftRewrite" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="112" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="112" height="109"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wR9-dW-ypI">
+                                            <rect key="frame" x="35" y="44" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </view>
+                                <connections>
+                                    <outlet property="title" destination="wR9-dW-ypI" id="Qyd-yq-Jiw"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -258,7 +271,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMk-2Q-27g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1244" y="2524"/>
+            <point key="canvasLocation" x="1244" y="2523.6881559220392"/>
         </scene>
         <!--Home-->
         <scene sceneID="jdo-nK-8sb">
