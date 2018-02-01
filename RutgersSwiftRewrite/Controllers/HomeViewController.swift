@@ -46,7 +46,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = self.collectionView.cellForItem(at: indexPath) as! HomeCollectionViewCell
+        let cell = self.collectionView.cellForItem(at: indexPath) as! HomeCell
         UIView.animate(withDuration: 0.5, animations: {
             cell.imageView.alpha = 1
         })
@@ -77,15 +77,16 @@ extension HomeViewController: UICollectionViewDataSource {
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =
             collectionView.dequeueReusableCell(withReuseIdentifier: "homeViewCell",
-                                               for: indexPath) as! HomeCollectionViewCell
+                                               for: indexPath) as! HomeCell
         
-        layoutCell(cell: cell)
+        HomeViewController.layoutCell(cell: cell as UICollectionViewCell)
         
         cell.title.text = "Title"
         
         return cell
     }
     
+    //MARK: Header Implementation
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionElementKindSectionHeader:
@@ -99,7 +100,7 @@ extension HomeViewController: UICollectionViewDataSource {
         }
     }
     
-    func layoutCell(cell: HomeCollectionViewCell) {
+    static func layoutCell(cell: UICollectionViewCell) {
         cell.contentView.layer.cornerRadius = 10
         cell.contentView.layer.borderWidth = 1.0
         
@@ -109,10 +110,27 @@ extension HomeViewController: UICollectionViewDataSource {
         
         cell.layer.shadowColor = UIColor.gray.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        cell.layer.shadowRadius = 2.0
-        cell.layer.shadowOpacity = 1.0
+        cell.layer.shadowRadius = 1.0
+        cell.layer.shadowOpacity = 2.5
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect:cell.bounds, cornerRadius:cell.contentView.layer.cornerRadius).cgPath
+ 
+    }
+    
+    static func layoutView(view: UIView) {
+        view.layer.cornerRadius = 10
+        view.layer.borderWidth = 1.0
+        
+        view.layer.borderColor = UIColor.clear.cgColor
+        view.layer.masksToBounds = true
+        view.layer.backgroundColor = UIColor.white.cgColor
+        
+        view.layer.shadowColor = UIColor.gray.cgColor
+        view.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        view.layer.shadowRadius = 1.0
+        view.layer.shadowOpacity = 2.5
+        view.layer.masksToBounds = false
+        view.layer.shadowPath = UIBezierPath(roundedRect:view.bounds, cornerRadius:view.layer.cornerRadius).cgPath
     }
 }
 

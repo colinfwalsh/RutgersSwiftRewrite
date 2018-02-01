@@ -9,5 +9,6 @@
 import UIKit
 
 class AcademicsCell: UICollectionViewCell {
-    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var academicLabel: UILabel!
+    @IBOutlet weak var testView: UIView!
 }

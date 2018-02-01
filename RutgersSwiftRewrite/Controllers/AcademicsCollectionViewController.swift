@@ -8,8 +8,6 @@
 
 import UIKit
 
-private let reuseIdentifier = "academicCell"
-
 private let academicItems = ["Sakai" : "url", "Libraries" : "Url", "Pearson e-College" : "url", "Schedule of Classes" : "url"]
 
 class AcademicsCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
@@ -17,33 +15,40 @@ class AcademicsCollectionViewController: UICollectionViewController, UICollectio
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.collectionView!.register(AcademicsCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
         self.collectionView?.delegate = self
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 100, height: 100)
-        layout.minimumInteritemSpacing = 10
-        layout.minimumLineSpacing = 10
-        layout.headerReferenceSize = CGSize(width: 0, height: 40)
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        collectionView?.collectionViewLayout = layout
+        self.collectionView?.dataSource = self
 
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
-
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return academicItems.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! AcademicsCell
-        cell.backgroundColor = .white
-        cell.title?.text = Array(academicItems.keys)[indexPath.row]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "academicCell", for: indexPath) as! AcademicsCell
+        
+        cell.academicLabel?.text = Array(academicItems.keys)[indexPath.row]
+        
+        HomeViewController.layoutCell(cell: cell as UICollectionViewCell)
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! AcademicsCell
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            cell.testView?.alpha = 1
+        })
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            cell.testView?.alpha = 0.55
+        })
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -51,6 +56,14 @@ class AcademicsCollectionViewController: UICollectionViewController, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
     }
 }
