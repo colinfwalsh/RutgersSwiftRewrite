@@ -492,7 +492,7 @@
                                             <rect key="frame" x="65" y="26" width="244" height="297.5"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cut" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t4P-kA-c3C">
-                                                    <rect key="frame" x="0.0" y="0.0" width="244" height="297.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="244" height="277.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUW-AB-iIE" userLabel="articleTitle">
                                                     <rect key="frame" x="10" y="10" width="224" height="277.5"/>
@@ -505,7 +505,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="t4P-kA-c3C" secondAttribute="trailing" id="9iC-27-MiH"/>
                                                 <constraint firstItem="sUW-AB-iIE" firstAttribute="leading" secondItem="pzq-Wb-2Ar" secondAttribute="leading" constant="10" id="Bon-BL-sNe"/>
                                                 <constraint firstItem="t4P-kA-c3C" firstAttribute="leading" secondItem="pzq-Wb-2Ar" secondAttribute="leading" id="IOe-Jt-1Mk"/>
-                                                <constraint firstAttribute="bottom" secondItem="t4P-kA-c3C" secondAttribute="bottom" id="YHY-hE-nhH"/>
+                                                <constraint firstAttribute="bottom" secondItem="t4P-kA-c3C" secondAttribute="bottom" constant="20" id="YHY-hE-nhH"/>
                                                 <constraint firstItem="t4P-kA-c3C" firstAttribute="top" secondItem="pzq-Wb-2Ar" secondAttribute="top" id="a3e-oc-U3v"/>
                                                 <constraint firstItem="sUW-AB-iIE" firstAttribute="top" secondItem="pzq-Wb-2Ar" secondAttribute="top" constant="10" id="jC7-1V-DHg"/>
                                                 <constraint firstAttribute="trailing" secondItem="sUW-AB-iIE" secondAttribute="trailing" constant="10" id="mPB-SP-JdY"/>
