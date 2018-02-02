@@ -42,7 +42,9 @@ extension HomeViewController: UICollectionViewDelegate {
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.collectionView.frame.width * 0.85, height: self.collectionView.frame.height/5)
+        
+        let size = indexPath.section == 0 ? CGSize(width: self.collectionView.frame.width * 0.85, height: self.collectionView.frame.height/5) : CGSize(width: collectionView.frame.width * 0.85, height: collectionView.frame.height/13)
+        return size
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -56,11 +58,12 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 extension HomeViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: self.collectionView.frame.width, height: 50)
+        
+        return CGSize(width: collectionView.frame.width, height: 50)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 5
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -69,15 +72,28 @@ extension HomeViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell =
-            collectionView.dequeueReusableCell(withReuseIdentifier: "homeViewCell",
-                                               for: indexPath) as! HomeCell
         
-        HomeViewController.layoutCell(cell: cell as UICollectionViewCell)
+        switch indexPath.section {
+        case 0:
+            let cell =
+                collectionView.dequeueReusableCell(withReuseIdentifier: "homeViewCell",
+                                                   for: indexPath) as! HomeCell
+            
+            HomeViewController.layoutCell(cell: cell as UICollectionViewCell)
+            
+            cell.title.text = "Title"
+            
+            return cell
+        default:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mapCell", for: indexPath) as! MapCell
+            
+            HomeViewController.layoutCell(cell: cell as UICollectionViewCell)
+            
+            cell.mainLabel?.text = "Favorited item - dependent on type of item"
+            
+            return cell
+        }
         
-        cell.title.text = "Title"
-        
-        return cell
     }
     
     //MARK: Header Implementation
@@ -86,8 +102,11 @@ extension HomeViewController: UICollectionViewDataSource {
         case UICollectionElementKindSectionHeader:
             let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
                                                                              withReuseIdentifier: "homeHeader",
+            
                                                                              for: indexPath) as! HomeHeaderView
-            headerView.label.text = "Header \(indexPath.section + 1)"
+            
+            let text = indexPath.section == 0 ? "Recents" : "Favorites"
+            headerView.label.text = text
             return headerView
         default:
             assert(false, "Unexpected element kind")
