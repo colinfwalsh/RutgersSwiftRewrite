@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewsTableViewController: UITableViewController {
+class NewsTableViewController: UITableViewController, AnimationProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()

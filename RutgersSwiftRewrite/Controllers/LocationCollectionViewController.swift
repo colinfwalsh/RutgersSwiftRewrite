@@ -8,22 +8,18 @@
 
 import UIKit
 
-class LocationCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class LocationCollectionViewController: UICollectionViewController, AnimationProtocol, UICollectionViewDelegateFlowLayout {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
     }
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 2
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return section == 0 ? 7 : 3
     }
 
@@ -61,13 +57,7 @@ class LocationCollectionViewController: UICollectionViewController, UICollection
         
         let cell = collectionView.cellForItem(at: indexPath) as! MapCell
         
-        UIView.animate(withDuration: 0.3) {
-            cell.backgroundColor = .red
-        }
-        
-        UIView.animate(withDuration: 0.3) {
-            cell.backgroundColor = .clear
-        }
+        animateWith(duration: 0.4, view: cell.contentView)
     }
     
 }

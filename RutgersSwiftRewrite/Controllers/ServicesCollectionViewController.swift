@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ServicesCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class ServicesCollectionViewController: UICollectionViewController, AnimationProtocol {
     
     let testDictionary = ["Student Media" : "url", "Student Affairs" : "url", "Resident Life" : "url", "Food" : "url", "myRutgers" : "url", "Career Services" : "url", "Fix-it" : "url"]
 
@@ -36,6 +36,14 @@ class ServicesCollectionViewController: UICollectionViewController, UICollection
         return cell
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! StudentServicesCell
+        
+        animateWith(duration: 0.4, view: cell.auxView)
+    }
+}
+
+extension ServicesCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: self.collectionView!.frame.width/2.25, height: self.collectionView!.frame.height/4)
     }
@@ -51,18 +59,4 @@ class ServicesCollectionViewController: UICollectionViewController, UICollection
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
     }
-    
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as! StudentServicesCell
-        
-        UIView.animate(withDuration: 0.4) {
-            cell.auxView.alpha = 1.0
-        }
-        
-        UIView.animate(withDuration: 0.4) {
-            cell.auxView.alpha = 0.55
-        }
-    }
-    
-
 }

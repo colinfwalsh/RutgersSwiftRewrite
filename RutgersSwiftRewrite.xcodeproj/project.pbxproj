@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF6807652024CC74000B421E /* AnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6807642024CC74000B421E /* AnimationProtocol.swift */; };
 		AF82EDF7202252C0005916BD /* AcademicsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */; };
 		AF82EDF9202252D7005916BD /* LocationCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */; };
 		AF82EDFB202252E6005916BD /* ServicesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF6807642024CC74000B421E /* AnimationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProtocol.swift; sourceTree = "<group>"; };
 		AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicsCollectionViewController.swift; sourceTree = "<group>"; };
 		AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionViewController.swift; sourceTree = "<group>"; };
 		AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */,
 				AFB5CFE22023BEC10002AB7A /* NewsTableViewController.swift */,
 				AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */,
+				AF6807642024CC74000B421E /* AnimationProtocol.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				AF82EDF9202252D7005916BD /* LocationCollectionViewController.swift in Sources */,
 				AFB5CFE12023B2DB0002AB7A /* MapCell.swift in Sources */,
 				AFF94E69201FC3D5001A15BD /* HomeCell.swift in Sources */,
+				AF6807652024CC74000B421E /* AnimationProtocol.swift in Sources */,
 				AF82EDF7202252C0005916BD /* AcademicsCollectionViewController.swift in Sources */,
 				AFB5CFE32023BEC10002AB7A /* NewsTableViewController.swift in Sources */,
 				AFB5CFE52023C5A30002AB7A /* NewsMainCell.swift in Sources */,

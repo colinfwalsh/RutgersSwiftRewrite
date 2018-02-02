@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, AnimationProtocol {
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -47,13 +47,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = self.collectionView.cellForItem(at: indexPath) as! HomeCell
-        UIView.animate(withDuration: 0.5, animations: {
-            cell.imageView.alpha = 1
-        })
-        
-        UIView.animate(withDuration: 0.5, animations: {
-            cell.imageView.alpha = 0.55
-        })
+        animateWith(duration: 0.4, view: cell.imageView)
     }
     
     

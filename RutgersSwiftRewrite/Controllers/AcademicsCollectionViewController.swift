@@ -10,7 +10,7 @@ import UIKit
 
 private let academicItems = ["Sakai" : "url", "Libraries" : "Url", "Pearson e-College" : "url", "Schedule of Classes" : "url"]
 
-class AcademicsCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class AcademicsCollectionViewController: UICollectionViewController, AnimationProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,6 @@ class AcademicsCollectionViewController: UICollectionViewController, UICollectio
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
         self.collectionView?.delegate = self
         self.collectionView?.dataSource = self
-
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -42,15 +41,12 @@ class AcademicsCollectionViewController: UICollectionViewController, UICollectio
         
         let cell = collectionView.cellForItem(at: indexPath) as! AcademicsCell
         
-        UIView.animate(withDuration: 0.5, animations: {
-            cell.testView?.alpha = 1
-        })
-        
-        UIView.animate(withDuration: 0.5, animations: {
-            cell.testView?.alpha = 0.55
-        })
+        animateWith(duration: 0.4, view: cell.testView)
     }
-    
+}
+
+// Could probably be abstracted later on, but this works for now
+extension AcademicsCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: self.collectionView!.frame.width/2.25, height: self.collectionView!.frame.height/4)
     }

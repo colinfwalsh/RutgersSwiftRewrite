@@ -174,7 +174,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="mainLabel" destination="mSb-PE-XwP" id="inq-3U-u86"/>
-                                    <segue destination="zmB-tC-cps" kind="show" id="ymS-cH-36g"/>
+                                    <segue destination="zmB-tC-cps" kind="show" id="kE5-qX-ih6"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
