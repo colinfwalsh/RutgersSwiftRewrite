@@ -330,10 +330,93 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="HCQ-zF-eKK" kind="show" identifier="goToWebView" id="Vy2-f2-T1C"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="443-mg-Xck" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1244" y="5150.3748125937036"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="hqB-2r-Mhe">
+            <objects>
+                <viewController id="HCQ-zF-eKK" customClass="WebViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IsE-Bo-npI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fl3-98-e3x">
+                                <rect key="frame" x="0.0" y="66" width="375" height="458"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytF-Gi-zOA">
+                                <rect key="frame" x="0.0" y="524" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdg-Ls-CO9">
+                                        <rect key="frame" x="40" y="10" width="34" height="30"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.99991601705551147" green="1" blue="0.99987202882766724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="back:" destination="HCQ-zF-eKK" eventType="touchUpInside" id="OcV-wS-xrb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3x-XZ-wPI">
+                                        <rect key="frame" x="279" y="10" width="56" height="30"/>
+                                        <state key="normal" title="Forward">
+                                            <color key="titleColor" red="0.99991601705551147" green="1" blue="0.99987202882766724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="forward:" destination="HCQ-zF-eKK" eventType="touchUpInside" id="hNE-hu-aqd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80107825994491577" green="0.0040147025138139725" blue="0.20171627402305603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Jdg-Ls-CO9" firstAttribute="centerY" secondItem="ytF-Gi-zOA" secondAttribute="centerY" id="D2P-rH-z6W"/>
+                                    <constraint firstAttribute="trailing" secondItem="r3x-XZ-wPI" secondAttribute="trailing" constant="40" id="YRt-vk-1wn"/>
+                                    <constraint firstItem="r3x-XZ-wPI" firstAttribute="centerY" secondItem="ytF-Gi-zOA" secondAttribute="centerY" id="hht-c7-3bz"/>
+                                    <constraint firstItem="Jdg-Ls-CO9" firstAttribute="leading" secondItem="ytF-Gi-zOA" secondAttribute="leading" constant="40" id="kZQ-ld-rK5"/>
+                                    <constraint firstAttribute="height" constant="50" id="zxZ-wG-kFU"/>
+                                </constraints>
+                            </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aR3-sN-9mW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="725-Zp-a3n"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80107825994491577" green="0.0040147025138139725" blue="0.20171627402305603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aR3-sN-9mW" firstAttribute="leading" secondItem="IsE-Bo-npI" secondAttribute="leadingMargin" constant="-16" id="OJg-2B-VXe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aR3-sN-9mW" secondAttribute="trailing" constant="-16" id="OJs-om-ELS"/>
+                            <constraint firstItem="aR3-sN-9mW" firstAttribute="top" secondItem="vsO-P4-bgW" secondAttribute="top" id="TIV-qD-anS"/>
+                            <constraint firstItem="ytF-Gi-zOA" firstAttribute="top" secondItem="fl3-98-e3x" secondAttribute="bottom" id="XsW-W0-BSv"/>
+                            <constraint firstItem="fl3-98-e3x" firstAttribute="top" secondItem="aR3-sN-9mW" secondAttribute="bottom" id="gyS-Cg-6hx"/>
+                            <constraint firstItem="fl3-98-e3x" firstAttribute="trailing" secondItem="vsO-P4-bgW" secondAttribute="trailing" id="kYM-h4-ptz"/>
+                            <constraint firstItem="vsO-P4-bgW" firstAttribute="trailing" secondItem="ytF-Gi-zOA" secondAttribute="trailing" id="mFX-KY-tU4"/>
+                            <constraint firstItem="fl3-98-e3x" firstAttribute="leading" secondItem="vsO-P4-bgW" secondAttribute="leading" id="qqf-7V-14x"/>
+                            <constraint firstItem="ytF-Gi-zOA" firstAttribute="leading" secondItem="vsO-P4-bgW" secondAttribute="leading" id="rco-rA-z13"/>
+                            <constraint firstItem="ytF-Gi-zOA" firstAttribute="bottom" secondItem="vsO-P4-bgW" secondAttribute="bottom" id="uc5-40-SKH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vsO-P4-bgW"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="Jdg-Ls-CO9" id="auH-S9-BtC"/>
+                        <outlet property="forwardButton" destination="r3x-XZ-wPI" id="DxR-c9-nyd"/>
+                        <outlet property="progBar" destination="aR3-sN-9mW" id="uWb-dZ-99g"/>
+                        <outlet property="webView" destination="fl3-98-e3x" id="Qij-5s-FKC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0qb-XU-uQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2056.8000000000002" y="5152.1739130434789"/>
         </scene>
         <!--Academics Collection View Controller-->
         <scene sceneID="B7l-cd-c31">

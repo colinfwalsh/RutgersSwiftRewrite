@@ -11,13 +11,26 @@ import UIKit
 
 class ServicesCollectionViewController: UICollectionViewController, AnimationProtocol {
     
-    let testDictionary = ["Student Media" : "url", "Student Affairs" : "url", "Resident Life" : "url", "Food" : "url", "myRutgers" : "url", "Career Services" : "url", "Fix-it" : "url"]
+    let testDictionary = [
+        "Student Media" : "https://newbrunswick.rutgers.edu/campus-life/student-media",
+        "Student Affairs" : "http://studentaffairs.rutgers.edu/",
+        "Resident Life" : "http://ruoncampus.rutgers.edu/",
+        "Food" : "http://food.rutgers.edu/",
+        "myRutgers" : "https://my.rutgers.edu/",
+        "Career Services" : "http://careers.rutgers.edu/",
+        "Fix-it" : "https://google.com"
+    ]
+    
+    var currentSelection = ""
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
     }
+ 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -26,6 +39,7 @@ class ServicesCollectionViewController: UICollectionViewController, AnimationPro
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return testDictionary.count
     }
+    
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "studentServicesCell", for: indexPath) as! StudentServicesCell
@@ -38,7 +52,9 @@ class ServicesCollectionViewController: UICollectionViewController, AnimationPro
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! StudentServicesCell
-        
+        currentSelection = Array(testDictionary.values)[indexPath.row]
+
+        openWebView(url: "asdjnas")
         animateWith(duration: 0.4, view: cell.auxView)
     }
 }
@@ -58,5 +74,23 @@ extension ServicesCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
+    }
+}
+
+extension ServicesCollectionViewController {
+    
+    
+    
+    func openWebView(url: String)  {
+        performSegue(withIdentifier: "goToWebView", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backItem = UIBarButtonItem()
+        backItem.title = "Back to Services"
+        navigationItem.backBarButtonItem = backItem
+        if let destination = segue.destination as? WebViewController {
+            destination.serviceURL = currentSelection
+        }
     }
 }
