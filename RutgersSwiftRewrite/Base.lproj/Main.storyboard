@@ -49,6 +49,7 @@
                                         <constraints>
                                             <constraint firstItem="m1g-ER-b3K" firstAttribute="centerY" secondItem="pwm-Ou-KZi" secondAttribute="centerY" id="0JR-Pk-Kw0"/>
                                             <constraint firstItem="m1g-ER-b3K" firstAttribute="leading" secondItem="pwm-Ou-KZi" secondAttribute="leading" constant="20" id="MlJ-rI-6l5"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m1g-ER-b3K" secondAttribute="trailing" symbolic="YES" id="NUW-pg-DUG"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="mainLabel" destination="m1g-ER-b3K" id="qv0-sB-1wK"/>
