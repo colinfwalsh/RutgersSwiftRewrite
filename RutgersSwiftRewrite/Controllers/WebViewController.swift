@@ -15,6 +15,7 @@ class WebViewController: UIViewController {
     @IBOutlet weak var progBar: UIProgressView!
     @IBOutlet weak var webView: WKWebView!
     
+    @IBOutlet weak var refreshButton: UIButton!
     @IBOutlet weak var forwardButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
     var serviceURL = "https://google.com"
@@ -27,6 +28,12 @@ class WebViewController: UIViewController {
         
         progBar.progress = 0.0
         progBar.tintColor = UIColor.blue
+        
+        backButton.setBackgroundImage(#imageLiteral(resourceName: "backCarretDisabled"), for: .disabled)
+        forwardButton.setBackgroundImage(#imageLiteral(resourceName: "forwardCarretDisabled"), for: .disabled)
+        backButton.setBackgroundImage(#imageLiteral(resourceName: "backCarret"), for: .normal)
+        forwardButton.setBackgroundImage(#imageLiteral(resourceName: "forwardCarret"), for: .normal)
+        refreshButton.setBackgroundImage(#imageLiteral(resourceName: "refresh"), for: .normal)
         
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: NSKeyValueObservingOptions.new, context: nil)
         let url = URL(string: serviceURL)!
@@ -47,6 +54,11 @@ class WebViewController: UIViewController {
         }
     }
     
+    @IBAction func refresh(_ sender: Any) {
+        let url = URL(string: serviceURL)!
+        let urlRequest = URLRequest(url: url)
+        webView.load(urlRequest)
+    }
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "estimatedProgress" {
             self.progBar.alpha = 1.0

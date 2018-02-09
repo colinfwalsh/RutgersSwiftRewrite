@@ -347,7 +347,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fl3-98-e3x">
-                                <rect key="frame" x="0.0" y="66" width="375" height="458"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="460"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -358,8 +358,13 @@
                                 <rect key="frame" x="0.0" y="524" width="375" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdg-Ls-CO9">
-                                        <rect key="frame" x="40" y="10" width="34" height="30"/>
-                                        <state key="normal" title="Back">
+                                        <rect key="frame" x="40" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="SM7-uG-2fF"/>
+                                            <constraint firstAttribute="height" constant="30" id="ubS-fC-oDo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal">
                                             <color key="titleColor" red="0.99991601705551147" green="1" blue="0.99987202882766724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -367,12 +372,27 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3x-XZ-wPI">
-                                        <rect key="frame" x="279" y="10" width="56" height="30"/>
-                                        <state key="normal" title="Forward">
+                                        <rect key="frame" x="305" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ZbQ-4t-TWy"/>
+                                            <constraint firstAttribute="width" constant="30" id="raa-DM-zb4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal">
                                             <color key="titleColor" red="0.99991601705551147" green="1" blue="0.99987202882766724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="forward:" destination="HCQ-zF-eKK" eventType="touchUpInside" id="hNE-hu-aqd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPR-WK-TlI">
+                                        <rect key="frame" x="172.5" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="ZXk-8l-u1Q"/>
+                                            <constraint firstAttribute="height" constant="30" id="hlx-KS-TPx"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="refresh:" destination="HCQ-zF-eKK" eventType="touchUpInside" id="B5s-EQ-NHr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -382,6 +402,8 @@
                                     <constraint firstAttribute="trailing" secondItem="r3x-XZ-wPI" secondAttribute="trailing" constant="40" id="YRt-vk-1wn"/>
                                     <constraint firstItem="r3x-XZ-wPI" firstAttribute="centerY" secondItem="ytF-Gi-zOA" secondAttribute="centerY" id="hht-c7-3bz"/>
                                     <constraint firstItem="Jdg-Ls-CO9" firstAttribute="leading" secondItem="ytF-Gi-zOA" secondAttribute="leading" constant="40" id="kZQ-ld-rK5"/>
+                                    <constraint firstItem="cPR-WK-TlI" firstAttribute="centerX" secondItem="ytF-Gi-zOA" secondAttribute="centerX" id="sva-cP-9iB"/>
+                                    <constraint firstItem="cPR-WK-TlI" firstAttribute="centerY" secondItem="ytF-Gi-zOA" secondAttribute="centerY" id="xRr-vW-5tN"/>
                                     <constraint firstAttribute="height" constant="50" id="zxZ-wG-kFU"/>
                                 </constraints>
                             </view>
@@ -394,13 +416,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.80107825994491577" green="0.0040147025138139725" blue="0.20171627402305603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fl3-98-e3x" firstAttribute="top" secondItem="vsO-P4-bgW" secondAttribute="top" id="8YY-Jy-W1G"/>
                             <constraint firstItem="aR3-sN-9mW" firstAttribute="leading" secondItem="IsE-Bo-npI" secondAttribute="leadingMargin" constant="-16" id="OJg-2B-VXe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aR3-sN-9mW" secondAttribute="trailing" constant="-16" id="OJs-om-ELS"/>
-                            <constraint firstItem="aR3-sN-9mW" firstAttribute="top" secondItem="vsO-P4-bgW" secondAttribute="top" id="TIV-qD-anS"/>
                             <constraint firstItem="ytF-Gi-zOA" firstAttribute="top" secondItem="fl3-98-e3x" secondAttribute="bottom" id="XsW-W0-BSv"/>
-                            <constraint firstItem="fl3-98-e3x" firstAttribute="top" secondItem="aR3-sN-9mW" secondAttribute="bottom" id="gyS-Cg-6hx"/>
                             <constraint firstItem="fl3-98-e3x" firstAttribute="trailing" secondItem="vsO-P4-bgW" secondAttribute="trailing" id="kYM-h4-ptz"/>
                             <constraint firstItem="vsO-P4-bgW" firstAttribute="trailing" secondItem="ytF-Gi-zOA" secondAttribute="trailing" id="mFX-KY-tU4"/>
+                            <constraint firstItem="aR3-sN-9mW" firstAttribute="top" secondItem="vsO-P4-bgW" secondAttribute="top" id="oYe-ES-lZ2"/>
                             <constraint firstItem="fl3-98-e3x" firstAttribute="leading" secondItem="vsO-P4-bgW" secondAttribute="leading" id="qqf-7V-14x"/>
                             <constraint firstItem="ytF-Gi-zOA" firstAttribute="leading" secondItem="vsO-P4-bgW" secondAttribute="leading" id="rco-rA-z13"/>
                             <constraint firstItem="ytF-Gi-zOA" firstAttribute="bottom" secondItem="vsO-P4-bgW" secondAttribute="bottom" id="uc5-40-SKH"/>
@@ -411,6 +433,7 @@
                         <outlet property="backButton" destination="Jdg-Ls-CO9" id="auH-S9-BtC"/>
                         <outlet property="forwardButton" destination="r3x-XZ-wPI" id="DxR-c9-nyd"/>
                         <outlet property="progBar" destination="aR3-sN-9mW" id="uWb-dZ-99g"/>
+                        <outlet property="refreshButton" destination="cPR-WK-TlI" id="QEJ-bM-pC9"/>
                         <outlet property="webView" destination="fl3-98-e3x" id="Qij-5s-FKC"/>
                     </connections>
                 </viewController>

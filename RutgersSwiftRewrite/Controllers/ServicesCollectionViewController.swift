@@ -21,9 +21,6 @@ class ServicesCollectionViewController: UICollectionViewController, AnimationPro
         "Fix-it" : "https://google.com"
     ]
     
-    var currentSelection = ""
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,9 +49,7 @@ class ServicesCollectionViewController: UICollectionViewController, AnimationPro
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! StudentServicesCell
-        currentSelection = Array(testDictionary.values)[indexPath.row]
-
-        openWebView(url: "asdjnas")
+        performSegue(withIdentifier: "goToWebView", sender: Array(testDictionary.values)[indexPath.row])
         animateWith(duration: 0.4, view: cell.auxView)
     }
 }
@@ -79,18 +74,12 @@ extension ServicesCollectionViewController: UICollectionViewDelegateFlowLayout {
 
 extension ServicesCollectionViewController {
     
-    
-    
-    func openWebView(url: String)  {
-        performSegue(withIdentifier: "goToWebView", sender: self)
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let backItem = UIBarButtonItem()
         backItem.title = "Back to Services"
         navigationItem.backBarButtonItem = backItem
         if let destination = segue.destination as? WebViewController {
-            destination.serviceURL = currentSelection
+            destination.serviceURL = sender as! String
         }
     }
 }
