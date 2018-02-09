@@ -8,7 +8,12 @@
 
 import UIKit
 
-private let academicItems = ["Sakai" : "url", "Libraries" : "Url", "Pearson e-College" : "url", "Schedule of Classes" : "url"]
+private let academicItems = [
+    "Sakai" : "https://sakai.rutgers.edu/portal",
+    "Libraries" : "https://www.libraries.rutgers.edu/",
+    "Pearson e-College" : "https://onlinelearning.rutgers.edu/ecollege",
+    "Schedule of Classes" : "https://sis.rutgers.edu/soc/#home"
+]
 
 class AcademicsCollectionViewController: UICollectionViewController, AnimationProtocol {
 
@@ -40,7 +45,7 @@ class AcademicsCollectionViewController: UICollectionViewController, AnimationPr
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let cell = collectionView.cellForItem(at: indexPath) as! AcademicsCell
-        
+        performSegue(withIdentifier: "goToWebView", sender: Array(academicItems.values)[indexPath.row])
         animateWith(duration: 0.4, view: cell.testView)
     }
 }
@@ -61,5 +66,12 @@ extension AcademicsCollectionViewController: UICollectionViewDelegateFlowLayout 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
+    }
+}
+
+extension AcademicsCollectionViewController: WebNavigationProtocol {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        setUpForWebView(currentView: self, currentViewName: "Academics", segue: segue, sender: sender)
     }
 }

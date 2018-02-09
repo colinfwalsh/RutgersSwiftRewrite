@@ -72,14 +72,25 @@ extension ServicesCollectionViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension ServicesCollectionViewController {
+extension ServicesCollectionViewController: WebNavigationProtocol {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        setUpForWebView(currentView: self, currentViewName: "Services", segue: segue, sender: sender)
+    }
+}
+
+protocol WebNavigationProtocol {
+    
+}
+
+extension WebNavigationProtocol {
+    func setUpForWebView(currentView: UIViewController, currentViewName: String, segue: UIStoryboardSegue, sender: Any?) {
         let backItem = UIBarButtonItem()
-        backItem.title = "Back to Services"
-        navigationItem.backBarButtonItem = backItem
+        backItem.title = "Back to \(currentViewName)"
+        currentView.navigationItem.backBarButtonItem = backItem
         if let destination = segue.destination as? WebViewController {
             destination.serviceURL = sender as! String
         }
     }
 }
+
