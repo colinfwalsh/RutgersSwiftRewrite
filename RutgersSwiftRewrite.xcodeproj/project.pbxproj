@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74459753202E0EBF00BE504A /* ordered_content.json in Resources */ = {isa = PBXBuildFile; fileRef = 74459752202E0EBE00BE504A /* ordered_content.json */; };
 		748F7591202B961200EFAA56 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748F7590202B961200EFAA56 /* WebViewController.swift */; };
+		AF119884202E3499008DF7E0 /* ordered_content.json in Resources */ = {isa = PBXBuildFile; fileRef = AF119883202E3499008DF7E0 /* ordered_content.json */; };
 		AF6807652024CC74000B421E /* AnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6807642024CC74000B421E /* AnimationProtocol.swift */; };
 		AF82EDF7202252C0005916BD /* AcademicsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */; };
 		AF82EDF9202252D7005916BD /* LocationCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */; };
@@ -48,8 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		74459752202E0EBE00BE504A /* ordered_content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ordered_content.json; path = ../../../../Desktop/ordered_content.json; sourceTree = "<group>"; };
 		748F7590202B961200EFAA56 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		AF119883202E3499008DF7E0 /* ordered_content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ordered_content.json; path = RutgersSwiftRewrite/ordered_content.json; sourceTree = SOURCE_ROOT; };
 		AF6807642024CC74000B421E /* AnimationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProtocol.swift; sourceTree = "<group>"; };
 		AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicsCollectionViewController.swift; sourceTree = "<group>"; };
 		AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionViewController.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		AF82EDFF20225DFC005916BD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				74459752202E0EBE00BE504A /* ordered_content.json */,
+				AF119883202E3499008DF7E0 /* ordered_content.json */,
 				AFF94E66201FB8D7001A15BD /* HomeViewController.swift */,
 				AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */,
 				AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */,
@@ -301,7 +301,7 @@
 				AFF94E40201F7191001A15BD /* LaunchScreen.storyboard in Resources */,
 				AFF94E3D201F7191001A15BD /* Assets.xcassets in Resources */,
 				AFF94E3B201F7191001A15BD /* Main.storyboard in Resources */,
-				74459753202E0EBF00BE504A /* ordered_content.json in Resources */,
+				AF119884202E3499008DF7E0 /* ordered_content.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
