@@ -20,6 +20,9 @@ class HomeViewController: UIViewController, AnimationProtocol {
         collectionView.dataSource = self
         
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
+        Client.parseOrderedJson() { orderedContent in
+            print(orderedContent[4])
+        }
     }
     
     static func addLeftBarIcon(named:String, navigationItem: UINavigationItem) {
