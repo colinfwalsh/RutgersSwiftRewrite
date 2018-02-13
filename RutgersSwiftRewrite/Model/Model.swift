@@ -23,12 +23,12 @@ struct OrderedContentItem: Codable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.handle = try container.decodeIfPresent(String.self, forKey: .handle) ?? "handle"
-        self.icon = try container.decodeIfPresent(String.self, forKey: .icon) ?? "icon"
+        self.handle = try container.decodeIfPresent(String.self, forKey: .handle) ?? "nan"
+        self.icon = try container.decodeIfPresent(String.self, forKey: .icon) ?? "nan"
         self.grouped = try container.decodeIfPresent(Bool.self, forKey: .grouped) ?? false
-        self.view = try container.decodeIfPresent(String.self, forKey: .view) ?? "view"
-        self.api = try container.decodeIfPresent(String.self, forKey: .api) ?? "api"
-        self.url = try container.decodeIfPresent(String.self, forKey: .handle) ?? "url"
+        self.view = try container.decodeIfPresent(String.self, forKey: .view) ?? "nan"
+        self.api = try container.decodeIfPresent(String.self, forKey: .api) ?? "nan"
+        self.url = try container.decodeIfPresent(String.self, forKey: .handle) ?? "nan"
         self.title = (try container.decodeIfPresent(Title.self, forKey: .title))
         
     }
