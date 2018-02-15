@@ -8,21 +8,27 @@
 
 import UIKit
 
-private let academicItems = [
-    "Sakai" : "https://sakai.rutgers.edu/portal",
-    "Libraries" : "https://www.libraries.rutgers.edu/",
-    "Pearson e-College" : "https://onlinelearning.rutgers.edu/ecollege",
-    "Schedule of Classes" : "https://sis.rutgers.edu/soc/#home"
-]
+
+
 
 class AcademicsCollectionViewController: UICollectionViewController, AnimationProtocol {
-
+    
+    private var academicContent: [OrderedContentItem] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
         self.collectionView?.delegate = self
         self.collectionView?.dataSource = self
+        
+        Client.parseOrderedJson() { orderedContent in
+            self.academicContent = orderedContent.academicContent
+            DispatchQueue.main.async {
+                self.collectionView?.reloadData()
+            }
+
+        }
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -30,14 +36,12 @@ class AcademicsCollectionViewController: UICollectionViewController, AnimationPr
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return academicItems.count
+        return self.academicContent.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "academicCell", for: indexPath) as! AcademicsCell
-        
-        cell.academicLabel?.text = Array(academicItems.keys)[indexPath.row]
-        
+        cell.academicLabel?.text = self.academicContent[indexPath.row].title?.text
         HomeViewController.layoutCell(cell: cell as UICollectionViewCell)
         return cell
     }
@@ -45,7 +49,13 @@ class AcademicsCollectionViewController: UICollectionViewController, AnimationPr
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let cell = collectionView.cellForItem(at: indexPath) as! AcademicsCell
-        performSegue(withIdentifier: "goToWebView", sender: Array(academicItems.values)[indexPath.row])
+        switch academicContent[indexPath.row].view {
+            case "www":
+                performSegue(withIdentifier: "goToWebView", sender: academicContent[indexPath.row])
+            default:
+                print("not webview")
+        }
+        
         animateWith(duration: 0.4, view: cell.testView)
     }
 }
@@ -72,6 +82,13 @@ extension AcademicsCollectionViewController: UICollectionViewDelegateFlowLayout 
 extension AcademicsCollectionViewController: WebNavigationProtocol {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        setUpForWebView(currentView: self, currentViewName: "Academics", segue: segue, sender: sender)
+        let item = sender as! OrderedContentItem
+        switch item.view {
+        case "www":
+            setUpForWebView(currentView: self, currentViewName: "Academics", segue: segue, sender: item.url)
+        default:
+            print("not webview")
+        }
+        
     }
 }

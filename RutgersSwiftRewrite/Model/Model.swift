@@ -8,8 +8,18 @@
 
 import Foundation
 
+
 struct OrderedContent: Codable {
-    
+    let academicContent: [OrderedContentItem]
+    let servicesContent: [OrderedContentItem]
+}
+struct AcademicsContent: Codable {
+    let content: [OrderedContentItem]
+}
+
+
+struct ServicesContent: Codable {
+    let content: [OrderedContentItem]
 }
 
 struct OrderedContentItem: Codable {
@@ -28,7 +38,7 @@ struct OrderedContentItem: Codable {
         self.grouped = try container.decodeIfPresent(Bool.self, forKey: .grouped) ?? false
         self.view = try container.decodeIfPresent(String.self, forKey: .view) ?? "nan"
         self.api = try container.decodeIfPresent(String.self, forKey: .api) ?? "nan"
-        self.url = try container.decodeIfPresent(String.self, forKey: .handle) ?? "nan"
+        self.url = try container.decodeIfPresent(String.self, forKey: .url) ?? "nan"
         self.title = (try container.decodeIfPresent(Title.self, forKey: .title))
         
     }
@@ -42,6 +52,15 @@ enum Title: Codable {
     
     case string(String)
     case object(MultiTitle)
+    
+    var text: String {
+        switch self {
+        case .string(let title):
+            return title
+        case .object(let multi):
+            return multi.homeTitle
+        }
+    }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()

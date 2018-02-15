@@ -11,14 +11,14 @@ import Foundation
 
 struct Client {
     
-    static func parseOrderedJson(completion: ([OrderedContentItem]) -> ()) {
+    static func parseOrderedJson(completion: (OrderedContent) -> ()) {
         if let path = Bundle.main.path(forResource: "ordered_content", ofType: "json") {
             
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 do {
-                    let orderedContent = try JSONDecoder().decode([OrderedContentItem].self, from: data)
-                    //print(orderedContent[2])
+                    let orderedContent = try JSONDecoder().decode(OrderedContent.self, from: data)
+                    
                     completion(orderedContent)
                 } catch {
                     

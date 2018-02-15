@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		748F7591202B961200EFAA56 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748F7590202B961200EFAA56 /* WebViewController.swift */; };
+		74AFBB2420363F2D002862BB /* WebNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AFBB2320363F2D002862BB /* WebNavigationProtocol.swift */; };
 		74F57BD02033523F008D6C4F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F57BCF2033523F008D6C4F /* Model.swift */; };
 		74F57BD220336C8C008D6C4F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F57BD120336C8C008D6C4F /* Client.swift */; };
 		AF119884202E3499008DF7E0 /* ordered_content.json in Resources */ = {isa = PBXBuildFile; fileRef = AF119883202E3499008DF7E0 /* ordered_content.json */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		748F7590202B961200EFAA56 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		74AFBB2320363F2D002862BB /* WebNavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebNavigationProtocol.swift; sourceTree = "<group>"; };
 		74F57BCF2033523F008D6C4F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		74F57BD120336C8C008D6C4F /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		AF119883202E3499008DF7E0 /* ordered_content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ordered_content.json; path = RutgersSwiftRewrite/ordered_content.json; sourceTree = SOURCE_ROOT; };
@@ -139,6 +141,7 @@
 				AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */,
 				AF6807642024CC74000B421E /* AnimationProtocol.swift */,
 				748F7590202B961200EFAA56 /* WebViewController.swift */,
+				74AFBB2320363F2D002862BB /* WebNavigationProtocol.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				AFF94E67201FB8D7001A15BD /* HomeViewController.swift in Sources */,
 				AFB5CFE92023D5460002AB7A /* StudentServicesCell.swift in Sources */,
 				AF82EDF9202252D7005916BD /* LocationCollectionViewController.swift in Sources */,
+				74AFBB2420363F2D002862BB /* WebNavigationProtocol.swift in Sources */,
 				AFB5CFE12023B2DB0002AB7A /* MapCell.swift in Sources */,
 				74F57BD02033523F008D6C4F /* Model.swift in Sources */,
 				AFF94E69201FC3D5001A15BD /* HomeCell.swift in Sources */,
