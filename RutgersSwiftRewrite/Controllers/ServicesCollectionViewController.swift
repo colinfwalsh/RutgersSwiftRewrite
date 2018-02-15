@@ -23,8 +23,7 @@ class ServicesCollectionViewController: UICollectionViewController, AnimationPro
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
     }
  
@@ -73,7 +72,6 @@ extension ServicesCollectionViewController: UICollectionViewDelegateFlowLayout {
 }
 
 extension ServicesCollectionViewController: WebNavigationProtocol {
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         setUpForWebView(currentView: self, currentViewName: "Services", segue: segue, sender: sender)
     }

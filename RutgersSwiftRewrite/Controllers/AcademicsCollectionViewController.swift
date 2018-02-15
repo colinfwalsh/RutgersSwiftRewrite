@@ -21,8 +21,6 @@ class AcademicsCollectionViewController: UICollectionViewController, AnimationPr
         super.viewDidLoad()
 
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
-        self.collectionView?.delegate = self
-        self.collectionView?.dataSource = self
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {

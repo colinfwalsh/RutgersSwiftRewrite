@@ -10,11 +10,8 @@ import UIKit
 import WebKit
 
 class WebViewController: UIViewController {
-
-    
     @IBOutlet weak var progBar: UIProgressView!
     @IBOutlet weak var webView: WKWebView!
-    
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var refreshButton: UIButton!
     @IBOutlet weak var forwardButton: UIButton!
@@ -41,7 +38,6 @@ class WebViewController: UIViewController {
         let url = URL(string: serviceURL)!
         let urlRequest = URLRequest(url: url)
         webView.load(urlRequest)
-        
     }
     
     @IBAction func back(_ sender: Any) {
@@ -50,6 +46,7 @@ class WebViewController: UIViewController {
             webView.goBack()
         }
     }
+    
     @IBAction func forward(_ sender: Any) {
         if webView.canGoForward {
             webView.goForward()
@@ -61,6 +58,7 @@ class WebViewController: UIViewController {
         let urlRequest = URLRequest(url: url)
         webView.load(urlRequest)
     }
+    
     @IBAction func share(_ sender: Any) {
     }
     
@@ -78,10 +76,6 @@ class WebViewController: UIViewController {
             }
         }
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         tabBarController?.tabBar.isHidden = true
@@ -92,16 +86,6 @@ class WebViewController: UIViewController {
         tabBarController?.tabBar.isHidden = false
         webView.removeObserver(self, forKeyPath: "estimatedProgress")
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension WebViewController: WKNavigationDelegate {
