@@ -35,7 +35,6 @@ class ViewController: UIViewController {
                 self.view.layoutIfNeeded()
             })
         default:
-            
             UIView.animate(withDuration: 0.2, animations: {
                 self.leadingConstraint.constant = -self.slidingMenu.frame.width
                 self.view.layoutIfNeeded()

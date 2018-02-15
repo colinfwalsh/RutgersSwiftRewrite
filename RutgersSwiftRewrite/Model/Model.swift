@@ -37,6 +37,27 @@ struct OrderedContentItem: Codable {
     
 }
 
+enum Title: Codable {
+    
+    
+    case string(String)
+    case object(MultiTitle)
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        do {
+           self = try .string(container.decode(String.self))
+        } catch DecodingError.typeMismatch {
+           self = try .object(container.decode(MultiTitle.self))
+        }
+        
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        
+    }
+}
+/*
 struct Title: Codable {
     let singleTitle: String
     let multiTitle: MultiTitle
@@ -65,7 +86,7 @@ struct Title: Codable {
         try isSingle ? container.encode(singleTitle) : container.encode(multiTitle)
     }
      */
-}
+}*/
 
 
 struct MultiTitle: Codable {

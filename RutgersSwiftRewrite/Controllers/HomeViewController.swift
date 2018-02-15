@@ -21,7 +21,9 @@ class HomeViewController: UIViewController, AnimationProtocol {
         
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
         Client.parseOrderedJson() { orderedContent in
-            print(orderedContent[4])
+            for item in orderedContent {
+                print(item)
+            }
         }
     }
     
