@@ -14,10 +14,10 @@ class LocationCollectionViewController: UICollectionViewController, AnimationPro
         super.viewDidLoad()
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
     }
+    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
-
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return section == 0 ? 7 : 3

@@ -23,12 +23,18 @@ class AcademicsCollectionViewController: UICollectionViewController, AnimationPr
         super.viewDidLoad()
 
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
+        
+      /* I'm not sure if you added these lines or I did, but they are unecessary since we're subclassing from UICollectionViewController.
+        All of the delegate/dataSource methods are available to us so long as we use the 'override' keyword before the necessary function.
+       */
         self.collectionView?.delegate = self
         self.collectionView?.dataSource = self
         
+
         Client.getOrderedContent(type: .academics) { (orderedContent) in
             let data = orderedContent as! AcademicContent
             self.academicContent = data.academicContent
+
         }
     }
     
@@ -50,7 +56,9 @@ class AcademicsCollectionViewController: UICollectionViewController, AnimationPr
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let cell = collectionView.cellForItem(at: indexPath) as! AcademicsCell
+
         performNavigation(currenView: self, selectedItem: academicContent[indexPath.row])
+
         animateWith(duration: 0.4, view: cell.testView)
     }
 }
@@ -79,5 +87,6 @@ extension AcademicsCollectionViewController: NavigationProtocol {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let item = sender as! OrderedContentItem
         prepareForNavigation(currentView: self, currentViewName: "Academics", selectedItem: item, segue: segue)        
+
     }
 }

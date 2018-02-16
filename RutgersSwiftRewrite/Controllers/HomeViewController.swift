@@ -25,7 +25,7 @@ class HomeViewController: UIViewController, AnimationProtocol {
             print(data)
         }
     }
-    
+    //Clean up
     static func addLeftBarIcon(named:String, navigationItem: UINavigationItem) {
         
         let logoImage = UIImage.init(named: named)
@@ -52,11 +52,11 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = self.collectionView.cellForItem(at: indexPath) as! HomeCell
-        animateWith(duration: 0.4, view: cell.imageView)
+        let cell = self.collectionView.cellForItem(at: indexPath) as? HomeCell
+        if let cell = cell {
+            animateWith(duration: 0.4, view: cell.imageView)
+        }
     }
-    
-    
 }
 
 extension HomeViewController: UICollectionViewDataSource {

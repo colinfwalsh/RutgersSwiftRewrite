@@ -10,6 +10,7 @@ import Foundation
 
 
 
+
 protocol OrderedContent {
  
 }
@@ -36,6 +37,7 @@ struct OrderedContentItem: Codable {
 extension OrderedContentItem {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
+
         self.handle = try container.decodeIfPresent(String.self, forKey: .handle)
         self.icon = try container.decodeIfPresent(String.self, forKey: .icon)
         self.grouped = try container.decodeIfPresent(Bool.self, forKey: .grouped)
@@ -48,6 +50,7 @@ extension OrderedContentItem {
 }
 
 enum Title: Codable {
+
     case string(String)
     case object(MultiTitle)
     
@@ -67,7 +70,6 @@ enum Title: Codable {
         } catch DecodingError.typeMismatch {
            self = try .object(container.decode(MultiTitle.self))
         }
-        
     }
     
     func encode(to encoder: Encoder) throws {
@@ -81,3 +83,5 @@ struct MultiTitle: Codable {
     let homeTitle: String
     let foreignTitle: String
 }
+
+
