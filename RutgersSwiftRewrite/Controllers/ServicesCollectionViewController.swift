@@ -11,18 +11,19 @@ import UIKit
 
 class ServicesCollectionViewController: UICollectionViewController, AnimationProtocol {
     
-    private var servicesContent: [OrderedContentItem] = []
-    
+    private var servicesContent: [OrderedContentItem] = [] {
+        didSet {
+            self.collectionView?.reloadData()
+        }
+    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
         
-        Client.parseOrderedJson() { orderedContent in
-            self.servicesContent = orderedContent.servicesContent
-            DispatchQueue.main.async {
-                self.collectionView?.reloadData()
-            }
-            
+        Client.getOrderedContent(type: .services) { (orderedContent) in
+            let data = orderedContent as! ServicesContent
+            self.servicesContent = data.servicesContent
         }
     }
  
@@ -47,12 +48,7 @@ class ServicesCollectionViewController: UICollectionViewController, AnimationPro
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! StudentServicesCell
-        switch servicesContent[indexPath.row].view {
-        case "www":
-            performSegue(withIdentifier: "goToWebView", sender: servicesContent[indexPath.row])
-        default:
-            print("not webview")
-        }
+        performNavigation(currenView: self, selectedItem: servicesContent[indexPath.row])
         animateWith(duration: 0.4, view: cell.auxView)
     }
 }
@@ -75,16 +71,11 @@ extension ServicesCollectionViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension ServicesCollectionViewController: WebNavigationProtocol {
+extension ServicesCollectionViewController: NavigationProtocol {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let item = sender as! OrderedContentItem
-        switch item.view {
-        case "www":
-            setUpForWebView(currentView: self, currentViewName: "Academics", segue: segue, sender: item.url)
-        default:
-            print("not webview")
-        }
+        prepareForNavigation(currentView: self, currentViewName: "Services", selectedItem: item, segue: segue)
     }
 }
 
