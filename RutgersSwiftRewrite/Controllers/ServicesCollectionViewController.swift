@@ -20,6 +20,7 @@ class ServicesCollectionViewController: UICollectionViewController, AnimationPro
         Client.parseOrderedJson() { orderedContent in
             self.servicesContent = orderedContent.servicesContent
             DispatchQueue.main.async {
+              //Add property observer on servicesContent and update collectionView there
                 self.collectionView?.reloadData()
             }
             
@@ -48,6 +49,7 @@ class ServicesCollectionViewController: UICollectionViewController, AnimationPro
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! StudentServicesCell
         switch servicesContent[indexPath.row].view {
+        //See comments on AcademicsCollectionViewController
         case "www":
             performSegue(withIdentifier: "goToWebView", sender: servicesContent[indexPath.row])
         default:
@@ -76,9 +78,9 @@ extension ServicesCollectionViewController: UICollectionViewDelegateFlowLayout {
 }
 
 extension ServicesCollectionViewController: WebNavigationProtocol {
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let item = sender as! OrderedContentItem
+        //Same comment as didSelectItemAt
         switch item.view {
         case "www":
             setUpForWebView(currentView: self, currentViewName: "Academics", segue: segue, sender: item.url)

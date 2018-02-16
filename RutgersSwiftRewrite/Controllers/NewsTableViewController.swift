@@ -17,7 +17,6 @@ class NewsTableViewController: UITableViewController, AnimationProtocol {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 2
@@ -44,7 +43,6 @@ class NewsTableViewController: UITableViewController, AnimationProtocol {
             cell.auxLabel.text = "Other info"
             return cell
         }
-        
     }
     
     override func  tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

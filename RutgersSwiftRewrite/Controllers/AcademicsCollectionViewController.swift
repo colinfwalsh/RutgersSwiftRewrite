@@ -19,11 +19,16 @@ class AcademicsCollectionViewController: UICollectionViewController, AnimationPr
         super.viewDidLoad()
 
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
+        
+      /* I'm not sure if you added these lines or I did, but they are unecessary since we're subclassing from UICollectionViewController.
+        All of the delegate/dataSource methods are available to us so long as we use the 'override' keyword before the necessary function.
+       */
         self.collectionView?.delegate = self
         self.collectionView?.dataSource = self
         
         Client.parseOrderedJson() { orderedContent in
             self.academicContent = orderedContent.academicContent
+           //Instead, make a didSet observer on the academicContent property and update the collectionView there
             DispatchQueue.main.async {
                 self.collectionView?.reloadData()
             }
@@ -49,6 +54,7 @@ class AcademicsCollectionViewController: UICollectionViewController, AnimationPr
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let cell = collectionView.cellForItem(at: indexPath) as! AcademicsCell
+      //Have multiple cases for 'www', 'food', 'soc', etc.  Figure out a way to abstract this away for reuse in other VC's
         switch academicContent[indexPath.row].view {
             case "www":
                 performSegue(withIdentifier: "goToWebView", sender: academicContent[indexPath.row])
@@ -83,6 +89,7 @@ extension AcademicsCollectionViewController: WebNavigationProtocol {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let item = sender as! OrderedContentItem
+      //Same here with previous comment in didSelectItemAt.  Abstract this away and add checks for other views
         switch item.view {
         case "www":
             setUpForWebView(currentView: self, currentViewName: "Academics", segue: segue, sender: item.url)
