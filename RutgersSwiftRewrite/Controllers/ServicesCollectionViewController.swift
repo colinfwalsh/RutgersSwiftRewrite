@@ -11,20 +11,20 @@ import UIKit
 
 class ServicesCollectionViewController: UICollectionViewController, AnimationProtocol {
     
-    let testDictionary = [
-        "Student Media" : "https://newbrunswick.rutgers.edu/campus-life/student-media",
-        "Student Affairs" : "http://studentaffairs.rutgers.edu/",
-        "Resident Life" : "http://ruoncampus.rutgers.edu/",
-        "Food" : "http://food.rutgers.edu/",
-        "myRutgers" : "https://my.rutgers.edu/",
-        "Career Services" : "http://careers.rutgers.edu/",
-        "Fix-it" : "https://google.com"
-    ]
+    private var servicesContent: [OrderedContentItem] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
+        
+        Client.parseOrderedJson() { orderedContent in
+            self.servicesContent = orderedContent.servicesContent
+            DispatchQueue.main.async {
+              //Add property observer on servicesContent and update collectionView there
+                self.collectionView?.reloadData()
+            }
+            
+        }
     }
  
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -33,14 +33,14 @@ class ServicesCollectionViewController: UICollectionViewController, AnimationPro
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return testDictionary.count
+        return servicesContent.count
     }
     
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "studentServicesCell", for: indexPath) as! StudentServicesCell
         
-        cell.servicesTitle.text = Array(testDictionary.keys)[indexPath.row]
+        cell.servicesTitle.text = servicesContent[indexPath.row].title?.text
         HomeViewController.layoutCell(cell: cell as UICollectionViewCell)
 
         return cell
@@ -48,7 +48,13 @@ class ServicesCollectionViewController: UICollectionViewController, AnimationPro
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! StudentServicesCell
-        performSegue(withIdentifier: "goToWebView", sender: Array(testDictionary.values)[indexPath.row])
+        switch servicesContent[indexPath.row].view {
+        //See comments on AcademicsCollectionViewController
+        case "www":
+            performSegue(withIdentifier: "goToWebView", sender: servicesContent[indexPath.row])
+        default:
+            print("not webview")
+        }
         animateWith(duration: 0.4, view: cell.auxView)
     }
 }
@@ -73,22 +79,16 @@ extension ServicesCollectionViewController: UICollectionViewDelegateFlowLayout {
 
 extension ServicesCollectionViewController: WebNavigationProtocol {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        setUpForWebView(currentView: self, currentViewName: "Services", segue: segue, sender: sender)
-    }
-}
-
-protocol WebNavigationProtocol {
-    
-}
-
-extension WebNavigationProtocol {
-    func setUpForWebView(currentView: UIViewController, currentViewName: String, segue: UIStoryboardSegue, sender: Any?) {
-        let backItem = UIBarButtonItem()
-        backItem.title = "Back to \(currentViewName)"
-        currentView.navigationItem.backBarButtonItem = backItem
-        if let destination = segue.destination as? WebViewController {
-            destination.serviceURL = sender as! String
+        let item = sender as! OrderedContentItem
+        //Same comment as didSelectItemAt
+        switch item.view {
+        case "www":
+            setUpForWebView(currentView: self, currentViewName: "Academics", segue: segue, sender: item.url)
+        default:
+            print("not webview")
         }
     }
 }
+
+
 
