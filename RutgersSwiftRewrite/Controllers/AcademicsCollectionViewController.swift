@@ -13,7 +13,11 @@ import UIKit
 
 class AcademicsCollectionViewController: UICollectionViewController, AnimationProtocol {
     
-    private var academicContent: [OrderedContentItem] = []
+    private var academicContent: [OrderedContentItem] = [] {
+        didSet {
+            self.collectionView?.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +30,10 @@ class AcademicsCollectionViewController: UICollectionViewController, AnimationPr
         self.collectionView?.delegate = self
         self.collectionView?.dataSource = self
         
-        Client.parseOrderedJson() { orderedContent in
-            self.academicContent = orderedContent.academicContent
-           //Instead, make a didSet observer on the academicContent property and update the collectionView there
-            DispatchQueue.main.async {
-                self.collectionView?.reloadData()
-            }
+
+        Client.getOrderedContent(type: .academics) { (orderedContent) in
+            let data = orderedContent as! AcademicContent
+            self.academicContent = data.academicContent
 
         }
     }
@@ -54,14 +56,9 @@ class AcademicsCollectionViewController: UICollectionViewController, AnimationPr
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let cell = collectionView.cellForItem(at: indexPath) as! AcademicsCell
-      //Have multiple cases for 'www', 'food', 'soc', etc.  Figure out a way to abstract this away for reuse in other VC's
-        switch academicContent[indexPath.row].view {
-            case "www":
-                performSegue(withIdentifier: "goToWebView", sender: academicContent[indexPath.row])
-            default:
-                print("not webview")
-        }
-        
+
+        performNavigation(currenView: self, selectedItem: academicContent[indexPath.row])
+
         animateWith(duration: 0.4, view: cell.testView)
     }
 }
@@ -85,17 +82,11 @@ extension AcademicsCollectionViewController: UICollectionViewDelegateFlowLayout 
     }
 }
 
-extension AcademicsCollectionViewController: WebNavigationProtocol {
+extension AcademicsCollectionViewController: NavigationProtocol {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let item = sender as! OrderedContentItem
-      //Same here with previous comment in didSelectItemAt.  Abstract this away and add checks for other views
-        switch item.view {
-        case "www":
-            setUpForWebView(currentView: self, currentViewName: "Academics", segue: segue, sender: item.url)
-        default:
-            print("not webview")
-        }
-        
+        prepareForNavigation(currentView: self, currentViewName: "Academics", selectedItem: item, segue: segue)        
+
     }
 }
