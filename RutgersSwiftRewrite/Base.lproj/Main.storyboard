@@ -236,7 +236,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrc-eZ-INT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1623" y="5230"/>
+            <point key="canvasLocation" x="1244" y="5217"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Rex-M3-jHb">
@@ -262,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2QM-6b-Gkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2761" y="5230"/>
+            <point key="canvasLocation" x="2193" y="5217"/>
         </scene>
         <!--Services Collection View Controller-->
         <scene sceneID="gHh-kh-cVV">
@@ -337,7 +337,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="443-mg-Xck" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1343" y="3253"/>
+            <point key="canvasLocation" x="1244" y="3252"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="hqB-2r-Mhe">
@@ -348,7 +348,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fl3-98-e3x">
-                                <rect key="frame" x="0.0" y="64" width="375" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="460"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -356,7 +356,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytF-Gi-zOA">
-                                <rect key="frame" x="0.0" y="568" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="524" width="375" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdg-Ls-CO9">
                                         <rect key="frame" x="50" y="12.5" width="25" height="25"/>
@@ -453,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0qb-XU-uQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2975" y="2987"/>
+            <point key="canvasLocation" x="2194" y="2901"/>
         </scene>
         <!--Academics Collection View Controller-->
         <scene sceneID="B7l-cd-c31">
@@ -715,7 +715,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbM-Hx-c06" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1244" y="4145.577211394303"/>
+            <point key="canvasLocation" x="1244" y="4146"/>
         </scene>
     </scenes>
     <resources>
@@ -730,6 +730,6 @@
         <image name="user" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qED-wg-7xg"/>
+        <segue reference="Vy2-f2-T1C"/>
     </inferredMetricsTieBreakers>
 </document>

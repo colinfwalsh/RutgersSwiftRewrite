@@ -29,6 +29,8 @@ extension NavigationProtocol {
             print("navigating to feedback view")
         case "ruinfo":
             print("navigating to ruinfo view")
+        case "bus":
+            print("navigating to bus view")
         default:
             print("error performing navigation")
         }
@@ -48,6 +50,8 @@ extension NavigationProtocol {
             print("prepare for feedback view")
         case "ruinfo":
             print("prepare for ruinfo view")
+        case "bus":
+            print("prepare for bus view")
         default:
             print("error preparing for navigation")
         }
