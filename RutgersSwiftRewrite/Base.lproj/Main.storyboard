@@ -236,7 +236,22 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrc-eZ-INT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1623" y="5230"/>
+            <point key="canvasLocation" x="1244" y="5217"/>
+        </scene>
+        <!--Feed Back View Controller-->
+        <scene sceneID="XRS-7v-7GN">
+            <objects>
+                <viewController id="bCv-Dk-QZU" customClass="FeedBackViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4qB-or-Iq0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="MeP-YB-WJZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avY-Q7-vU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2185" y="5085"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Rex-M3-jHb">
@@ -262,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2QM-6b-Gkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2761" y="5230"/>
+            <point key="canvasLocation" x="1244" y="6036"/>
         </scene>
         <!--Services Collection View Controller-->
         <scene sceneID="gHh-kh-cVV">
@@ -333,11 +348,29 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="HCQ-zF-eKK" kind="show" identifier="goToWebView" id="Vy2-f2-T1C"/>
+                        <segue destination="Nwd-lN-5bi" kind="show" identifier="showFood" id="zkO-bk-L5w"/>
+                        <segue destination="plD-bq-EQz" kind="show" identifier="showDTable" id="Qvm-Zn-aHH"/>
+                        <segue destination="bCv-Dk-QZU" kind="show" identifier="showFeedBack" id="r0G-nG-qlN"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="443-mg-Xck" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1343" y="3253"/>
+            <point key="canvasLocation" x="1244" y="3252"/>
+        </scene>
+        <!--Food View Controller-->
+        <scene sceneID="BLZ-sz-HQj">
+            <objects>
+                <viewController id="Nwd-lN-5bi" customClass="FoodViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G92-AR-ztZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="7oq-eP-x82"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxj-Xs-UcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2185" y="3642"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="hqB-2r-Mhe">
@@ -348,7 +381,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fl3-98-e3x">
-                                <rect key="frame" x="0.0" y="64" width="375" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="460"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -356,7 +389,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytF-Gi-zOA">
-                                <rect key="frame" x="0.0" y="568" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="524" width="375" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdg-Ls-CO9">
                                         <rect key="frame" x="50" y="12.5" width="25" height="25"/>
@@ -453,7 +486,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0qb-XU-uQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2975" y="2987"/>
+            <point key="canvasLocation" x="2194" y="2901"/>
         </scene>
         <!--Academics Collection View Controller-->
         <scene sceneID="B7l-cd-c31">
@@ -517,11 +550,27 @@
                     </navigationItem>
                     <connections>
                         <segue destination="HCQ-zF-eKK" kind="show" identifier="goToWebView" id="qED-wg-7xg"/>
+                        <segue destination="evj-SF-c8V" kind="show" identifier="showSoc" id="85y-oA-Y3P"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMk-2Q-27g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1244" y="2523.6881559220392"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a7Z-cd-Woy">
+            <objects>
+                <viewController id="evj-SF-c8V" customClass="SOCViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ZC-D1-35W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="6wH-VG-pKD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5B-Ln-I26" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2193" y="2160"/>
         </scene>
         <!--Home-->
         <scene sceneID="jdo-nK-8sb">
@@ -715,7 +764,22 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbM-Hx-c06" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1244" y="4145.577211394303"/>
+            <point key="canvasLocation" x="1244" y="4146"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="du7-aL-YGO">
+            <objects>
+                <viewController id="plD-bq-EQz" customClass="DTableViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pcp-7J-Ncp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="fmP-SB-1v8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lN8-uy-ifK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2185" y="4362"/>
         </scene>
     </scenes>
     <resources>
@@ -730,6 +794,6 @@
         <image name="user" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qED-wg-7xg"/>
+        <segue reference="Vy2-f2-T1C"/>
     </inferredMetricsTieBreakers>
 </document>

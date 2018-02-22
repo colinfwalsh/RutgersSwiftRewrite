@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		748F7591202B961200EFAA56 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748F7590202B961200EFAA56 /* WebViewController.swift */; };
 		74AFBB2420363F2D002862BB /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AFBB2320363F2D002862BB /* NavigationProtocol.swift */; };
+		74EA99DF203F6B0000FA23F1 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA99DE203F6B0000FA23F1 /* FoodViewController.swift */; };
+		74EA99E1203F6B2300FA23F1 /* SOCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA99E0203F6B2300FA23F1 /* SOCViewController.swift */; };
+		74EA99E5203F6EF800FA23F1 /* DTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA99E4203F6EF800FA23F1 /* DTableViewController.swift */; };
+		74EA99E7203F77DF00FA23F1 /* FeedBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA99E6203F77DF00FA23F1 /* FeedBackViewController.swift */; };
 		74F57BD02033523F008D6C4F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F57BCF2033523F008D6C4F /* Model.swift */; };
 		74F57BD220336C8C008D6C4F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F57BD120336C8C008D6C4F /* Client.swift */; };
 		AF119884202E3499008DF7E0 /* ordered_content.json in Resources */ = {isa = PBXBuildFile; fileRef = AF119883202E3499008DF7E0 /* ordered_content.json */; };
@@ -53,6 +57,10 @@
 /* Begin PBXFileReference section */
 		748F7590202B961200EFAA56 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		74AFBB2320363F2D002862BB /* NavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProtocol.swift; sourceTree = "<group>"; };
+		74EA99DE203F6B0000FA23F1 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		74EA99E0203F6B2300FA23F1 /* SOCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOCViewController.swift; sourceTree = "<group>"; };
+		74EA99E4203F6EF800FA23F1 /* DTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTableViewController.swift; sourceTree = "<group>"; };
+		74EA99E6203F77DF00FA23F1 /* FeedBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackViewController.swift; sourceTree = "<group>"; };
 		74F57BCF2033523F008D6C4F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		74F57BD120336C8C008D6C4F /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		AF119883202E3499008DF7E0 /* ordered_content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ordered_content.json; path = RutgersSwiftRewrite/ordered_content.json; sourceTree = SOURCE_ROOT; };
@@ -142,6 +150,10 @@
 				AF6807642024CC74000B421E /* AnimationProtocol.swift */,
 				748F7590202B961200EFAA56 /* WebViewController.swift */,
 				74AFBB2320363F2D002862BB /* NavigationProtocol.swift */,
+				74EA99DE203F6B0000FA23F1 /* FoodViewController.swift */,
+				74EA99E0203F6B2300FA23F1 /* SOCViewController.swift */,
+				74EA99E4203F6EF800FA23F1 /* DTableViewController.swift */,
+				74EA99E6203F77DF00FA23F1 /* FeedBackViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -347,8 +359,10 @@
 				AF82EDFB202252E6005916BD /* ServicesCollectionViewController.swift in Sources */,
 				AFF94E36201F7191001A15BD /* AppDelegate.swift in Sources */,
 				AFF94E67201FB8D7001A15BD /* HomeViewController.swift in Sources */,
+				74EA99E5203F6EF800FA23F1 /* DTableViewController.swift in Sources */,
 				AFB5CFE92023D5460002AB7A /* StudentServicesCell.swift in Sources */,
 				AF82EDF9202252D7005916BD /* LocationCollectionViewController.swift in Sources */,
+				74EA99E7203F77DF00FA23F1 /* FeedBackViewController.swift in Sources */,
 				74AFBB2420363F2D002862BB /* NavigationProtocol.swift in Sources */,
 				AFB5CFE12023B2DB0002AB7A /* MapCell.swift in Sources */,
 				74F57BD02033523F008D6C4F /* Model.swift in Sources */,
@@ -356,6 +370,8 @@
 				AF6807652024CC74000B421E /* AnimationProtocol.swift in Sources */,
 				AF82EDF7202252C0005916BD /* AcademicsCollectionViewController.swift in Sources */,
 				74F57BD220336C8C008D6C4F /* Client.swift in Sources */,
+				74EA99DF203F6B0000FA23F1 /* FoodViewController.swift in Sources */,
+				74EA99E1203F6B2300FA23F1 /* SOCViewController.swift in Sources */,
 				AFB5CFE32023BEC10002AB7A /* NewsTableViewController.swift in Sources */,
 				AFB5CFE52023C5A30002AB7A /* NewsMainCell.swift in Sources */,
 				AFB5CFDF20236D420002AB7A /* AcademicsCell.swift in Sources */,
