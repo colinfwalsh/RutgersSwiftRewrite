@@ -1,4 +1,18 @@
 {
+  "busContent": [
+      {
+      "handle": "bus",
+      "title": "Bus",
+      "view": "bus",
+      "icon": "bus"
+      },
+      {
+      "handle": "places",
+      "title": "Places",
+      "view": "places",
+      "icon": "places"
+      }
+],
  "academicContent": [
        {
        "handle": "sakai",
@@ -44,12 +58,6 @@
       "icon": "fixit"
       },
       {
-      "handle": "bus",
-      "title": "Bus",
-      "view": "bus",
-      "icon": "bus"
-      },
-      {
       "handle": "myrutgers",
       "title": "myRutgers",
       "url": "https://my.rutgers.edu/",
@@ -69,12 +77,6 @@
       "grouped": true,
       "view": "dtable",
       "api": "athleticsfaq.txt"
-      },
-      {
-      "handle": "places",
-      "title": "Places",
-      "view": "places",
-      "icon": "places"
       },
       {
       "handle": "campus_status",
