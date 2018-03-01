@@ -7,19 +7,28 @@
 //
 
 import UIKit
+import FeedKit
 
 class NewsTableViewController: UITableViewController, AnimationProtocol {
+    
+    var feed: [RSSFeedItem] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
+        Client.getNewsFeed { (feed) in
+            self.feed = feed
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return feed.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,12 +44,15 @@ class NewsTableViewController: UITableViewController, AnimationProtocol {
             HomeViewController.layoutView(view: cell.articleDisplay)
             HomeViewController.layoutView(view: cell.articleImage)
             cell.articleImage.clipsToBounds = true
-            cell.articleTitle.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            
+            //print("feed article title \(feed[indexPath.row].title)")
+            cell.articleTitle.text = feed[indexPath.section].title
+            
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "newsAux", for: indexPath) as! NewsAuxCell
-            cell.articleLabel.text = "Article 1"
-            cell.auxLabel.text = "Other info"
+            cell.articleLabel.text = feed[indexPath.section].title
+            cell.auxLabel.text = "author"
             return cell
         }
     }
