@@ -15,11 +15,9 @@ struct Client {
         case academics
         case services
     }
-    
-    
+
     static func getOrderedContent(type: OrderedContentKeys, completion: (OrderedContent) -> ()) {
         if let path = Bundle.main.path(forResource: "ordered_content", ofType: "json") {
-            
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 switch type {
@@ -30,7 +28,6 @@ struct Client {
                     let servicesContent = try JSONDecoder().decode(ServicesContent.self, from: data)
                     completion(servicesContent)
                 }
-
             } catch {
                 print("error getting local file")
             }

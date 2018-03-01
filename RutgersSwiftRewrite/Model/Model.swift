@@ -12,7 +12,7 @@ import Foundation
 
 
 protocol OrderedContent {
- 
+    //Should do something
 }
 
 struct AcademicContent: Codable, OrderedContent {
