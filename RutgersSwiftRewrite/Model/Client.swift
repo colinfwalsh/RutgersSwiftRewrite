@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import FeedKit
+
 
 
 struct Client {
@@ -33,7 +35,19 @@ struct Client {
             }
             
         }
+    }
+    
+    static func getNewsFeed(completion: @escaping ([RSSFeedItem])->()) {
+        let feedURL = URL(string: "http://www.therutgersreview.com/feed/")
+        let parser = FeedParser(URL: feedURL!)
         
-        
+        parser?.parseAsync(result: { (result) in
+            print(result.rssFeed?.items![0].title)
+            print(result.rssFeed?.items![1].title)
+            print(result.rssFeed?.items![2].title)
+            print(result.rssFeed?.items![3].title)
+            guard let feed = result.rssFeed?.items else { return }
+            completion(feed)
+        })
     }
 }
