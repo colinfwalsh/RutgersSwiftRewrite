@@ -19,6 +19,9 @@
 		8261CDA652ADF29444873F3D /* Pods_RutgersSwiftRewrite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81FE388B9D11D9B9CACD4C2 /* Pods_RutgersSwiftRewrite.framework */; };
 		937443B89E3855F5C198151D /* Pods_RutgersSwiftRewriteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E59EBEF5697B0EEE1BFEAC /* Pods_RutgersSwiftRewriteTests.framework */; };
 		AF119884202E3499008DF7E0 /* ordered_content.json in Resources */ = {isa = PBXBuildFile; fileRef = AF119883202E3499008DF7E0 /* ordered_content.json */; };
+		AF2390862049EA7D006124E5 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2390852049EA7D006124E5 /* MainTabViewController.swift */; };
+		AF2390902049FA26006124E5 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF23908E2049FA26006124E5 /* LoadingViewController.swift */; };
+		AF2390912049FA26006124E5 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF23908F2049FA26006124E5 /* LoadingViewController.xib */; };
 		AF6807652024CC74000B421E /* AnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6807642024CC74000B421E /* AnimationProtocol.swift */; };
 		AF82EDF7202252C0005916BD /* AcademicsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */; };
 		AF82EDF9202252D7005916BD /* LocationCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */; };
@@ -74,6 +77,9 @@
 		7B363CA611B855ED2AEBB18B /* Pods_RutgersSwiftRewriteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RutgersSwiftRewriteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99453EB33FCD5EE84765585D /* Pods-RutgersSwiftRewriteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RutgersSwiftRewriteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RutgersSwiftRewriteUITests/Pods-RutgersSwiftRewriteUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF119883202E3499008DF7E0 /* ordered_content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ordered_content.json; path = RutgersSwiftRewrite/ordered_content.json; sourceTree = SOURCE_ROOT; };
+		AF2390852049EA7D006124E5 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		AF23908E2049FA26006124E5 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		AF23908F2049FA26006124E5 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
 		AF6807642024CC74000B421E /* AnimationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProtocol.swift; sourceTree = "<group>"; };
 		AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicsCollectionViewController.swift; sourceTree = "<group>"; };
 		AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionViewController.swift; sourceTree = "<group>"; };
@@ -197,7 +203,10 @@
 		AF82EDFF20225DFC005916BD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AF23908E2049FA26006124E5 /* LoadingViewController.swift */,
+				AF23908F2049FA26006124E5 /* LoadingViewController.xib */,
 				AFF94E66201FB8D7001A15BD /* HomeViewController.swift */,
+				AF2390852049EA7D006124E5 /* MainTabViewController.swift */,
 				AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */,
 				AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */,
 				AFB5CFE22023BEC10002AB7A /* NewsTableViewController.swift */,
@@ -395,6 +404,7 @@
 				AFF94E40201F7191001A15BD /* LaunchScreen.storyboard in Resources */,
 				AFF94E3D201F7191001A15BD /* Assets.xcassets in Resources */,
 				AFF94E3B201F7191001A15BD /* Main.storyboard in Resources */,
+				AF2390912049FA26006124E5 /* LoadingViewController.xib in Resources */,
 				AF119884202E3499008DF7E0 /* ordered_content.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,9 +587,11 @@
 				74EA99E5203F6EF800FA23F1 /* DTableViewController.swift in Sources */,
 				AFB5CFE92023D5460002AB7A /* StudentServicesCell.swift in Sources */,
 				AF82EDF9202252D7005916BD /* LocationCollectionViewController.swift in Sources */,
+				AF2390862049EA7D006124E5 /* MainTabViewController.swift in Sources */,
 				74EA99E7203F77DF00FA23F1 /* FeedBackViewController.swift in Sources */,
 				74AFBB2420363F2D002862BB /* NavigationProtocol.swift in Sources */,
 				AFB5CFE12023B2DB0002AB7A /* MapCell.swift in Sources */,
+				AF2390902049FA26006124E5 /* LoadingViewController.swift in Sources */,
 				74F57BD02033523F008D6C4F /* Model.swift in Sources */,
 				AFF94E69201FC3D5001A15BD /* HomeCell.swift in Sources */,
 				AF6807652024CC74000B421E /* AnimationProtocol.swift in Sources */,

@@ -42,10 +42,11 @@ struct Client {
         let parser = FeedParser(URL: feedURL!)
         
         parser?.parseAsync(result: { (result) in
-            print(result.rssFeed?.items![0].title)
-            print(result.rssFeed?.items![1].title)
-            print(result.rssFeed?.items![2].title)
-            print(result.rssFeed?.items![3].title)
+//            print(result.rssFeed?.items![0].link)
+//            print(result.rssFeed?.items![1])
+//            print(result.rssFeed?.items![2])
+//            print(result.rssFeed?.items![3])
+        
             guard let feed = result.rssFeed?.items else { return }
             completion(feed)
         })

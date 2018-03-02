@@ -9,20 +9,19 @@
 import UIKit
 import FeedKit
 
-class NewsTableViewController: UITableViewController, AnimationProtocol {
+class NewsTableViewController: UITableViewController, AnimationProtocol, LoadingViewControllerDelegate {
     
-    var feed: [RSSFeedItem] = []
+    var feed: [RSSFeedItem] = [] {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+    
+    var loading: LoadingViewController? = nil 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
-        Client.getNewsFeed { (feed) in
-            self.feed = feed
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
     }
 
     // MARK: - Table view data source
@@ -34,6 +33,10 @@ class NewsTableViewController: UITableViewController, AnimationProtocol {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 2
+    }
+    
+    func didFinishLoading(controller: LoadingViewController) {
+        controller.dismiss(animated: true, completion: nil)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
