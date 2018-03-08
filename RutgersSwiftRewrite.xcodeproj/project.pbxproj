@@ -40,6 +40,8 @@
 		AFF94E69201FC3D5001A15BD /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E68201FC3D5001A15BD /* HomeCell.swift */; };
 		C97A101A2051C9A1009F1C6D /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = C97A10192051C9A0009F1C6D /* news.json */; };
 		C97A101C2051D1F4009F1C6D /* NewsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A101B2051D1F4009F1C6D /* NewsModels.swift */; };
+		C97A101E2051E7DB009F1C6D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A101D2051E7DA009F1C6D /* NewsViewController.swift */; };
+		C97A10202051E94D009F1C6D /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A101F2051E94D009F1C6D /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,8 @@
 		C3E59EBEF5697B0EEE1BFEAC /* Pods_RutgersSwiftRewriteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RutgersSwiftRewriteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97A10192051C9A0009F1C6D /* news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news.json; sourceTree = SOURCE_ROOT; };
 		C97A101B2051D1F4009F1C6D /* NewsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModels.swift; sourceTree = "<group>"; };
+		C97A101D2051E7DA009F1C6D /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		C97A101F2051E94D009F1C6D /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		F81FE388B9D11D9B9CACD4C2 /* Pods_RutgersSwiftRewrite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RutgersSwiftRewrite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -195,6 +199,7 @@
 				AFB5CFE02023B2DB0002AB7A /* MapCell.swift */,
 				AFB5CFDE20236D420002AB7A /* AcademicsCell.swift */,
 				AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */,
+				C97A101F2051E94D009F1C6D /* NewsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 				74EA99E0203F6B2300FA23F1 /* SOCViewController.swift */,
 				74EA99E4203F6EF800FA23F1 /* DTableViewController.swift */,
 				74EA99E6203F77DF00FA23F1 /* FeedBackViewController.swift */,
+				C97A101D2051E7DA009F1C6D /* NewsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -592,12 +598,14 @@
 				AFF94E69201FC3D5001A15BD /* HomeCell.swift in Sources */,
 				AF6807652024CC74000B421E /* AnimationProtocol.swift in Sources */,
 				AF82EDF7202252C0005916BD /* AcademicsCollectionViewController.swift in Sources */,
+				C97A101E2051E7DB009F1C6D /* NewsViewController.swift in Sources */,
 				74F57BD220336C8C008D6C4F /* Client.swift in Sources */,
 				74EA99DF203F6B0000FA23F1 /* FoodViewController.swift in Sources */,
 				74EA99E1203F6B2300FA23F1 /* SOCViewController.swift in Sources */,
 				AFB5CFE32023BEC10002AB7A /* NewsTableViewController.swift in Sources */,
 				AFB5CFE52023C5A30002AB7A /* NewsMainCell.swift in Sources */,
 				AFB5CFDF20236D420002AB7A /* AcademicsCell.swift in Sources */,
+				C97A10202051E94D009F1C6D /* NewsTableViewCell.swift in Sources */,
 				748F7591202B961200EFAA56 /* WebViewController.swift in Sources */,
 				AFB5CFE72023C7730002AB7A /* NewsAuxCell.swift in Sources */,
 			);
@@ -767,10 +775,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q844VW9UW4;
+				DEVELOPMENT_TEAM = C3YP8P798R;
 				INFOPLIST_FILE = RutgersSwiftRewrite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = OSS.RutgersSwiftRewrite;
+				PRODUCT_BUNDLE_IDENTIFIER = salman.rutgerstest.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -783,10 +791,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q844VW9UW4;
+				DEVELOPMENT_TEAM = C3YP8P798R;
 				INFOPLIST_FILE = RutgersSwiftRewrite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = OSS.RutgersSwiftRewrite;
+				PRODUCT_BUNDLE_IDENTIFIER = salman.rutgerstest.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
