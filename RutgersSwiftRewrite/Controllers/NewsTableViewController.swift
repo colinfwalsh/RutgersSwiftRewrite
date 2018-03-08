@@ -11,14 +11,14 @@ import FeedKit
 
 class NewsTableViewController: UITableViewController, AnimationProtocol {
     
-    var feed: [RSSFeedItem] = []
+    var feed: [Article] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
-        Client.getNewsFeed { (feed) in
-            self.feed = feed
+        Client.getNewsFeeds { (feeds) in
+            self.feed = feeds[0].articles!
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }

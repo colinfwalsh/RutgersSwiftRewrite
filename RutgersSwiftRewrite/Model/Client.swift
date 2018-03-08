@@ -37,17 +37,16 @@ struct Client {
         }
     }
     
-    static func getNewsFeed(completion: @escaping ([RSSFeedItem])->()) {
-        let feedURL = URL(string: "http://www.therutgersreview.com/feed/")
-        let parser = FeedParser(URL: feedURL!)
-        
-        parser?.parseAsync(result: { (result) in
-            print(result.rssFeed?.items![0].title)
-            print(result.rssFeed?.items![1].title)
-            print(result.rssFeed?.items![2].title)
-            print(result.rssFeed?.items![3].title)
-            guard let feed = result.rssFeed?.items else { return }
-            completion(feed)
-        })
+    static func getNewsFeeds(completion: @escaping ([NewsSource])->()) {
+        if let path = Bundle.main.path(forResource: "news", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let content = try JSONDecoder().decode([NewsSource].self, from: data)
+                completion(content)
+            } catch {
+                print("error getting news")
+            }
+        }
     }
+    
 }
