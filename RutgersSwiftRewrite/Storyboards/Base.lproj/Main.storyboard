@@ -140,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="1244" y="1741.9790104947529"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab View Controller-->
         <scene sceneID="NWp-qP-RSh">
             <objects>
-                <tabBarController id="gch-cz-jg8" sceneMemberID="viewController">
+                <tabBarController id="gch-cz-jg8" customClass="MainTabViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3BY-BW-t1p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -670,6 +670,10 @@
         <!--News View Controller-->
         <scene sceneID="vj0-7Y-PAc">
             <objects>
+              
+              
+              
+              
                 <viewController id="yI5-Ps-Ujo" customClass="NewsViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bne-cF-Vbl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>

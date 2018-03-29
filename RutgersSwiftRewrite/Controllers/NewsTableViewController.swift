@@ -9,13 +9,14 @@
 import UIKit
 import FeedKit
 
-class NewsTableViewController: UITableViewController, AnimationProtocol {
+class NewsTableViewController: UITableViewController, AnimationProtocol, LoadingViewControllerDelegate {
     
+
     var feed: [Article] = []
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
         Client.getNewsFeeds { (feeds) in
             self.feed = feeds[0].articles!
@@ -34,6 +35,10 @@ class NewsTableViewController: UITableViewController, AnimationProtocol {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 2
+    }
+    
+    func didFinishLoading(controller: LoadingViewController) {
+        controller.dismiss(animated: true, completion: nil)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
