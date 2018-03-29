@@ -7,11 +7,7 @@
 //
 
 import UIKit
-
-protocol LoadingViewControllerDelegate {
-    func didFinishLoading(controller: LoadingViewController)
-}
-
+//Mark for deletion - possible reuse elsewhere
 class MainTabViewController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
@@ -20,22 +16,7 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate {
     }
     
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        if let destination = viewController.childViewControllers[0] as? NewsTableViewController{
-            let loading = LoadingViewController(nibName: "LoadingViewController", bundle: nil)
-            loading.modalTransitionStyle = .crossDissolve
-            loading.modalPresentationStyle = .overFullScreen
-//            present(loading, animated: true, completion: nil)
-            self.present(loading, animated: true, completion: nil)
-            
-            Client.getNewsFeed { (feed) in
-                DispatchQueue.main.async {
-                    destination.feed = feed
-                    destination.loading = loading
-                    destination.loading?.delegate = destination
-                    loading.finished()
-                }
-            }
-        }
+        
         return true
     }
    

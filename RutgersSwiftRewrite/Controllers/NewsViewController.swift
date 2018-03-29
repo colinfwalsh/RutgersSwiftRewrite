@@ -34,10 +34,7 @@ class NewsViewController: UIViewController {
 
         //Picker view creation
         newsPickerView.frame = CGRect(x: -150, y: titleLabel.frame.maxY + 10, width: view.frame.width + 300, height: 40)
-        self.view.addSubview(newsPickerView)
 
-
-        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -46,8 +43,6 @@ class NewsViewController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 150
      
-        
-        
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
         Client.getNewsFeeds { (feeds) in
             self.feed = feeds[0].articles!
@@ -57,15 +52,6 @@ class NewsViewController: UIViewController {
             }
         }
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-
-
 }
 
 extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
@@ -80,6 +66,10 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
         
         layoutCell(cell: cell)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 250
     }
     
     private func layoutCell(cell: UITableViewCell) {
@@ -99,7 +89,7 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
        
     }
 }
-
+//MARK: Example Mark
 extension NewsViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -124,17 +114,14 @@ extension NewsViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         }
     }
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-        let view = UIView()
-        view.frame = CGRect(x: 0, y: 0, width: 250, height: 40)
 
         let label = UILabel()
         label.frame = CGRect(x: 0, y: 0, width: 250, height: 40)
         label.textAlignment = .center
         label.text = newsSources[row].title
 
-        view.addSubview(label)
-        view.transform = CGAffineTransform(rotationAngle: -rotationAngle)
+        label.transform = CGAffineTransform(rotationAngle: -rotationAngle)
 
-        return view
+        return label as! UIView
     }
 }

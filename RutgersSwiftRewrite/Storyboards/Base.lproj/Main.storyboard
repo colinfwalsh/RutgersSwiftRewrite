@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -670,10 +669,6 @@
         <!--News View Controller-->
         <scene sceneID="vj0-7Y-PAc">
             <objects>
-              
-              
-              
-              
                 <viewController id="yI5-Ps-Ujo" customClass="NewsViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bne-cF-Vbl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -686,7 +681,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cay-95-sQD">
-                                <rect key="frame" x="0.0" y="184" width="375" height="483"/>
+                                <rect key="frame" x="0.0" y="225" width="375" height="442"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="210" id="j8I-dc-MzK" customClass="NewsTableViewCell" customModule="RutgersSwiftRewrite" customModuleProvider="target">
@@ -696,27 +691,30 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cut" translatesAutoresizingMaskIntoConstraints="NO" id="5Bc-xw-GCT">
-                                                    <rect key="frame" x="15" y="11" width="208" height="188"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kYP-sZ-k1P">
+                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="209.5"/>
+                                                    <color key="backgroundColor" red="0.42570029145077726" green="0.42570029145077726" blue="0.42570029145077726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="188" id="t7i-gn-PMY"/>
-                                                        <constraint firstAttribute="width" secondItem="5Bc-xw-GCT" secondAttribute="height" multiplier="315:127" constant="-258.29921259842519" id="yOl-oc-ODz"/>
+                                                        <constraint firstAttribute="width" constant="140" id="rkd-SB-46V"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVj-x9-Usu">
-                                                    <rect key="frame" x="233" y="21" width="117" height="26.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVj-x9-Usu">
+                                                    <rect key="frame" x="148" y="0.0" width="2" height="210"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="QVj-x9-Usu" firstAttribute="top" secondItem="J8k-uZ-S9Y" secondAttribute="topMargin" constant="10" id="Jyd-oW-dhQ"/>
-                                                <constraint firstItem="QVj-x9-Usu" firstAttribute="leading" secondItem="5Bc-xw-GCT" secondAttribute="trailing" constant="10" id="MAK-8V-lJD"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="QVj-x9-Usu" secondAttribute="trailing" constant="10" id="cIq-cN-ql9"/>
-                                                <constraint firstItem="5Bc-xw-GCT" firstAttribute="top" secondItem="J8k-uZ-S9Y" secondAttribute="topMargin" id="i0Z-RS-FDn"/>
-                                                <constraint firstItem="5Bc-xw-GCT" firstAttribute="leading" secondItem="J8k-uZ-S9Y" secondAttribute="leadingMargin" id="rn4-re-Gsg"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="5Bc-xw-GCT" secondAttribute="bottom" id="uSI-rS-C2d"/>
+                                                <constraint firstAttribute="trailing" secondItem="QVj-x9-Usu" secondAttribute="trailing" id="7Fy-Ej-TF6"/>
+                                                <constraint firstItem="kYP-sZ-k1P" firstAttribute="height" secondItem="J8k-uZ-S9Y" secondAttribute="height" id="JII-M3-Qv7"/>
+                                                <constraint firstItem="QVj-x9-Usu" firstAttribute="height" secondItem="J8k-uZ-S9Y" secondAttribute="height" id="bA6-tH-vzy"/>
+                                                <constraint firstItem="kYP-sZ-k1P" firstAttribute="leading" secondItem="J8k-uZ-S9Y" secondAttribute="leading" id="byG-yA-6CX"/>
+                                                <constraint firstItem="QVj-x9-Usu" firstAttribute="leading" secondItem="kYP-sZ-k1P" secondAttribute="trailing" constant="10" id="dhM-dy-me3"/>
+                                                <constraint firstAttribute="bottom" secondItem="QVj-x9-Usu" secondAttribute="bottom" id="kgF-Fu-SdN"/>
+                                                <constraint firstItem="kYP-sZ-k1P" firstAttribute="top" secondItem="J8k-uZ-S9Y" secondAttribute="top" id="rPQ-EC-sVD"/>
+                                                <constraint firstAttribute="bottom" secondItem="kYP-sZ-k1P" secondAttribute="bottom" id="sNw-Jm-tWw"/>
+                                                <constraint firstItem="QVj-x9-Usu" firstAttribute="top" secondItem="J8k-uZ-S9Y" secondAttribute="top" id="vqb-ed-aem"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -726,16 +724,16 @@
                                 </prototypes>
                             </tableView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RPg-59-mUs">
-                                <rect key="frame" x="27" y="130" width="320" height="78"/>
+                                <rect key="frame" x="0.0" y="107" width="375" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="cay-95-sQD" secondAttribute="bottom" id="8cM-wb-6MB"/>
+                            <constraint firstItem="cay-95-sQD" firstAttribute="trailing" secondItem="5kC-zJ-HYw" secondAttribute="trailing" id="5lW-TA-szZ"/>
+                            <constraint firstItem="cay-95-sQD" firstAttribute="leading" secondItem="5kC-zJ-HYw" secondAttribute="leading" id="6BI-Lt-yIZ"/>
                             <constraint firstItem="IyS-KL-wi2" firstAttribute="top" secondItem="5kC-zJ-HYw" secondAttribute="top" constant="10" id="AMu-x8-Enf"/>
-                            <constraint firstItem="cay-95-sQD" firstAttribute="leading" secondItem="5kC-zJ-HYw" secondAttribute="leading" id="k6W-L4-nm0"/>
-                            <constraint firstItem="cay-95-sQD" firstAttribute="trailing" secondItem="5kC-zJ-HYw" secondAttribute="trailing" id="kDG-Qj-Kln"/>
+                            <constraint firstAttribute="bottom" secondItem="cay-95-sQD" secondAttribute="bottom" id="Xvr-Np-vyh"/>
                             <constraint firstItem="5kC-zJ-HYw" firstAttribute="trailing" secondItem="IyS-KL-wi2" secondAttribute="trailing" constant="16" id="rjC-R9-wf4"/>
                             <constraint firstItem="IyS-KL-wi2" firstAttribute="leading" secondItem="5kC-zJ-HYw" secondAttribute="leading" constant="16" id="vVH-ZT-hYq"/>
                         </constraints>
@@ -771,7 +769,6 @@
     <resources>
         <image name="academics" width="48" height="48"/>
         <image name="bus" width="1024" height="682"/>
-        <image name="cut" width="750" height="422"/>
         <image name="home" width="48" height="48"/>
         <image name="location" width="48" height="48"/>
         <image name="news" width="48" height="48"/>
