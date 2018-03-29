@@ -33,7 +33,7 @@ class NewsViewController: UIViewController {
         newsPickerView.transform = CGAffineTransform(rotationAngle: rotationAngle)
 
         //Picker view creation
-        newsPickerView.frame = CGRect(x: -150, y: titleLabel.frame.maxY + 5, width: view.frame.width + 300, height: 40)
+        newsPickerView.frame = CGRect(x: -150, y: titleLabel.frame.maxY + 10, width: view.frame.width + 300, height: 40)
         self.view.addSubview(newsPickerView)
 
 
@@ -41,12 +41,11 @@ class NewsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        self.view.addConstraint(NSLayoutConstraint(item: tableView, attribute: .top, relatedBy: .equal, toItem: titleLabel, attribute: .bottom, multiplier: 1.0, constant: newsPickerView.frame.height + 10))
-        
+        self.view.addConstraint(NSLayoutConstraint(item: tableView, attribute: .top, relatedBy: .equal, toItem: titleLabel, attribute: .bottom, multiplier: 1.0, constant: newsPickerView.frame.height + 15))
+        tableView.separatorColor = .white
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 150
-        tableView.backgroundColor = .red
-        
+     
         
         
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
@@ -79,7 +78,25 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath) as! NewsTableViewCell
         cell.titleLabel.text = feed[indexPath.row].title
         
+        layoutCell(cell: cell)
         return cell
+    }
+    
+    private func layoutCell(cell: UITableViewCell) {
+        cell.contentView.layer.cornerRadius = 10
+        cell.contentView.layer.borderWidth = 1.0
+        
+        cell.contentView.layer.borderColor = UIColor.clear.cgColor
+        cell.contentView.layer.masksToBounds = true
+        cell.contentView.layer.backgroundColor = UIColor.white.cgColor
+        
+//        cell.layer.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0).cgColor
+        
+        cell.contentView.layer.shadowColor = UIColor.gray.cgColor
+        cell.contentView.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        cell.contentView.layer.shadowRadius = 1.0
+        cell.contentView.layer.shadowOpacity = 2.5
+       
     }
 }
 

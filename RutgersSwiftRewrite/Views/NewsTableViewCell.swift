@@ -21,5 +21,9 @@ class NewsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.frame = UIEdgeInsetsInsetRect(contentView.frame, UIEdgeInsetsMake(16, 16, 16, 16))
+    }
 }
