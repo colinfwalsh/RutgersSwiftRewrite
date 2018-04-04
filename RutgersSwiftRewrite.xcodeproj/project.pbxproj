@@ -23,8 +23,6 @@
 		AF82EDFB202252E6005916BD /* ServicesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */; };
 		AFB5CFDF20236D420002AB7A /* AcademicsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5CFDE20236D420002AB7A /* AcademicsCell.swift */; };
 		AFB5CFE12023B2DB0002AB7A /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5CFE02023B2DB0002AB7A /* MapCell.swift */; };
-		AFB5CFE52023C5A30002AB7A /* NewsMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5CFE42023C5A30002AB7A /* NewsMainCell.swift */; };
-		AFB5CFE72023C7730002AB7A /* NewsAuxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5CFE62023C7730002AB7A /* NewsAuxCell.swift */; };
 		AFB5CFE92023D5460002AB7A /* StudentServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */; };
 		AFF94E36201F7191001A15BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E35201F7191001A15BD /* AppDelegate.swift */; };
 		AFF94E38201F7191001A15BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E37201F7191001A15BD /* ViewController.swift */; };
@@ -75,8 +73,6 @@
 		AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewController.swift; sourceTree = "<group>"; };
 		AFB5CFDE20236D420002AB7A /* AcademicsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicsCell.swift; sourceTree = "<group>"; };
 		AFB5CFE02023B2DB0002AB7A /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
-		AFB5CFE42023C5A30002AB7A /* NewsMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsMainCell.swift; sourceTree = "<group>"; };
-		AFB5CFE62023C7730002AB7A /* NewsAuxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAuxCell.swift; sourceTree = "<group>"; };
 		AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentServicesCell.swift; sourceTree = "<group>"; };
 		AFF94E32201F7191001A15BD /* RutgersSwiftRewrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RutgersSwiftRewrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF94E35201F7191001A15BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,8 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				AFF94E68201FC3D5001A15BD /* HomeCell.swift */,
-				AFB5CFE42023C5A30002AB7A /* NewsMainCell.swift */,
-				AFB5CFE62023C7730002AB7A /* NewsAuxCell.swift */,
 				AFB5CFE02023B2DB0002AB7A /* MapCell.swift */,
 				AFB5CFDE20236D420002AB7A /* AcademicsCell.swift */,
 				AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */,
@@ -404,11 +398,9 @@
 				74F57BD220336C8C008D6C4F /* Client.swift in Sources */,
 				74EA99DF203F6B0000FA23F1 /* FoodViewController.swift in Sources */,
 				74EA99E1203F6B2300FA23F1 /* SOCViewController.swift in Sources */,
-				AFB5CFE52023C5A30002AB7A /* NewsMainCell.swift in Sources */,
 				AFB5CFDF20236D420002AB7A /* AcademicsCell.swift in Sources */,
 				C97A10202051E94D009F1C6D /* NewsTableViewCell.swift in Sources */,
 				748F7591202B961200EFAA56 /* WebViewController.swift in Sources */,
-				AFB5CFE72023C7730002AB7A /* NewsAuxCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
