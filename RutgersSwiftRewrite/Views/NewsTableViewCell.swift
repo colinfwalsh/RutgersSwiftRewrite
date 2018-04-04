@@ -10,6 +10,7 @@ import UIKit
 
 class NewsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var articleImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,5 +26,6 @@ class NewsTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         contentView.frame = UIEdgeInsetsInsetRect(contentView.frame, UIEdgeInsetsMake(16, 16, 16, 16))
+        articleImage.clipsToBounds = true
     }
 }

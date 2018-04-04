@@ -72,13 +72,22 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
         return 250
     }
     
-    private func layoutCell(cell: UITableViewCell) {
+    private func layoutCell(cell: NewsTableViewCell) {
         cell.contentView.layer.cornerRadius = 10
         cell.contentView.layer.borderWidth = 1.0
         
         cell.contentView.layer.borderColor = UIColor.clear.cgColor
         cell.contentView.layer.masksToBounds = true
         cell.contentView.layer.backgroundColor = UIColor.white.cgColor
+        
+        let path = UIBezierPath(roundedRect:cell.articleImage.bounds,
+                                byRoundingCorners:[.topLeft, .bottomLeft],
+                                cornerRadii: CGSize(width: 10, height:  10))
+        
+        let maskLayer = CAShapeLayer()
+        
+        maskLayer.path = path.cgPath
+        cell.articleImage.layer.mask = maskLayer
         
 //        cell.layer.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0).cgColor
         
