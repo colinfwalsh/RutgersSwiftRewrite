@@ -72,6 +72,13 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
         return 250
     }
     
+    func scrollToTop() {
+        if (self.tableView.numberOfSections > 0 ) {
+            let top = NSIndexPath(row: Foundation.NSNotFound, section: 0)
+            self.tableView.scrollToRow(at: top as IndexPath, at: .top, animated: true);
+        }
+    }
+    
     
 }
 //MARK: Example Mark
@@ -96,8 +103,13 @@ extension NewsViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         feed = newsSources[row].articles!
         DispatchQueue.main.async {
             self.tableView.reloadData()
+            self.scrollToTop()
         }
+        
     }
+    
+    
+    
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
 
         let label = UILabel()
@@ -110,3 +122,5 @@ extension NewsViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         return label as! UIView
     }
 }
+
+
