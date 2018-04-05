@@ -64,7 +64,7 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath) as! NewsTableViewCell
         cell.titleLabel.text = feed[indexPath.row].title
         
-        layoutCell(cell: cell)
+        cell.layoutCell()
         return cell
     }
     
@@ -72,22 +72,14 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
         return 250
     }
     
-    private func layoutCell(cell: UITableViewCell) {
-        cell.contentView.layer.cornerRadius = 10
-        cell.contentView.layer.borderWidth = 1.0
-        
-        cell.contentView.layer.borderColor = UIColor.clear.cgColor
-        cell.contentView.layer.masksToBounds = true
-        cell.contentView.layer.backgroundColor = UIColor.white.cgColor
-        
-//        cell.layer.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0).cgColor
-        
-        cell.contentView.layer.shadowColor = UIColor.gray.cgColor
-        cell.contentView.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        cell.contentView.layer.shadowRadius = 1.0
-        cell.contentView.layer.shadowOpacity = 2.5
-       
+    func scrollToTop() {
+        if (self.tableView.numberOfSections > 0 ) {
+            let top = NSIndexPath(row: Foundation.NSNotFound, section: 0)
+            self.tableView.scrollToRow(at: top as IndexPath, at: .top, animated: true);
+        }
     }
+    
+    
 }
 //MARK: Example Mark
 extension NewsViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -111,8 +103,13 @@ extension NewsViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         feed = newsSources[row].articles!
         DispatchQueue.main.async {
             self.tableView.reloadData()
+            self.scrollToTop()
         }
+        
     }
+    
+    
+    
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
 
         let label = UILabel()
@@ -125,3 +122,5 @@ extension NewsViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         return label as! UIView
     }
 }
+
+
