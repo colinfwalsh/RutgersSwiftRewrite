@@ -24,6 +24,8 @@ class NewsTableViewCell: UITableViewCell {
     }
     
     func layoutCell() {
+        self.backgroundColor = UIColor(red: 248, green: 248, blue: 248, alpha: 1)
+        
         self.contentView.layer.cornerRadius = 10
         self.contentView.layer.borderWidth = 1.0
         

@@ -33,6 +33,8 @@
 		AFF94E56201F7192001A15BD /* RutgersSwiftRewriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E55201F7192001A15BD /* RutgersSwiftRewriteUITests.swift */; };
 		AFF94E67201FB8D7001A15BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E66201FB8D7001A15BD /* HomeViewController.swift */; };
 		AFF94E69201FC3D5001A15BD /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E68201FC3D5001A15BD /* HomeCell.swift */; };
+		C9212DD420780DCF007DB663 /* NewsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9212DD320780DCF007DB663 /* NewsClient.swift */; };
+		C9212DDA20780EE0007DB663 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9212DD920780EE0007DB663 /* TestViewController.swift */; };
 		C97A101A2051C9A1009F1C6D /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = C97A10192051C9A0009F1C6D /* news.json */; };
 		C97A101C2051D1F4009F1C6D /* NewsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A101B2051D1F4009F1C6D /* NewsModels.swift */; };
 		C97A101E2051E7DB009F1C6D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A101D2051E7DA009F1C6D /* NewsViewController.swift */; };
@@ -89,6 +91,8 @@
 		AFF94E57201F7192001A15BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFF94E66201FB8D7001A15BD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AFF94E68201FC3D5001A15BD /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		C9212DD320780DCF007DB663 /* NewsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsClient.swift; sourceTree = "<group>"; };
+		C9212DD920780EE0007DB663 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		C97A10192051C9A0009F1C6D /* news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news.json; sourceTree = SOURCE_ROOT; };
 		C97A101B2051D1F4009F1C6D /* NewsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModels.swift; sourceTree = "<group>"; };
 		C97A101D2051E7DA009F1C6D /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -124,10 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				74F57BCF2033523F008D6C4F /* Model.swift */,
-				C97A101B2051D1F4009F1C6D /* NewsModels.swift */,
 				74F57BD120336C8C008D6C4F /* Client.swift */,
 			);
-			path = Model;
+			name = Model;
+			path = ../Model;
 			sourceTree = "<group>";
 		};
 		AF0D5C0F20485D9B0000AFA2 /* Protocols */ = {
@@ -146,36 +150,6 @@
 				AFF94E39201F7191001A15BD /* Main.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		AF82EDFE20225DE5005916BD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				AFF94E68201FC3D5001A15BD /* HomeCell.swift */,
-				AFB5CFE02023B2DB0002AB7A /* MapCell.swift */,
-				AFB5CFDE20236D420002AB7A /* AcademicsCell.swift */,
-				AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */,
-				C97A101F2051E94D009F1C6D /* NewsTableViewCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		AF82EDFF20225DFC005916BD /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				AFF94E66201FB8D7001A15BD /* HomeViewController.swift */,
-				AF2390852049EA7D006124E5 /* MainTabViewController.swift */,
-				AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */,
-				AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */,
-				AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */,
-				748F7590202B961200EFAA56 /* WebViewController.swift */,
-				74EA99DE203F6B0000FA23F1 /* FoodViewController.swift */,
-				74EA99E0203F6B2300FA23F1 /* SOCViewController.swift */,
-				74EA99E4203F6EF800FA23F1 /* DTableViewController.swift */,
-				74EA99E6203F77DF00FA23F1 /* FeedBackViewController.swift */,
-				C97A101D2051E7DA009F1C6D /* NewsViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		AFF94E29201F7191001A15BD = {
@@ -207,9 +181,15 @@
 				AFF94E65201FA38E001A15BD /* TEST_MODULES */,
 				AF0D5C1020485DC90000AFA2 /* Storyboards */,
 				AF0D5C0F20485D9B0000AFA2 /* Protocols */,
-				74F57BCE203351F1008D6C4F /* Model */,
-				AF82EDFF20225DFC005916BD /* Controllers */,
-				AF82EDFE20225DE5005916BD /* Views */,
+				C9212DD520780E46007DB663 /* Home */,
+				C9212DDD20780F4C007DB663 /* Academics */,
+				C9212DDE20780F5F007DB663 /* Student Services */,
+				C9212DDB20780F3E007DB663 /* Location */,
+				C9212DE020781067007DB663 /* SOC */,
+				C9212DDC20780F44007DB663 /* Food */,
+				C9212DDF20780FC5007DB663 /* WebView */,
+				C9212DCE20780D52007DB663 /* News */,
+				C9212DE1207810AE007DB663 /* Extra View Controllers */,
 				AFF94E3C201F7191001A15BD /* Assets.xcassets */,
 				AFF94E41201F7191001A15BD /* Info.plist */,
 			);
@@ -240,6 +220,129 @@
 				AFF94E37201F7191001A15BD /* ViewController.swift */,
 			);
 			path = TEST_MODULES;
+			sourceTree = "<group>";
+		};
+		C9212DCE20780D52007DB663 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C9212DD220780D87007DB663 /* Controller */,
+				C9212DD120780D82007DB663 /* View */,
+				C9212DCF20780D6F007DB663 /* Model */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		C9212DCF20780D6F007DB663 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C97A101B2051D1F4009F1C6D /* NewsModels.swift */,
+				C9212DD320780DCF007DB663 /* NewsClient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9212DD120780D82007DB663 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C97A101F2051E94D009F1C6D /* NewsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9212DD220780D87007DB663 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C97A101D2051E7DA009F1C6D /* NewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9212DD520780E46007DB663 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C9212DD820780E62007DB663 /* Controller */,
+				C9212DD720780E5D007DB663 /* View */,
+				74F57BCE203351F1008D6C4F /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C9212DD720780E5D007DB663 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFF94E68201FC3D5001A15BD /* HomeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9212DD820780E62007DB663 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AFF94E66201FB8D7001A15BD /* HomeViewController.swift */,
+				C9212DD920780EE0007DB663 /* TestViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9212DDB20780F3E007DB663 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */,
+				AFB5CFE02023B2DB0002AB7A /* MapCell.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		C9212DDC20780F44007DB663 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				74EA99DE203F6B0000FA23F1 /* FoodViewController.swift */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		C9212DDD20780F4C007DB663 /* Academics */ = {
+			isa = PBXGroup;
+			children = (
+				AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */,
+				AFB5CFDE20236D420002AB7A /* AcademicsCell.swift */,
+				AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */,
+			);
+			path = Academics;
+			sourceTree = "<group>";
+		};
+		C9212DDE20780F5F007DB663 /* Student Services */ = {
+			isa = PBXGroup;
+			children = (
+				AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */,
+			);
+			path = "Student Services";
+			sourceTree = "<group>";
+		};
+		C9212DDF20780FC5007DB663 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				748F7590202B961200EFAA56 /* WebViewController.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		C9212DE020781067007DB663 /* SOC */ = {
+			isa = PBXGroup;
+			children = (
+				74EA99E0203F6B2300FA23F1 /* SOCViewController.swift */,
+			);
+			path = SOC;
+			sourceTree = "<group>";
+		};
+		C9212DE1207810AE007DB663 /* Extra View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF2390852049EA7D006124E5 /* MainTabViewController.swift */,
+				74EA99E4203F6EF800FA23F1 /* DTableViewController.swift */,
+				74EA99E6203F77DF00FA23F1 /* FeedBackViewController.swift */,
+			);
+			path = "Extra View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,8 +488,10 @@
 				AFF94E67201FB8D7001A15BD /* HomeViewController.swift in Sources */,
 				74EA99E5203F6EF800FA23F1 /* DTableViewController.swift in Sources */,
 				AFB5CFE92023D5460002AB7A /* StudentServicesCell.swift in Sources */,
+				C9212DD420780DCF007DB663 /* NewsClient.swift in Sources */,
 				AF82EDF9202252D7005916BD /* LocationCollectionViewController.swift in Sources */,
 				AF2390862049EA7D006124E5 /* MainTabViewController.swift in Sources */,
+				C9212DDA20780EE0007DB663 /* TestViewController.swift in Sources */,
 				74EA99E7203F77DF00FA23F1 /* FeedBackViewController.swift in Sources */,
 				74AFBB2420363F2D002862BB /* NavigationProtocol.swift in Sources */,
 				AFB5CFE12023B2DB0002AB7A /* MapCell.swift in Sources */,

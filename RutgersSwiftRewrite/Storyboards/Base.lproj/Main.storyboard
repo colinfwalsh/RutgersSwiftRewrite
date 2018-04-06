@@ -12,6 +12,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="lC4-VA-mRg">
+            <objects>
+                <viewController id="xiT-o4-occ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sh0-r9-Se5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="xXP-t4-Rb8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nng-H3-WCV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9mu-mQ-z0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="1069"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="Nci-8u-tYP">
             <objects>
@@ -21,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ivi-aZ-Big">
-                                <rect key="frame" x="0.0" y="7.5" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OUs-aP-YEg">
                                     <size key="itemSize" width="375" height="88"/>
@@ -137,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJe-xW-4Mx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1244" y="1741.9790104947529"/>
+            <point key="canvasLocation" x="1356" y="1742"/>
         </scene>
         <!--Main Tab View Controller-->
         <scene sceneID="NWp-qP-RSh">
@@ -583,7 +599,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BVb-vp-S4u" kind="relationship" relationship="rootViewController" id="4qV-L6-H2X"/>
+                        <segue destination="xiT-o4-occ" kind="relationship" relationship="rootViewController" id="5MW-hi-IGp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23u-wN-AyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -688,7 +704,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="210"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j8I-dc-MzK" id="J8k-uZ-S9Y">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="209"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kYP-sZ-k1P">

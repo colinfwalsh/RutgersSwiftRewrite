@@ -42,9 +42,10 @@ class NewsViewController: UIViewController {
         tableView.separatorColor = .white
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 150
+        tableView.backgroundColor = UIColor(red: 248, green: 248, blue: 248, alpha: 1)
      
         HomeViewController.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
-        Client.getNewsFeeds { (feeds) in
+        NewsClient.getNewsFeeds { (feeds) in
             self.feed = feeds[0].articles!
             self.newsSources = feeds
             DispatchQueue.main.async {
