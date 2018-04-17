@@ -25,7 +25,6 @@
 		AFB5CFE12023B2DB0002AB7A /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5CFE02023B2DB0002AB7A /* MapCell.swift */; };
 		AFB5CFE92023D5460002AB7A /* StudentServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */; };
 		AFF94E36201F7191001A15BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E35201F7191001A15BD /* AppDelegate.swift */; };
-		AFF94E38201F7191001A15BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E37201F7191001A15BD /* ViewController.swift */; };
 		AFF94E3B201F7191001A15BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF94E39201F7191001A15BD /* Main.storyboard */; };
 		AFF94E3D201F7191001A15BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF94E3C201F7191001A15BD /* Assets.xcassets */; };
 		AFF94E40201F7191001A15BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF94E3E201F7191001A15BD /* LaunchScreen.storyboard */; };
@@ -35,6 +34,12 @@
 		AFF94E69201FC3D5001A15BD /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E68201FC3D5001A15BD /* HomeCell.swift */; };
 		C91CE289208682C7002604B8 /* ModulesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91CE288208682C7002604B8 /* ModulesStoryboard.storyboard */; };
 		C91CE28B208686DD002604B8 /* NewsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91CE28A208686DD002604B8 /* NewsStoryboard.storyboard */; };
+		C91CE29120869351002604B8 /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91CE29020869351002604B8 /* ModulesViewController.swift */; };
+		C91CE29320869369002604B8 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91CE29220869369002604B8 /* HomeStoryboard.storyboard */; };
+		C91CE2992086967B002604B8 /* SettingsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91CE2982086967B002604B8 /* SettingsStoryboard.storyboard */; };
+		C91CE29E20869813002604B8 /* StudentServicesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91CE29D20869813002604B8 /* StudentServicesStoryboard.storyboard */; };
+		C91CE2A3208698A0002604B8 /* AcademicsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91CE2A2208698A0002604B8 /* AcademicsStoryboard.storyboard */; };
+		C91CE2A82086993A002604B8 /* LocationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91CE2A72086993A002604B8 /* LocationStoryboard.storyboard */; };
 		C9212DD420780DCF007DB663 /* NewsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9212DD320780DCF007DB663 /* NewsClient.swift */; };
 		C9212DDA20780EE0007DB663 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9212DD920780EE0007DB663 /* TestViewController.swift */; };
 		C97A101A2051C9A1009F1C6D /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = C97A10192051C9A0009F1C6D /* news.json */; };
@@ -82,7 +87,6 @@
 		AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentServicesCell.swift; sourceTree = "<group>"; };
 		AFF94E32201F7191001A15BD /* RutgersSwiftRewrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RutgersSwiftRewrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF94E35201F7191001A15BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFF94E37201F7191001A15BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFF94E3A201F7191001A15BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFF94E3C201F7191001A15BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFF94E3F201F7191001A15BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,6 +101,12 @@
 		AFF94E68201FC3D5001A15BD /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		C91CE288208682C7002604B8 /* ModulesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModulesStoryboard.storyboard; sourceTree = "<group>"; };
 		C91CE28A208686DD002604B8 /* NewsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsStoryboard.storyboard; sourceTree = "<group>"; };
+		C91CE29020869351002604B8 /* ModulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesViewController.swift; sourceTree = "<group>"; };
+		C91CE29220869369002604B8 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		C91CE2982086967B002604B8 /* SettingsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsStoryboard.storyboard; sourceTree = "<group>"; };
+		C91CE29D20869813002604B8 /* StudentServicesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudentServicesStoryboard.storyboard; sourceTree = "<group>"; };
+		C91CE2A2208698A0002604B8 /* AcademicsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AcademicsStoryboard.storyboard; sourceTree = "<group>"; };
+		C91CE2A72086993A002604B8 /* LocationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationStoryboard.storyboard; sourceTree = "<group>"; };
 		C9212DD320780DCF007DB663 /* NewsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsClient.swift; sourceTree = "<group>"; };
 		C9212DD920780EE0007DB663 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		C97A10192051C9A0009F1C6D /* news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news.json; sourceTree = SOURCE_ROOT; };
@@ -151,13 +161,12 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		AF0D5C1020485DC90000AFA2 /* Storyboards */ = {
+		AF0D5C1020485DC90000AFA2 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
 				AFF94E3E201F7191001A15BD /* LaunchScreen.storyboard */,
-				AFF94E39201F7191001A15BD /* Main.storyboard */,
 			);
-			path = Storyboards;
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		AFF94E29201F7191001A15BD = {
@@ -186,20 +195,13 @@
 				AF119883202E3499008DF7E0 /* ordered_content.json */,
 				C97A10192051C9A0009F1C6D /* news.json */,
 				AFF94E35201F7191001A15BD /* AppDelegate.swift */,
-				AFF94E65201FA38E001A15BD /* TEST_MODULES */,
-				AF0D5C1020485DC90000AFA2 /* Storyboards */,
+				AF0D5C1020485DC90000AFA2 /* LaunchScreen */,
 				AF0D5C0F20485D9B0000AFA2 /* Protocols */,
 				C91CE28C20868E2C002604B8 /* Tab Bar */,
-				C9212DD520780E46007DB663 /* Home */,
-				C91CE287208682A0002604B8 /* Modules */,
-				C9212DDD20780F4C007DB663 /* Academics */,
-				C9212DDE20780F5F007DB663 /* Student Services */,
-				C9212DDB20780F3E007DB663 /* Location */,
-				C9212DE020781067007DB663 /* SOC */,
-				C9212DDC20780F44007DB663 /* Food */,
-				C9212DDF20780FC5007DB663 /* WebView */,
-				C9212DCE20780D52007DB663 /* News */,
-				C9212DE1207810AE007DB663 /* Extra View Controllers */,
+				C9212DD520780E46007DB663 /* Home Tab */,
+				C91CE287208682A0002604B8 /* Modules Tab */,
+				C91CE2942086964C002604B8 /* Settings Tab */,
+				C91CE2AA20869A1F002604B8 /* Modules */,
 				AFF94E3C201F7191001A15BD /* Assets.xcassets */,
 				AFF94E41201F7191001A15BD /* Info.plist */,
 			);
@@ -224,28 +226,165 @@
 			path = RutgersSwiftRewriteUITests;
 			sourceTree = "<group>";
 		};
-		AFF94E65201FA38E001A15BD /* TEST_MODULES */ = {
+		C91CE287208682A0002604B8 /* Modules Tab */ = {
 			isa = PBXGroup;
 			children = (
-				AFF94E37201F7191001A15BD /* ViewController.swift */,
+				C91CE28F20869326002604B8 /* Controller */,
+				C91CE28E20869320002604B8 /* View */,
+				C91CE28D20869310002604B8 /* Model */,
 			);
-			path = TEST_MODULES;
-			sourceTree = "<group>";
-		};
-		C91CE287208682A0002604B8 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				C91CE288208682C7002604B8 /* ModulesStoryboard.storyboard */,
-			);
-			path = Modules;
+			path = "Modules Tab";
 			sourceTree = "<group>";
 		};
 		C91CE28C20868E2C002604B8 /* Tab Bar */ = {
 			isa = PBXGroup;
 			children = (
 				AF2390852049EA7D006124E5 /* MainTabViewController.swift */,
+				AFF94E39201F7191001A15BD /* Main.storyboard */,
 			);
 			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		C91CE28D20869310002604B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C91CE28E20869320002604B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C91CE288208682C7002604B8 /* ModulesStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C91CE28F20869326002604B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C91CE29020869351002604B8 /* ModulesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C91CE2942086964C002604B8 /* Settings Tab */ = {
+			isa = PBXGroup;
+			children = (
+				C91CE2972086965F002604B8 /* Controller */,
+				C91CE2962086965A002604B8 /* View */,
+				C91CE29520869654002604B8 /* Model */,
+			);
+			path = "Settings Tab";
+			sourceTree = "<group>";
+		};
+		C91CE29520869654002604B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C91CE2962086965A002604B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C91CE2982086967B002604B8 /* SettingsStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C91CE2972086965F002604B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C91CE29A208697CC002604B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C91CE29B208697D4002604B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */,
+				C91CE29D20869813002604B8 /* StudentServicesStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C91CE29C208697DB002604B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C91CE29F2086987B002604B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C91CE2A020869884002604B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFB5CFDE20236D420002AB7A /* AcademicsCell.swift */,
+				C91CE2A2208698A0002604B8 /* AcademicsStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C91CE2A120869889002604B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C91CE2A4208698EB002604B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C91CE2A5208698F2002604B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFB5CFE02023B2DB0002AB7A /* MapCell.swift */,
+				C91CE2A72086993A002604B8 /* LocationStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C91CE2A6208698F6002604B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C91CE2AA20869A1F002604B8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C9212DDD20780F4C007DB663 /* Academics */,
+				C9212DDE20780F5F007DB663 /* Student Services */,
+				C9212DDB20780F3E007DB663 /* Location */,
+				C9212DE020781067007DB663 /* SOC */,
+				C9212DDC20780F44007DB663 /* Food */,
+				C9212DDF20780FC5007DB663 /* WebView */,
+				C9212DCE20780D52007DB663 /* News */,
+				C9212DE1207810AE007DB663 /* Extra View Controllers */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		C9212DCE20780D52007DB663 /* News */ = {
@@ -284,14 +423,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		C9212DD520780E46007DB663 /* Home */ = {
+		C9212DD520780E46007DB663 /* Home Tab */ = {
 			isa = PBXGroup;
 			children = (
 				C9212DD820780E62007DB663 /* Controller */,
 				C9212DD720780E5D007DB663 /* View */,
 				74F57BCE203351F1008D6C4F /* Model */,
 			);
-			path = Home;
+			path = "Home Tab";
 			sourceTree = "<group>";
 		};
 		C9212DD720780E5D007DB663 /* View */ = {
@@ -300,6 +439,7 @@
 				AFF94E68201FC3D5001A15BD /* HomeCell.swift */,
 				C9D97E58207FE9D700244C2A /* HomeCampusCell.swift */,
 				C9D97E5A207FEA1E00244C2A /* HomeBusCell.swift */,
+				C91CE29220869369002604B8 /* HomeStoryboard.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,8 +456,9 @@
 		C9212DDB20780F3E007DB663 /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */,
-				AFB5CFE02023B2DB0002AB7A /* MapCell.swift */,
+				C91CE2A6208698F6002604B8 /* Controller */,
+				C91CE2A5208698F2002604B8 /* View */,
+				C91CE2A4208698EB002604B8 /* Model */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -333,8 +474,9 @@
 		C9212DDD20780F4C007DB663 /* Academics */ = {
 			isa = PBXGroup;
 			children = (
-				AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */,
-				AFB5CFDE20236D420002AB7A /* AcademicsCell.swift */,
+				C91CE2A120869889002604B8 /* Controller */,
+				C91CE2A020869884002604B8 /* View */,
+				C91CE29F2086987B002604B8 /* Model */,
 			);
 			path = Academics;
 			sourceTree = "<group>";
@@ -342,8 +484,9 @@
 		C9212DDE20780F5F007DB663 /* Student Services */ = {
 			isa = PBXGroup;
 			children = (
-				AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */,
-				AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */,
+				C91CE29C208697DB002604B8 /* Controller */,
+				C91CE29B208697D4002604B8 /* View */,
+				C91CE29A208697CC002604B8 /* Model */,
 			);
 			path = "Student Services";
 			sourceTree = "<group>";
@@ -480,13 +623,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C91CE2992086967B002604B8 /* SettingsStoryboard.storyboard in Resources */,
 				AFF94E40201F7191001A15BD /* LaunchScreen.storyboard in Resources */,
+				C91CE2A82086993A002604B8 /* LocationStoryboard.storyboard in Resources */,
 				C91CE28B208686DD002604B8 /* NewsStoryboard.storyboard in Resources */,
+				C91CE29320869369002604B8 /* HomeStoryboard.storyboard in Resources */,
 				C91CE289208682C7002604B8 /* ModulesStoryboard.storyboard in Resources */,
 				C97A101A2051C9A1009F1C6D /* news.json in Resources */,
 				AFF94E3D201F7191001A15BD /* Assets.xcassets in Resources */,
 				AFF94E3B201F7191001A15BD /* Main.storyboard in Resources */,
+				C91CE29E20869813002604B8 /* StudentServicesStoryboard.storyboard in Resources */,
 				AF119884202E3499008DF7E0 /* ordered_content.json in Resources */,
+				C91CE2A3208698A0002604B8 /* AcademicsStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,12 +659,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFF94E38201F7191001A15BD /* ViewController.swift in Sources */,
 				C97A101C2051D1F4009F1C6D /* NewsModels.swift in Sources */,
 				AF82EDFB202252E6005916BD /* ServicesCollectionViewController.swift in Sources */,
 				AFF94E36201F7191001A15BD /* AppDelegate.swift in Sources */,
 				AFF94E67201FB8D7001A15BD /* HomeViewController.swift in Sources */,
 				74EA99E5203F6EF800FA23F1 /* DTableViewController.swift in Sources */,
+				C91CE29120869351002604B8 /* ModulesViewController.swift in Sources */,
 				AFB5CFE92023D5460002AB7A /* StudentServicesCell.swift in Sources */,
 				C9212DD420780DCF007DB663 /* NewsClient.swift in Sources */,
 				AF82EDF9202252D7005916BD /* LocationCollectionViewController.swift in Sources */,

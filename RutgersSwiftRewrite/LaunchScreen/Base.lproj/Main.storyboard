@@ -12,65 +12,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Test View Controller-->
-        <scene sceneID="lC4-VA-mRg">
-            <objects>
-                <viewController id="xiT-o4-occ" customClass="TestViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sh0-r9-Se5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ebe-fh-Ngb">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zLR-YM-sni">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="20" minY="10" maxX="10" maxY="10"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="moduleCell" id="SFh-0Q-BlL" customClass="HomeCampusCell" customModule="RutgersSwiftRewrite" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="10" width="335" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                        <size key="customSize" width="335" height="50"/>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="busModuleCell" id="1vW-ET-ltm" customClass="HomeBusCell" customModule="RutgersSwiftRewrite" customModuleProvider="target">
-                                        <rect key="frame" x="167.5" y="70" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                        <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="xXP-t4-Rb8" firstAttribute="trailing" secondItem="ebe-fh-Ngb" secondAttribute="trailing" id="9HH-wB-KeN"/>
-                            <constraint firstItem="xXP-t4-Rb8" firstAttribute="bottom" secondItem="ebe-fh-Ngb" secondAttribute="bottom" id="WI4-e9-J4B"/>
-                            <constraint firstItem="ebe-fh-Ngb" firstAttribute="top" secondItem="xXP-t4-Rb8" secondAttribute="top" id="iNI-RQ-OC2"/>
-                            <constraint firstItem="ebe-fh-Ngb" firstAttribute="leading" secondItem="xXP-t4-Rb8" secondAttribute="leading" id="rT8-T5-NcT"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="xXP-t4-Rb8"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Nng-H3-WCV"/>
-                    <connections>
-                        <outlet property="collectionView" destination="ebe-fh-Ngb" id="bcq-yp-g8n"/>
-                        <outlet property="collectionViewFlowLayout" destination="zLR-YM-sni" id="c8x-nE-F8M"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9mu-mQ-z0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1356" y="1045.7271364317842"/>
-        </scene>
         <!--Home View Controller-->
         <scene sceneID="Nci-8u-tYP">
             <objects>
@@ -196,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJe-xW-4Mx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="1742"/>
+            <point key="canvasLocation" x="1994" y="1765"/>
         </scene>
         <!--Main Tab View Controller-->
         <scene sceneID="NWp-qP-RSh">
@@ -208,10 +149,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="cce-NI-8LO" kind="relationship" relationship="viewControllers" id="JtC-bm-KuA"/>
+                        <segue destination="whK-BR-zIC" kind="relationship" relationship="viewControllers" id="Yry-Vd-VKC"/>
+                        <segue destination="LhQ-hN-WG4" kind="relationship" relationship="viewControllers" id="TN3-OG-qxP"/>
                         <segue destination="PJh-WD-PG0" kind="relationship" relationship="viewControllers" id="XeF-V2-Ihm"/>
                         <segue destination="XpP-IE-oHO" kind="relationship" relationship="viewControllers" id="bIs-Er-yyt"/>
-                        <segue destination="0la-7b-rEK" kind="relationship" relationship="viewControllers" id="sZb-xC-S0Y"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rya-U0-Tzw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -629,25 +570,6 @@
             </objects>
             <point key="canvasLocation" x="2193" y="2160"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="jdo-nK-8sb">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cce-NI-8LO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="home" id="Vz3-Ko-Kt9"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TQT-Ka-AgC">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="xiT-o4-occ" kind="relationship" relationship="rootViewController" id="5MW-hi-IGp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="23u-wN-AyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="534" y="1742"/>
-        </scene>
         <!--Academics-->
         <scene sceneID="qZH-Yc-OcS">
             <objects>
@@ -705,16 +627,33 @@
             </objects>
             <point key="canvasLocation" x="532" y="3254"/>
         </scene>
-        <!--news-->
-        <scene sceneID="e8g-TD-qcy">
+        <!--home-->
+        <scene sceneID="jqh-RA-RDc">
             <objects>
-                <viewControllerPlaceholder storyboardName="NewsStoryboard" referencedIdentifier="news" id="0la-7b-rEK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="news" image="academics" id="h6O-FY-RmT"/>
-                    <navigationItem key="navigationItem" id="gam-42-OCM"/>
+                <viewControllerPlaceholder storyboardName="HomeStoryboard" referencedIdentifier="home" id="whK-BR-zIC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="home" id="wFu-Jl-eq2"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k3X-cQ-1gV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSP-2n-fY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1181" y="3448"/>
+            <point key="canvasLocation" x="-1446" y="3448"/>
+        </scene>
+        <!--modules-->
+        <scene sceneID="U3t-UO-ViL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ModulesStoryboard" referencedIdentifier="modules" id="LhQ-hN-WG4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Modules" id="qDT-og-BST"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCS-Vh-xrr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1093" y="3446"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="q3J-sn-OKN">
+            <objects>
+                <viewControllerPlaceholder id="IMs-Eh-Ifg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DEI-Dr-8kW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-585" y="3448"/>
         </scene>
         <!--News/Events-->
         <scene sceneID="kvn-4g-TPi">
@@ -839,7 +778,6 @@
     <resources>
         <image name="academics" width="48" height="48"/>
         <image name="bus" width="1024" height="682"/>
-        <image name="home" width="48" height="48"/>
         <image name="location" width="48" height="48"/>
         <image name="news" width="48" height="48"/>
         <image name="options" width="6" height="25"/>
