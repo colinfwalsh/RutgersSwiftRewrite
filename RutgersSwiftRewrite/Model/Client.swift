@@ -9,13 +9,12 @@
 import Foundation
 
 struct Client {
-    
     enum OrderedContentKeys {
         case academics
         case services
     }
 
-    static func getOrderedContent(type: OrderedContentKeys, completion: (OrderedContent) -> ()) {
+    static func getOrderedContent(type: OrderedContentKeys, completion: (OrderedContent) -> Void) {
         if let path = Bundle.main.path(forResource: "ordered_content", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
@@ -30,11 +29,9 @@ struct Client {
             } catch {
                 print("error getting local file")
             }
-            
         }
     }
-    
-    static func getNewsFeeds(completion: @escaping ([NewsSource])->()) {
+    static func getNewsFeeds(completion: @escaping ([NewsSource]) -> Void) {
         if let path = Bundle.main.path(forResource: "news", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)

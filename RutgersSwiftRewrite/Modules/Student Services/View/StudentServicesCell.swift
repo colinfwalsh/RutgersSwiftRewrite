@@ -11,5 +11,4 @@ import UIKit
 class StudentServicesCell: UICollectionViewCell {
     @IBOutlet weak var servicesTitle: UILabel!
     @IBOutlet weak var auxView: UIView!
-    
 }

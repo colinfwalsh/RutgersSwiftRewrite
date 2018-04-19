@@ -8,9 +8,6 @@
 
 import Foundation
 
-
-
-
 protocol OrderedContent {
     //Should do something
 }
@@ -22,7 +19,6 @@ struct AcademicContent: Codable, OrderedContent {
 struct ServicesContent: Codable, OrderedContent {
     let servicesContent: [OrderedContentItem]
 }
-
 
 struct OrderedContentItem: Codable {
     let handle: String?
@@ -45,7 +41,6 @@ extension OrderedContentItem {
         self.api = try container.decodeIfPresent(String.self, forKey: .api)
         self.url = try container.decodeIfPresent(String.self, forKey: .url)
         self.title = try container.decodeIfPresent(Title.self, forKey: .title)
-        
     }
 }
 
@@ -53,7 +48,6 @@ enum Title: Codable {
 
     case string(String)
     case object(MultiTitle)
-    
     var text: String {
         switch self {
         case .string(let title):
@@ -62,7 +56,6 @@ enum Title: Codable {
             return multi.homeTitle
         }
     }
-    
     init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         do {
@@ -71,17 +64,12 @@ enum Title: Codable {
            self = try .object(container.decode(MultiTitle.self))
         }
     }
-    
     func encode(to encoder: Encoder) throws {
-        
     }
 }
-
 
 struct MultiTitle: Codable {
     let homeCampus: String
     let homeTitle: String
     let foreignTitle: String
 }
-
-

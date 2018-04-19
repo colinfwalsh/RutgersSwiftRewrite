@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol AnimationProtocol {
-    func animateWith(duration: Double, view: UIView) 
+    func animateWith(duration: Double, view: UIView)
 }
 
 extension AnimationProtocol {
@@ -18,7 +18,6 @@ extension AnimationProtocol {
         UIView.animate(withDuration: duration, animations: {
             view.alpha = 1
         })
-        
         UIView.animate(withDuration: duration, animations: {
             view.alpha = 0.55
         })

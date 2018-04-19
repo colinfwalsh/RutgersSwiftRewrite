@@ -9,7 +9,7 @@
 import Foundation
 
 struct NewsClient {
-    static func getNewsFeeds(completion: @escaping ([NewsSource])->()) {
+    static func getNewsFeeds(completion: @escaping ([NewsSource]) -> Void) {
         if let path = Bundle.main.path(forResource: "news", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)

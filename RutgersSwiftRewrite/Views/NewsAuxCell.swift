@@ -11,9 +11,7 @@ import UIKit
 class NewsAuxCell: UITableViewCell {
     @IBOutlet weak var articleLabel: UILabel!
     @IBOutlet weak var auxLabel: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 }

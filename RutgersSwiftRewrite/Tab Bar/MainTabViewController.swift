@@ -14,11 +14,8 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
         self.delegate = self
     }
-    
-    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        
+    func tabBarController(_ tabBarController: UITabBarController,
+                          shouldSelect viewController: UIViewController) -> Bool {
         return true
     }
-    
-    
 }

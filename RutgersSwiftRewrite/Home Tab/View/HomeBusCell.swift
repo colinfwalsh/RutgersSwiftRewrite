@@ -11,6 +11,5 @@ import UIKit
 class HomeBusCell: UICollectionViewCell {
     func setUpCell(cellWidth: CGFloat) {
         self.frame.size = CGSize(width: cellWidth, height: 100)
-        
     }
 }

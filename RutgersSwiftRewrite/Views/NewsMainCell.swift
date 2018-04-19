@@ -13,10 +13,7 @@ class NewsMainCell: UITableViewCell {
     @IBOutlet weak var articleDisplay: UIView!
     @IBOutlet weak var articleTitle: UILabel!
     @IBOutlet weak var articleImage: UIImageView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
 }
