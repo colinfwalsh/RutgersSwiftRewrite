@@ -16,6 +16,7 @@ class WebViewController: UIViewController {
     @IBOutlet weak var refreshButton: UIButton!
     @IBOutlet weak var forwardButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
+    var obs: NSKeyValueObservation?
     var serviceURL = "https://google.com"
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +31,20 @@ class WebViewController: UIViewController {
         forwardButton.setBackgroundImage(#imageLiteral(resourceName: "forwardCarret"), for: .normal)
         refreshButton.setBackgroundImage(#imageLiteral(resourceName: "refresh"), for: .normal)
         shareButton.setBackgroundImage(#imageLiteral(resourceName: "share"), for: .normal)
-        webView.addObserver(self, forKeyPath: "estimatedProgress",
-                            options: NSKeyValueObservingOptions.new,
-                            context: nil)
+        self.obs = webView.observe(\.estimatedProgress, options: [.new]) {(webView, _) in
+            self.progBar.alpha = 1.0
+            self.progBar.setProgress(Float(webView.estimatedProgress), animated: true)
+            if webView.estimatedProgress >= 1.0 {
+                UIView.animate(withDuration: 0.3,
+                               delay: 0.1,
+                               options: UIViewAnimationOptions.curveEaseInOut,
+                               animations: { () -> Void in
+                                self.progBar.alpha = 0.0
+                }, completion: { _ in
+                    self.progBar.progress = 0
+                })
+            }
+        }
         let url = URL(string: serviceURL)!
         let urlRequest = URLRequest(url: url)
         webView.load(urlRequest)
@@ -54,26 +66,6 @@ class WebViewController: UIViewController {
         webView.load(urlRequest)
     }
     @IBAction func share(_ sender: Any) {
-    }
-    //Block based KVO
-    override func observeValue(forKeyPath keyPath: String?,
-                               of object: Any?,
-                               change: [NSKeyValueChangeKey: Any]?,
-                               context: UnsafeMutableRawPointer?) {
-        if keyPath == "estimatedProgress" {
-            self.progBar.alpha = 1.0
-            progBar.setProgress(Float(webView.estimatedProgress), animated: true)
-            if self.webView.estimatedProgress >= 1.0 {
-                UIView.animate(withDuration: 0.3,
-                               delay: 0.1,
-                               options: UIViewAnimationOptions.curveEaseInOut,
-                               animations: { () -> Void in
-                    self.progBar.alpha = 0.0
-                }, completion: { _ in
-                    self.progBar.progress = 0
-                })
-            }
-        }
     }
     override func viewWillAppear(_ animated: Bool) {
         tabBarController?.tabBar.isHidden = true

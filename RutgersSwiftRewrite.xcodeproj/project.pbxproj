@@ -317,13 +317,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		C91CE29F2086987B002604B8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		C91CE2A020869884002604B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,7 +459,6 @@
 			children = (
 				C91CE2A120869889002604B8 /* Controller */,
 				C91CE2A020869884002604B8 /* View */,
-				C91CE29F2086987B002604B8 /* Model */,
 			);
 			path = Academics;
 			sourceTree = "<group>";
