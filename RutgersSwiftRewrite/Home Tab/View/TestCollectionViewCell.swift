@@ -12,7 +12,6 @@ class TestCollectionViewCell: UICollectionViewCell {
     func setUpCell() {
         self.backgroundColor = .gray
         self.layer.cornerRadius = 10
-        
         self.contentView.layer.shadowColor = UIColor.gray.cgColor
         self.contentView.layer.shadowOffset = CGSize(width: 0, height: 2.0)
         self.contentView.layer.shadowRadius = 1.0
