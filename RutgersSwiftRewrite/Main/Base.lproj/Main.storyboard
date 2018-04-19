@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Tab View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="NWp-qP-RSh">
             <objects>
-                <tabBarController id="gch-cz-jg8" customClass="MainTabViewController" customModule="RutgersSwiftRewrite" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="gch-cz-jg8" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3BY-BW-t1p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -194,25 +194,25 @@
                                 <rect key="frame" x="0.0" y="574" width="375" height="44"/>
                                 <items>
                                     <barButtonItem width="4" style="plain" systemItem="fixedSpace" id="bpI-As-Vcz"/>
-                                    <barButtonItem title="Item" image="backCarret" id="AQW-n4-lQk">
+                                    <barButtonItem image="backCarret" id="AQW-n4-lQk">
                                         <connections>
                                             <action selector="back:" destination="BSl-69-5y4" id="WFM-Vl-OWe"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="fixedSpace" id="WSO-Ky-NiZ"/>
-                                    <barButtonItem title="Item" image="forwardCarret" id="9f8-HA-BLe">
+                                    <barButtonItem image="forwardCarret" id="9f8-HA-BLe">
                                         <connections>
                                             <action selector="forward:" destination="BSl-69-5y4" id="knL-hM-Agt"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="JeK-ci-4Ud"/>
-                                    <barButtonItem title="Item" image="refresh" id="tLN-nN-boQ">
+                                    <barButtonItem image="refresh" id="tLN-nN-boQ">
                                         <connections>
                                             <action selector="refresh:" destination="BSl-69-5y4" id="BLI-93-MXX"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem width="7" style="plain" systemItem="fixedSpace" id="88M-Lc-8cu"/>
-                                    <barButtonItem title="Item" image="share" id="oyB-NY-Q6C">
+                                    <barButtonItem image="share" id="oyB-NY-Q6C">
                                         <connections>
                                             <action selector="share:" destination="BSl-69-5y4" id="aaF-sd-fI0"/>
                                         </connections>
@@ -226,7 +226,6 @@
                             <constraint firstItem="CXl-I2-hQx" firstAttribute="bottom" secondItem="feF-mu-pUN" secondAttribute="bottom" id="Fwd-d5-1vU"/>
                             <constraint firstItem="sW4-XD-0Fa" firstAttribute="leading" secondItem="wOB-4e-bV4" secondAttribute="leading" id="WXa-IK-Lh8"/>
                             <constraint firstItem="CXl-I2-hQx" firstAttribute="leading" secondItem="feF-mu-pUN" secondAttribute="leading" id="hAS-5V-49i"/>
-                            <constraint firstItem="CXl-I2-hQx" firstAttribute="centerX" secondItem="feF-mu-pUN" secondAttribute="centerX" id="i53-1L-eJS"/>
                             <constraint firstAttribute="trailing" secondItem="sW4-XD-0Fa" secondAttribute="trailing" id="jJi-yW-sGH"/>
                             <constraint firstItem="sW4-XD-0Fa" firstAttribute="top" secondItem="feF-mu-pUN" secondAttribute="top" id="nko-Lt-iJY"/>
                             <constraint firstItem="W1K-of-3VV" firstAttribute="leading" secondItem="feF-mu-pUN" secondAttribute="leading" id="o0E-jG-JUz"/>

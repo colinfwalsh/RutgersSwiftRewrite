@@ -30,6 +30,7 @@ class NewsViewController: UIViewController {
         newsPickerView.frame = CGRect(x: -150, y: titleLabel.frame.maxY + 10, width: view.frame.width + 300, height: 40)
         tableView.delegate = self
         tableView.dataSource = self
+        /*
         self.view.addConstraint(
             NSLayoutConstraint(item: tableView,
                                attribute: .top,
@@ -38,6 +39,7 @@ class NewsViewController: UIViewController {
                                attribute: .bottom,
                                multiplier: 1.0,
                                constant: newsPickerView.frame.height + 15))
+ */
         tableView.separatorColor = .white
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 150

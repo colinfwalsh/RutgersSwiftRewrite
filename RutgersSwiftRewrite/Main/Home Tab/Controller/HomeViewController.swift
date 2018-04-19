@@ -24,8 +24,6 @@ class HomeViewController: UIViewController, AnimationProtocol {
         logoImageView.contentMode = .scaleAspectFit
         let imageItem = UIBarButtonItem.init(customView: logoImageView)
         let widthConstraint = logoImageView.widthAnchor.constraint(equalToConstant: 125)
-        let heightConstraint = logoImageView.heightAnchor.constraint(equalToConstant: 52)
-        heightConstraint.isActive = true
         widthConstraint.isActive = true
         navigationItem.leftBarButtonItem = imageItem
     }

@@ -22,6 +22,7 @@ class NewsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    //This should possibly be somewhere else
     func layoutCell() {
         self.backgroundColor = UIColor(red: 248, green: 248, blue: 248, alpha: 1)
         self.contentView.layer.cornerRadius = 10
@@ -40,10 +41,13 @@ class NewsTableViewCell: UITableViewCell {
         self.contentView.layer.shadowRadius = 1.0
         self.contentView.layer.shadowOpacity = 2.5
     }
+    //Should not be set here
     override func layoutSubviews() {
         super.layoutSubviews()
+        /*
         contentView.frame = UIEdgeInsetsInsetRect(contentView.frame,
                                                   UIEdgeInsetsMake(16, 16, 16, 16))
+        */
         articleImage.image = #imageLiteral(resourceName: "cut")
     }
 }
