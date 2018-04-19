@@ -9,7 +9,6 @@
 import UIKit
 
 class HomeViewController: UIViewController, AnimationProtocol {
-    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,10 +47,13 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
-        let cell = self.collectionView.cellForItem(at: indexPath) as? HomeCell
+//        let cell = self.collectionView.cellForItem(at: indexPath) as? HomeCell
+        /*
         if let cell = cell {
             animateWith(duration: 0.4, view: cell.imageView)
         }
+ */
+        print("Tapped cell!")
     }
 }
 
@@ -69,24 +71,25 @@ extension HomeViewController: UICollectionViewDataSource {
     }
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        switch indexPath.section {
-        case 0:
+//        switch indexPath.section {
+//        case 0:
             guard let cell =
                 collectionView.dequeueReusableCell(withReuseIdentifier: "homeViewCell",
                                                    for: indexPath) as? HomeCell else {return UICollectionViewCell()}
             HomeViewController.layoutCell(cell: cell as UICollectionViewCell)
-            cell.title.text = "Title"
+//            cell.title.text = "Title"
             return cell
-        default:
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mapCell",
-                                                                for: indexPath) as? MapCell
-                else {return UICollectionViewCell()}
-            HomeViewController.layoutCell(cell: cell as UICollectionViewCell)
-            cell.mainLabel?.text = "Favorited item - dependent on type of item"
-            return cell
-        }
+//        default:
+//            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mapCell",
+//                                                                for: indexPath) as? MapCell
+//                else {return UICollectionViewCell()}
+//            HomeViewController.layoutCell(cell: cell as UICollectionViewCell)
+//            cell.mainLabel?.text = "Favorited item - dependent on type of item"
+//            return cell
+//        }
     }
     // MARK: Header Implementation
+    /*
     func collectionView(_ collectionView: UICollectionView,
                         viewForSupplementaryElementOfKind kind: String,
                         at indexPath: IndexPath) -> UICollectionReusableView {
@@ -102,7 +105,7 @@ extension HomeViewController: UICollectionViewDataSource {
         default:
             assert(false, "Unexpected element kind")
         }
-    }
+    }*/
     static func layoutCell(cell: UICollectionViewCell) {
         cell.contentView.layer.cornerRadius = 10
         cell.contentView.layer.borderWidth = 1.0
