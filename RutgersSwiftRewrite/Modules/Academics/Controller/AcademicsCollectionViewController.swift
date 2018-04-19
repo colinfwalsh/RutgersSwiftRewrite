@@ -8,9 +8,6 @@
 
 import UIKit
 
-
-
-
 class AcademicsCollectionViewController: UICollectionViewController, AnimationProtocol {
     
     private var academicContent: [OrderedContentItem] = [] {
