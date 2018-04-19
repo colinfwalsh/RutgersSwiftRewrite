@@ -12,10 +12,10 @@ import WebKit
 class WebViewController: UIViewController {
     @IBOutlet weak var progBar: UIProgressView!
     @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var shareButton: UIButton!
-    @IBOutlet weak var refreshButton: UIButton!
-    @IBOutlet weak var forwardButton: UIButton!
-    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var backButton: UIBarButtonItem!
+    @IBOutlet weak var forwardButton: UIBarButtonItem!
+    @IBOutlet weak var shareButton: UIBarButtonItem!
+    @IBOutlet weak var refreshButton: UIBarButtonItem!
     var obs: NSKeyValueObservation?
     var serviceURL = "https://google.com"
     override func viewDidLoad() {
@@ -25,12 +25,6 @@ class WebViewController: UIViewController {
         webView.navigationDelegate = self
         progBar.progress = 0.0
         progBar.tintColor = UIColor.blue
-        backButton.setBackgroundImage(#imageLiteral(resourceName: "backCarretDisabled"), for: .disabled)
-        forwardButton.setBackgroundImage(#imageLiteral(resourceName: "forwardCarretDisabled"), for: .disabled)
-        backButton.setBackgroundImage(#imageLiteral(resourceName: "backCarret"), for: .normal)
-        forwardButton.setBackgroundImage(#imageLiteral(resourceName: "forwardCarret"), for: .normal)
-        refreshButton.setBackgroundImage(#imageLiteral(resourceName: "refresh"), for: .normal)
-        shareButton.setBackgroundImage(#imageLiteral(resourceName: "share"), for: .normal)
         self.obs = webView.observe(\.estimatedProgress, options: [.new]) {(webView, _) in
             self.progBar.alpha = 1.0
             self.progBar.setProgress(Float(webView.estimatedProgress), animated: true)
@@ -45,12 +39,14 @@ class WebViewController: UIViewController {
                 })
             }
         }
-        let url = URL(string: serviceURL)!
+        loadPageWithUrl(urlString: serviceURL)
+    }
+    func loadPageWithUrl(urlString: String) {
+        guard let url = URL(string: urlString) else {return}
         let urlRequest = URLRequest(url: url)
         webView.load(urlRequest)
     }
     @IBAction func back(_ sender: Any) {
-        print("attempting back")
         if webView.canGoBack {
             webView.goBack()
         }
@@ -61,9 +57,7 @@ class WebViewController: UIViewController {
         }
     }
     @IBAction func refresh(_ sender: Any) {
-        let url = URL(string: serviceURL)!
-        let urlRequest = URLRequest(url: url)
-        webView.load(urlRequest)
+        loadPageWithUrl(urlString: serviceURL)
     }
     @IBAction func share(_ sender: Any) {
     }
@@ -72,7 +66,11 @@ class WebViewController: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         tabBarController?.tabBar.isHidden = false
-        webView.removeObserver(self, forKeyPath: "estimatedProgress")
+        // Do not remove observer here!  This is not safe!
+        // webView.removeObserver(self, forKeyPath: "estimatedProgress")
+    }
+    deinit {
+        self.obs?.invalidate()
     }
 }
 

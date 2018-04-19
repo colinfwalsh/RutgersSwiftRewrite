@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "backCarret.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "backCarret.png",
       "scale" : "2x"
     },
     {
