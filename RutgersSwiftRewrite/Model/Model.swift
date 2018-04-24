@@ -8,16 +8,9 @@
 
 import Foundation
 
-protocol OrderedContent {
-    //Should do something
-}
-
-struct AcademicContent: Codable, OrderedContent {
-    let academicContent: [OrderedContentItem]
-}
-
-struct ServicesContent: Codable, OrderedContent {
-    let servicesContent: [OrderedContentItem]
+struct OrderedContent: Codable {
+    let modules: [OrderedContentItem]?
+    let links: [OrderedContentItem]?
 }
 
 struct OrderedContentItem: Codable {
@@ -33,7 +26,7 @@ struct OrderedContentItem: Codable {
 extension OrderedContentItem {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-
+        
         self.handle = try container.decodeIfPresent(String.self, forKey: .handle)
         self.icon = try container.decodeIfPresent(String.self, forKey: .icon)
         self.grouped = try container.decodeIfPresent(Bool.self, forKey: .grouped)
