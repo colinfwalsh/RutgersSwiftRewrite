@@ -21,13 +21,9 @@
 		AF119884202E3499008DF7E0 /* ordered_content.json in Resources */ = {isa = PBXBuildFile; fileRef = AF119883202E3499008DF7E0 /* ordered_content.json */; };
 		AF5547D6208938C800278AFB /* NewsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5547D5208938C800278AFB /* NewsStoryboard.storyboard */; };
 		AF6807652024CC74000B421E /* AnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6807642024CC74000B421E /* AnimationProtocol.swift */; };
-		AF82EDF7202252C0005916BD /* AcademicsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */; };
 		AF82EDF9202252D7005916BD /* LocationCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */; };
-		AF82EDFB202252E6005916BD /* ServicesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */; };
 		AFA296FD2088F76500F0B84C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA296FC2088F76500F0B84C /* SettingsViewController.swift */; };
-		AFB5CFDF20236D420002AB7A /* AcademicsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5CFDE20236D420002AB7A /* AcademicsCell.swift */; };
 		AFB5CFE12023B2DB0002AB7A /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5CFE02023B2DB0002AB7A /* MapCell.swift */; };
-		AFB5CFE92023D5460002AB7A /* StudentServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */; };
 		AFF94E36201F7191001A15BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E35201F7191001A15BD /* AppDelegate.swift */; };
 		AFF94E3B201F7191001A15BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF94E39201F7191001A15BD /* Main.storyboard */; };
 		AFF94E3D201F7191001A15BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFF94E3C201F7191001A15BD /* Assets.xcassets */; };
@@ -38,6 +34,7 @@
 		AFF94E69201FC3D5001A15BD /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E68201FC3D5001A15BD /* HomeCell.swift */; };
 		C91CE29120869351002604B8 /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91CE29020869351002604B8 /* ModulesViewController.swift */; };
 		C9212DD420780DCF007DB663 /* NewsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9212DD320780DCF007DB663 /* NewsClient.swift */; };
+		C95B1F0C208FABFD004B6D50 /* ModuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B1F0B208FABFD004B6D50 /* ModuleCell.swift */; };
 		C97A101A2051C9A1009F1C6D /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = C97A10192051C9A0009F1C6D /* news.json */; };
 		C97A101C2051D1F4009F1C6D /* NewsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A101B2051D1F4009F1C6D /* NewsModels.swift */; };
 		C97A101E2051E7DB009F1C6D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A101D2051E7DA009F1C6D /* NewsViewController.swift */; };
@@ -82,13 +79,9 @@
 		AF119883202E3499008DF7E0 /* ordered_content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ordered_content.json; path = RutgersSwiftRewrite/ordered_content.json; sourceTree = SOURCE_ROOT; };
 		AF5547D5208938C800278AFB /* NewsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewsStoryboard.storyboard; sourceTree = "<group>"; };
 		AF6807642024CC74000B421E /* AnimationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProtocol.swift; sourceTree = "<group>"; };
-		AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicsCollectionViewController.swift; sourceTree = "<group>"; };
 		AF82EDF8202252D7005916BD /* LocationCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionViewController.swift; sourceTree = "<group>"; };
-		AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewController.swift; sourceTree = "<group>"; };
 		AFA296FC2088F76500F0B84C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		AFB5CFDE20236D420002AB7A /* AcademicsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicsCell.swift; sourceTree = "<group>"; };
 		AFB5CFE02023B2DB0002AB7A /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
-		AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentServicesCell.swift; sourceTree = "<group>"; };
 		AFF94E32201F7191001A15BD /* RutgersSwiftRewrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RutgersSwiftRewrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF94E35201F7191001A15BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFF94E3A201F7191001A15BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,6 +98,7 @@
 		AFF94E68201FC3D5001A15BD /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		C91CE29020869351002604B8 /* ModulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesViewController.swift; sourceTree = "<group>"; };
 		C9212DD320780DCF007DB663 /* NewsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsClient.swift; sourceTree = "<group>"; };
+		C95B1F0B208FABFD004B6D50 /* ModuleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCell.swift; sourceTree = "<group>"; };
 		C97A10192051C9A0009F1C6D /* news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news.json; sourceTree = SOURCE_ROOT; };
 		C97A101B2051D1F4009F1C6D /* NewsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModels.swift; sourceTree = "<group>"; };
 		C97A101D2051E7DA009F1C6D /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -263,6 +257,7 @@
 		C91CE287208682A0002604B8 /* Modules Tab */ = {
 			isa = PBXGroup;
 			children = (
+				C95B1F0A208FABD2004B6D50 /* View */,
 				C91CE28F20869326002604B8 /* Controller */,
 			);
 			path = "Modules Tab";
@@ -284,38 +279,6 @@
 			path = "Settings Tab";
 			sourceTree = "<group>";
 		};
-		C91CE29B208697D4002604B8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C91CE29C208697DB002604B8 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				AF82EDFA202252E6005916BD /* ServicesCollectionViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C91CE2A020869884002604B8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				AFB5CFDE20236D420002AB7A /* AcademicsCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C91CE2A120869889002604B8 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				AF82EDF6202252C0005916BD /* AcademicsCollectionViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		C91CE2A5208698F2002604B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,8 +298,6 @@
 		C91CE2AA20869A1F002604B8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				C9212DDD20780F4C007DB663 /* Academics */,
-				C9212DDE20780F5F007DB663 /* Student Services */,
 				C9212DDB20780F3E007DB663 /* Location */,
 				C9212DE020781067007DB663 /* SOC */,
 				C9212DDC20780F44007DB663 /* Food */,
@@ -427,24 +388,6 @@
 			path = Food;
 			sourceTree = "<group>";
 		};
-		C9212DDD20780F4C007DB663 /* Academics */ = {
-			isa = PBXGroup;
-			children = (
-				C91CE2A120869889002604B8 /* Controller */,
-				C91CE2A020869884002604B8 /* View */,
-			);
-			path = Academics;
-			sourceTree = "<group>";
-		};
-		C9212DDE20780F5F007DB663 /* Student Services */ = {
-			isa = PBXGroup;
-			children = (
-				C91CE29C208697DB002604B8 /* Controller */,
-				C91CE29B208697D4002604B8 /* View */,
-			);
-			path = "Student Services";
-			sourceTree = "<group>";
-		};
 		C9212DDF20780FC5007DB663 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,6 +411,14 @@
 				74EA99E6203F77DF00FA23F1 /* FeedBackViewController.swift */,
 			);
 			path = "Extra View Controllers";
+			sourceTree = "<group>";
+		};
+		C95B1F0A208FABD2004B6D50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C95B1F0B208FABFD004B6D50 /* ModuleCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -778,12 +729,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C97A101C2051D1F4009F1C6D /* NewsModels.swift in Sources */,
-				AF82EDFB202252E6005916BD /* ServicesCollectionViewController.swift in Sources */,
 				AFF94E36201F7191001A15BD /* AppDelegate.swift in Sources */,
 				AFF94E67201FB8D7001A15BD /* HomeViewController.swift in Sources */,
 				74EA99E5203F6EF800FA23F1 /* DTableViewController.swift in Sources */,
 				C91CE29120869351002604B8 /* ModulesViewController.swift in Sources */,
-				AFB5CFE92023D5460002AB7A /* StudentServicesCell.swift in Sources */,
 				C9212DD420780DCF007DB663 /* NewsClient.swift in Sources */,
 				AF82EDF9202252D7005916BD /* LocationCollectionViewController.swift in Sources */,
 				C9D97E59207FE9D700244C2A /* HomeCampusCell.swift in Sources */,
@@ -794,13 +743,12 @@
 				74F57BD02033523F008D6C4F /* Model.swift in Sources */,
 				AFF94E69201FC3D5001A15BD /* HomeCell.swift in Sources */,
 				AF6807652024CC74000B421E /* AnimationProtocol.swift in Sources */,
-				AF82EDF7202252C0005916BD /* AcademicsCollectionViewController.swift in Sources */,
 				C97A101E2051E7DB009F1C6D /* NewsViewController.swift in Sources */,
 				74F57BD220336C8C008D6C4F /* Client.swift in Sources */,
 				74EA99DF203F6B0000FA23F1 /* FoodViewController.swift in Sources */,
 				74EA99E1203F6B2300FA23F1 /* SOCViewController.swift in Sources */,
-				AFB5CFDF20236D420002AB7A /* AcademicsCell.swift in Sources */,
 				AFA296FD2088F76500F0B84C /* SettingsViewController.swift in Sources */,
+				C95B1F0C208FABFD004B6D50 /* ModuleCell.swift in Sources */,
 				C97A10202051E94D009F1C6D /* NewsTableViewCell.swift in Sources */,
 				748F7591202B961200EFAA56 /* WebViewController.swift in Sources */,
 			);
