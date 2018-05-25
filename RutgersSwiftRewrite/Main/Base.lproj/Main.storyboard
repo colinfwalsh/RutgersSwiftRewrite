@@ -27,7 +27,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rya-U0-Tzw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="255" y="2239"/>
+            <point key="canvasLocation" x="-1102" y="2245"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="sd2-yJ-l9W">
@@ -86,14 +86,101 @@
                     <view key="view" contentMode="scaleToFill" id="ROb-N4-K0Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pSV-vC-qg8">
+                                <rect key="frame" x="0.0" y="99" width="375" height="519"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4ym-te-4cy">
+                                    <size key="itemSize" width="135" height="110"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="moduleCell" id="Fzc-Dr-681" customClass="ModuleCell" customModule="RutgersSwiftRewrite" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="135" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wou-bZ-pS6">
+                                                    <rect key="frame" x="46" y="69" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQi-NF-wjP">
+                                                    <rect key="frame" x="35" y="9" width="65" height="55"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="moduleIcon" destination="eQi-NF-wjP" id="6Wc-4F-BtO"/>
+                                            <outlet property="moduleLabel" destination="Wou-bZ-pS6" id="FJD-lm-a7Z"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8W1-nU-mBT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="USn-4S-NzE"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="58I-Ri-WrI">
+                                    <size key="itemSize" width="118" height="25"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="jSY-DE-hg8" userLabel="categoryCell" customClass="CategoryCell" customModule="RutgersSwiftRewrite" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="118" height="25"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fi2-cK-VEK">
+                                                    <rect key="frame" x="38" y="2" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="categoryLabel" destination="fi2-cK-VEK" id="R4W-Un-8Eo"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pSV-vC-qg8" firstAttribute="leading" secondItem="TOC-Vw-hug" secondAttribute="leading" id="LDc-4H-POd"/>
+                            <constraint firstItem="TOC-Vw-hug" firstAttribute="bottom" secondItem="pSV-vC-qg8" secondAttribute="bottom" id="QzA-0v-jhN"/>
+                            <constraint firstItem="8W1-nU-mBT" firstAttribute="top" secondItem="TOC-Vw-hug" secondAttribute="top" id="Spr-CR-AZg"/>
+                            <constraint firstItem="pSV-vC-qg8" firstAttribute="top" secondItem="8W1-nU-mBT" secondAttribute="bottom" constant="10" id="ZXG-kb-ItF"/>
+                            <constraint firstItem="8W1-nU-mBT" firstAttribute="trailing" secondItem="TOC-Vw-hug" secondAttribute="trailing" id="Zoh-iQ-x2k"/>
+                            <constraint firstItem="TOC-Vw-hug" firstAttribute="trailing" secondItem="pSV-vC-qg8" secondAttribute="trailing" id="fip-0a-U8Z"/>
+                            <constraint firstItem="8W1-nU-mBT" firstAttribute="leading" secondItem="TOC-Vw-hug" secondAttribute="leading" id="qhl-Ee-eaG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TOC-Vw-hug"/>
                     </view>
                     <navigationItem key="navigationItem" id="E9F-Cr-ACn"/>
+                    <connections>
+                        <outlet property="categoryCollectionView" destination="8W1-nU-mBT" id="Fgc-lZ-1V6"/>
+                        <outlet property="modulesCollectionView" destination="pSV-vC-qg8" id="Pug-aB-vdX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2op-mG-wVx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="255" y="3740"/>
+            <point key="canvasLocation" x="252" y="3738.9805097451276"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="TeS-X0-JSs">
@@ -221,7 +308,8 @@
                                 </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" red="0.80107825990000003" green="0.0040147025139999999" blue="0.201716274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.42570029149999999" green="0.42570029149999999" blue="0.42570029149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CXl-I2-hQx" firstAttribute="bottom" secondItem="feF-mu-pUN" secondAttribute="bottom" id="Fwd-d5-1vU"/>
                             <constraint firstItem="sW4-XD-0Fa" firstAttribute="leading" secondItem="wOB-4e-bV4" secondAttribute="leading" id="WXa-IK-Lh8"/>

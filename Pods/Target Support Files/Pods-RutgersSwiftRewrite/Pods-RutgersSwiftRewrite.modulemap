@@ -1,6 +1,0 @@
-framework module Pods_RutgersSwiftRewrite {
-  umbrella header "Pods-RutgersSwiftRewrite-umbrella.h"
-
-  export *
-  module * { export * }
-}
