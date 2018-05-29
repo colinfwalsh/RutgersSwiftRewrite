@@ -9,11 +9,21 @@
 import Foundation
 import UIKit
 
-class HomeBusCellDataSource: NSObject, UITableViewDataSource {
+class HomeBusCellDataSource <T: UICollectionViewDataSource & UICollectionViewDelegate>: NSObject, UITableViewDataSource {
+    
+    let dataSource: T
+    
+    init (_ dataSource: T) {
+        self.dataSource = dataSource
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell =
             tableView.dequeueReusableCell(withIdentifier: "savedStopCell")
                 as? SavedStopCell
+        cell?.collectionView.register(UINib(nibName: "RouteCell", bundle: nil), forCellWithReuseIdentifier: "routeCell")
+        cell?.collectionView.delegate = dataSource
+        cell?.collectionView.dataSource = dataSource
         return cell!
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

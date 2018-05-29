@@ -9,8 +9,8 @@
 import UIKit
 
 class HomeViewController: UIViewController, AnimationProtocol {
-    let datasource = HomeBusCellDataSource()
-    
+    let datasource = HomeBusCellDataSource(RouteCollectionViewDataSource())
+
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
