@@ -58,9 +58,12 @@ extension HomeViewController: UICollectionViewDataSource {
             collectionView.dequeueReusableCell(withReuseIdentifier: "homeBusCell",
                                                for: indexPath) as? HomeBusCell
             else {return UICollectionViewCell()}
-        HomeBusCell.setupCell(cell)
+//        HomeBusCell.setupCell(cell)
+        cell.tableView.register(UINib(nibName: "SavedStopCell", bundle: nil), forCellReuseIdentifier: "savedStopCell")
+        cell.tableView.isScrollEnabled = false
         cell.tableView.delegate = self
         cell.tableView.dataSource = datasource
+        
         LayoutViewManager.layoutCell(cell: cell as UICollectionViewCell)
         return cell
     }
