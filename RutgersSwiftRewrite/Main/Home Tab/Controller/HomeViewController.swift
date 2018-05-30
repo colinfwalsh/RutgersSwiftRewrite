@@ -9,7 +9,10 @@
 import UIKit
 
 class HomeViewController: UIViewController, AnimationProtocol {
-    let datasource = HomeBusCellDataSource(RouteCollectionViewDataSource())
+    let busStopDataSources = HomeBusCellDataSource<RouteCollectionViewDataSource>()
+    let routeDataSource1 = RouteCollectionViewDataSource()
+    let routeDataSource2 = RouteCollectionViewDataSource()
+    let routeDataSource3 = RouteCollectionViewDataSource()
 
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
@@ -18,6 +21,9 @@ class HomeViewController: UIViewController, AnimationProtocol {
         collectionView.dataSource = self
         LayoutViewManager.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
         self.setupXibs()
+        busStopDataSources.add(dataSource: routeDataSource1, stop: "Hill Center")
+        busStopDataSources.add(dataSource: routeDataSource2, stop: "College Ave Student Center")
+        busStopDataSources.add(dataSource: routeDataSource3, stop: "Busch Student Center")
     }
 }
 extension HomeViewController: UICollectionViewDelegate {
@@ -29,7 +35,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         let size = indexPath.section == 0 ?
             CGSize(width: self.collectionView.frame.width * 0.85,
-                   height: self.collectionView.frame.height/5) :
+                   height: (self.collectionView.frame.height/5) * CGFloat(self.busStopDataSources.stopDatasources.count)) :
             CGSize(width: collectionView.frame.width * 0.85,
                    height: collectionView.frame.height/13)
         return size
@@ -46,10 +52,10 @@ extension HomeViewController: UICollectionViewDataSource {
         return CGSize(width: collectionView.frame.width, height: 50)
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -61,8 +67,8 @@ extension HomeViewController: UICollectionViewDataSource {
 //        HomeBusCell.setupCell(cell)
         cell.tableView.register(UINib(nibName: "SavedStopCell", bundle: nil), forCellReuseIdentifier: "savedStopCell")
         cell.tableView.isScrollEnabled = false
-        cell.tableView.delegate = self
-        cell.tableView.dataSource = datasource
+        cell.tableView.delegate = self.busStopDataSources as? UITableViewDelegate
+        cell.tableView.dataSource = self.busStopDataSources
         
         LayoutViewManager.layoutCell(cell: cell as UICollectionViewCell)
         return cell
@@ -72,6 +78,7 @@ extension HomeViewController: UICollectionViewDataSource {
                                      forCellWithReuseIdentifier: "homeBusCell")
     }
 }
+/*
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell =
@@ -86,7 +93,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         return 1
     }
 }
-
+*/
 class HomeHeaderView: UICollectionReusableView {
     @IBOutlet weak var label: UILabel!
 }

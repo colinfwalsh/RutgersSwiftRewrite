@@ -21,13 +21,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buses @ Hill Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfC-pn-9oy">
-                        <rect key="frame" x="30" y="21" width="212" height="30"/>
+                        <rect key="frame" x="20" y="11" width="212" height="30"/>
                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="SzY-vM-C4O">
-                        <rect key="frame" x="0.0" y="56" width="452" height="124.5"/>
+                        <rect key="frame" x="10" y="51" width="432" height="124.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pxL-hV-TlJ">
                             <size key="itemSize" width="50" height="50"/>
@@ -38,17 +38,18 @@
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="SzY-vM-C4O" secondAttribute="bottom" id="0QM-TL-aLP"/>
-                    <constraint firstItem="BfC-pn-9oy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="KCZ-GG-azc"/>
-                    <constraint firstItem="SzY-vM-C4O" firstAttribute="top" secondItem="BfC-pn-9oy" secondAttribute="bottom" constant="5" id="Kkx-sT-0lm"/>
-                    <constraint firstItem="SzY-vM-C4O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SKC-1y-Xjd"/>
-                    <constraint firstAttribute="trailing" secondItem="SzY-vM-C4O" secondAttribute="trailing" id="Wfe-KI-4uE"/>
-                    <constraint firstItem="BfC-pn-9oy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="flj-Ts-7B6"/>
+                    <constraint firstAttribute="bottom" secondItem="SzY-vM-C4O" secondAttribute="bottom" constant="5" id="0QM-TL-aLP"/>
+                    <constraint firstItem="BfC-pn-9oy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="KCZ-GG-azc"/>
+                    <constraint firstItem="SzY-vM-C4O" firstAttribute="top" secondItem="BfC-pn-9oy" secondAttribute="bottom" constant="10" id="Kkx-sT-0lm"/>
+                    <constraint firstItem="SzY-vM-C4O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="SKC-1y-Xjd"/>
+                    <constraint firstAttribute="trailing" secondItem="SzY-vM-C4O" secondAttribute="trailing" constant="10" id="Wfe-KI-4uE"/>
+                    <constraint firstItem="BfC-pn-9oy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="flj-Ts-7B6"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="collectionView" destination="SzY-vM-C4O" id="b8b-2n-ShJ"/>
+                <outlet property="stopTitle" destination="BfC-pn-9oy" id="8Vr-IL-7N2"/>
             </connections>
             <point key="canvasLocation" x="26" y="-57.5"/>
         </tableViewCell>
