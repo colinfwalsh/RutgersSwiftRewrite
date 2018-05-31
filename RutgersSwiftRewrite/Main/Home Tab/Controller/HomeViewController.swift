@@ -13,87 +13,22 @@ class HomeViewController: UIViewController, AnimationProtocol {
     let routeDataSource1 = RouteCollectionViewDataSource()
     let routeDataSource2 = RouteCollectionViewDataSource()
     let routeDataSource3 = RouteCollectionViewDataSource()
-
+    
+    @IBOutlet weak var addItem: UIBarButtonItem!
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        let homeDS = HomeDataSource<String>()
+        collectionView.delegate = homeDS
+        collectionView.dataSource = homeDS
         LayoutViewManager.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
-        self.setupXibs()
         busStopDataSources.add(dataSource: routeDataSource1, stop: "Hill Center")
         busStopDataSources.add(dataSource: routeDataSource2, stop: "College Ave Student Center")
         busStopDataSources.add(dataSource: routeDataSource3, stop: "Busch Student Center")
+        
+        
+        self.collectionView.register(UINib(nibName: "HomeCell", bundle: nil),
+                                     forCellWithReuseIdentifier: "homeCell")
     }
-}
-extension HomeViewController: UICollectionViewDelegate {
 }
 
-extension HomeViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = indexPath.section == 0 ?
-            CGSize(width: self.collectionView.frame.width * 0.85,
-                   height: (self.collectionView.frame.height/5) * CGFloat(self.busStopDataSources.stopDatasources.count)) :
-            CGSize(width: collectionView.frame.width * 0.85,
-                   height: collectionView.frame.height/13)
-        return size
-    }
-    func collectionView(_ collectionView: UICollectionView,
-                        didSelectItemAt indexPath: IndexPath) {
-        print("Tapped cell!")
-    }
-}
-extension HomeViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: 50)
-    }
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
-    }
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        guard let cell =
-            collectionView.dequeueReusableCell(withReuseIdentifier: "homeBusCell",
-                                               for: indexPath) as? HomeBusCell
-            else {return UICollectionViewCell()}
-//        HomeBusCell.setupCell(cell)
-        cell.tableView.register(UINib(nibName: "SavedStopCell", bundle: nil), forCellReuseIdentifier: "savedStopCell")
-        cell.tableView.isScrollEnabled = false
-        cell.tableView.delegate = self.busStopDataSources as? UITableViewDelegate
-        cell.tableView.dataSource = self.busStopDataSources
-        
-        LayoutViewManager.layoutCell(cell: cell as UICollectionViewCell)
-        return cell
-    }
-    func setupXibs() {
-        self.collectionView.register(UINib(nibName: "HomeBusCell", bundle: nil),
-                                     forCellWithReuseIdentifier: "homeBusCell")
-    }
-}
-/*
-extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell =
-            tableView.dequeueReusableCell(withIdentifier: "savedStopCell")
-                as? SavedStopCell
-        return cell!
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.frame.height
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-}
-*/
-class HomeHeaderView: UICollectionReusableView {
-    @IBOutlet weak var label: UILabel!
-}

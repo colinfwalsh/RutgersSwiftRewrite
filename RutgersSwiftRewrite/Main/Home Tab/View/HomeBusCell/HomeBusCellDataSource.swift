@@ -13,6 +13,7 @@ class HomeBusCellDataSource <T: UICollectionViewDataSource & UICollectionViewDel
     
     var stopTitles: [String] = []
     var stopDatasources: [T] = []
+
     //This doesn't need to be generic, but it was mainly to test out generics for future use.  Works as intended
 
     func add (dataSource: T, stop: String) {
@@ -21,10 +22,11 @@ class HomeBusCellDataSource <T: UICollectionViewDataSource & UICollectionViewDel
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         let cell =
             tableView.dequeueReusableCell(withIdentifier: "savedStopCell")
                 as? SavedStopCell
-        cell?.stopTitle.text = "Buses @ " + stopTitles[indexPath.row]
+        cell?.stopTitle.text = "@ " + stopTitles[indexPath.row]
         cell?.collectionView.register(UINib(nibName: "RouteCell", bundle: nil), forCellWithReuseIdentifier: "routeCell")
         cell?.collectionView.delegate = self.stopDatasources[indexPath.row]
         cell?.collectionView.dataSource = self.stopDatasources[indexPath.row]
@@ -38,5 +40,6 @@ class HomeBusCellDataSource <T: UICollectionViewDataSource & UICollectionViewDel
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return stopDatasources.count
     }
+    
 }
 

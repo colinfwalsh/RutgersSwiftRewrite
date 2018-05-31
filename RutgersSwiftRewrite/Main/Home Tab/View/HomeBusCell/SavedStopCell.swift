@@ -9,6 +9,7 @@
 import UIKit
 
 class SavedStopCell: UITableViewCell {
+    
     @IBOutlet weak var stopTitle: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
 }

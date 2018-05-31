@@ -70,8 +70,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EM8-cX-VeR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OPP-fB-fsh"/>
+                    <navigationItem key="navigationItem" id="OPP-fB-fsh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5k8-7C-6fw">
+                            <connections>
+                                <action selector="addTapped:" destination="uDB-se-SPd" id="Tbn-ha-Egq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="addItem" destination="5k8-7C-6fw" id="sGo-yB-BAr"/>
                         <outlet property="collectionView" destination="HdH-mX-G6J" id="CAJ-IF-iV4"/>
                     </connections>
                 </viewController>

@@ -30,7 +30,6 @@ class RouteCollectionViewDataSource: NSObject, UICollectionViewDataSource, UICol
     
     static func initLayout(_ collectionView: UICollectionView)  {
         let flowLayout = UICollectionViewFlowLayout()
-//        flowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width/2-10, height: 190)
 //        flowLayout.sectionInset = UIEdgeInsetsMake(0, 5, 0, 5)
         flowLayout.itemSize = CGSize(width: collectionView.frame.size.width/6, height: collectionView.frame.size.height)
         flowLayout.scrollDirection = UICollectionViewScrollDirection.horizontal
