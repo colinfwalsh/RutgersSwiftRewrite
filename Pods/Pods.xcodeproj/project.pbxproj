@@ -3,74 +3,57 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		144F48FCE18F7F72FD65DC9A7EF5379B /* Pods-RutgersSwiftRewrite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F0BD91967018C4F0CB98E7EB41A046 /* Pods-RutgersSwiftRewrite-dummy.m */; };
-		2466ADA99EB1C64EA6F134BB86240E4B /* Pods-RutgersSwiftRewriteUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B95CC03197F8AF8D07E7DFEFBC7758 /* Pods-RutgersSwiftRewriteUITests-dummy.m */; };
-		383B281F33DC1032CAD03C3350E90E12 /* Pods-RutgersSwiftRewriteTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3148C5F68B6A4A4DB6DADE4EEC39CDF5 /* Pods-RutgersSwiftRewriteTests-dummy.m */; };
+		144F48FCE18F7F72FD65DC9A7EF5379B /* Pods-RutgersSwiftRewrite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2D9F8B130815318EEDB62B5322E437 /* Pods-RutgersSwiftRewrite-dummy.m */; };
+		23135A96FE595E80CCED79BD4885EF0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4F8539503E90A2ADD6C76348B43A3F3D /* Pods-RutgersSwiftRewriteTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72705C07FA19B3B760A718B9ED48119E /* Pods-RutgersSwiftRewriteTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51214FCB91066FF2D5F9DD353BB9D5FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		777B706C8708A50269C89ACE522E38D8 /* Pods-RutgersSwiftRewrite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B12BFEC127DAAC79F60DD0039E105D /* Pods-RutgersSwiftRewrite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A98E5414CF3930BB333950710F80AC0 /* Pods-RutgersSwiftRewriteTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCE277512FE74A145158AB8F947E495E /* Pods-RutgersSwiftRewriteTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9EE6205D3855EF790C24D92754473266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B11ED22207ABAEC797EA95F38700AC57 /* Pods-RutgersSwiftRewriteUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 933DBF06B71EA22288CCBB9D6D703B1A /* Pods-RutgersSwiftRewriteUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA30508E91D994FD62EE4279805BB401 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		777B706C8708A50269C89ACE522E38D8 /* Pods-RutgersSwiftRewrite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7D437560F6142A4458F7C973631F32D /* Pods-RutgersSwiftRewrite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AEC1163F5F917EFBAF29156C86C79D2 /* Pods-RutgersSwiftRewriteUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 926E1EA319BB987C21237CE252707BB7 /* Pods-RutgersSwiftRewriteUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96997682444260DFFE6FA33FEF345BA7 /* Pods-RutgersSwiftRewriteUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9888429780735B16780BDF2DF3769 /* Pods-RutgersSwiftRewriteUITests-dummy.m */; };
+		C11B747A9BE02AA1B04DECEDBF11FC07 /* Pods-RutgersSwiftRewriteTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A55580F5A771C13460EDB45D7638EA8E /* Pods-RutgersSwiftRewriteTests-dummy.m */; };
+		CAF3D58D398AAD0E21DDFEA5236D71BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		6610E7AAE1C45F02E9C5A7122CC26DDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 50909AF80887C816DE48A8BC0F4F9B09;
-			remoteInfo = "Pods-RutgersSwiftRewrite";
-		};
-		D79DC304AED74EA2ACF80BA7FD22FB9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 50909AF80887C816DE48A8BC0F4F9B09;
-			remoteInfo = "Pods-RutgersSwiftRewrite";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		0AD9FDB2469385ED4EC456A8FD0967AE /* Pods-RutgersSwiftRewriteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RutgersSwiftRewriteTests.debug.xcconfig"; sourceTree = "<group>"; };
-		0F08AA684082C3DE63161553747E5870 /* Pods-RutgersSwiftRewrite-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RutgersSwiftRewrite-frameworks.sh"; sourceTree = "<group>"; };
-		13BE127F9710B6DA5A57B5B2BFED96D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1436BC1AC26AB5E8F0FD969F924732AF /* Pods-RutgersSwiftRewrite-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RutgersSwiftRewrite-resources.sh"; sourceTree = "<group>"; };
-		1D2D12A6C918AA05BBA82225EFE771F1 /* Pods-RutgersSwiftRewrite-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RutgersSwiftRewrite-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1D60F0423F0887C467CBC16EF6121842 /* Pods_RutgersSwiftRewriteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RutgersSwiftRewriteUITests.framework; path = "Pods-RutgersSwiftRewriteUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2421C806EDA0548762E429D2C6C93FC5 /* Pods-RutgersSwiftRewriteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RutgersSwiftRewriteUITests.release.xcconfig"; sourceTree = "<group>"; };
-		27E41F89F5B66253CC0DF4E01B27E5CF /* Pods-RutgersSwiftRewriteUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RutgersSwiftRewriteUITests-resources.sh"; sourceTree = "<group>"; };
-		3148C5F68B6A4A4DB6DADE4EEC39CDF5 /* Pods-RutgersSwiftRewriteTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RutgersSwiftRewriteTests-dummy.m"; sourceTree = "<group>"; };
-		42CF45DF7E392C6990E42AE888DCDD59 /* Pods-RutgersSwiftRewriteUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RutgersSwiftRewriteUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		45C7195DF0753664930AD0C56CDDEDF4 /* Pods-RutgersSwiftRewrite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RutgersSwiftRewrite.modulemap"; sourceTree = "<group>"; };
-		4AB8DD65E3A1590E7C37E912EB23D724 /* Pods-RutgersSwiftRewriteUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RutgersSwiftRewriteUITests.modulemap"; sourceTree = "<group>"; };
-		6222DC75743AB332DA48E3ECC008985F /* Pods-RutgersSwiftRewriteTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RutgersSwiftRewriteTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6292AB3C5B5E9A96CFDC2A6EF9FDDD82 /* Pods-RutgersSwiftRewriteTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RutgersSwiftRewriteTests-resources.sh"; sourceTree = "<group>"; };
-		65FBAF349BA6E837B1D8A9522BEDD259 /* Pods-RutgersSwiftRewriteTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RutgersSwiftRewriteTests.modulemap"; sourceTree = "<group>"; };
+		0159C1134BEB6BC18740BDA46CAB9903 /* Pods-RutgersSwiftRewrite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RutgersSwiftRewrite.modulemap"; sourceTree = "<group>"; };
+		0CA0058EA4B7985382584DFBB55F2AA2 /* Pods-RutgersSwiftRewriteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RutgersSwiftRewriteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0FA9888429780735B16780BDF2DF3769 /* Pods-RutgersSwiftRewriteUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RutgersSwiftRewriteUITests-dummy.m"; sourceTree = "<group>"; };
+		1D60F0423F0887C467CBC16EF6121842 /* Pods_RutgersSwiftRewriteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RutgersSwiftRewriteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E00FF77D24F861A8DEA6DBE98452BBF /* Pods-RutgersSwiftRewrite-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RutgersSwiftRewrite-frameworks.sh"; sourceTree = "<group>"; };
+		2C20DDAE2FBC803D4A7669F51FAB8B96 /* Pods-RutgersSwiftRewriteTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RutgersSwiftRewriteTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3AB164439DBBC65E0C76680F874E4E41 /* Pods-RutgersSwiftRewrite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RutgersSwiftRewrite.debug.xcconfig"; sourceTree = "<group>"; };
+		3FE253E250C6BBC11F356CB3A9CDB487 /* Pods-RutgersSwiftRewriteTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RutgersSwiftRewriteTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4C20868AE7136B7D0F299873719C4966 /* Pods-RutgersSwiftRewriteUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RutgersSwiftRewriteUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4DBF80A3A0716FA003D0CCEF4E3899FA /* Pods-RutgersSwiftRewriteUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RutgersSwiftRewriteUITests-resources.sh"; sourceTree = "<group>"; };
+		508C77F245EC9E89AE3BA497189829A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E9FB8C5F947941E3C081DEA01A0394A /* Pods-RutgersSwiftRewrite-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RutgersSwiftRewrite-resources.sh"; sourceTree = "<group>"; };
+		602C3D5E973BC657B0AA320FAAC4CCB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		671320A6DF208B8083A1BE31E73261A2 /* Pods_RutgersSwiftRewrite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RutgersSwiftRewrite.framework; path = "Pods-RutgersSwiftRewrite.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E780F92484FF09A2F99A6951BCFA7D9 /* Pods-RutgersSwiftRewriteUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RutgersSwiftRewriteUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		864C3901C77F0B1E48E74A6E9E08F8CB /* Pods-RutgersSwiftRewriteTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RutgersSwiftRewriteTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		877E1338EE3910FA12DECBB0C6A5BB48 /* Pods-RutgersSwiftRewrite-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RutgersSwiftRewrite-acknowledgements.plist"; sourceTree = "<group>"; };
-		90B12BFEC127DAAC79F60DD0039E105D /* Pods-RutgersSwiftRewrite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RutgersSwiftRewrite-umbrella.h"; sourceTree = "<group>"; };
-		933DBF06B71EA22288CCBB9D6D703B1A /* Pods-RutgersSwiftRewriteUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RutgersSwiftRewriteUITests-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A476DAD1AA0FCDBDC39505D86D346376 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6A0D34629822BB6BCB37FEB859D955E /* Pods-RutgersSwiftRewrite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RutgersSwiftRewrite.release.xcconfig"; sourceTree = "<group>"; };
-		A7F55563F7D0A2E2041D68A2531D16C2 /* Pods-RutgersSwiftRewriteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RutgersSwiftRewriteTests.release.xcconfig"; sourceTree = "<group>"; };
-		B760BF46D1631CB6EE4A168906EFEFE2 /* Pods-RutgersSwiftRewriteTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RutgersSwiftRewriteTests-frameworks.sh"; sourceTree = "<group>"; };
-		BCE277512FE74A145158AB8F947E495E /* Pods-RutgersSwiftRewriteTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RutgersSwiftRewriteTests-umbrella.h"; sourceTree = "<group>"; };
-		BE2C2E527DAB3B4155A61611BC703564 /* Pods-RutgersSwiftRewriteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RutgersSwiftRewriteUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C4461D0AC818A5B0F243121A0A979817 /* Pods_RutgersSwiftRewriteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RutgersSwiftRewriteTests.framework; path = "Pods-RutgersSwiftRewriteTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC367D4C86557642B872AE4630845196 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3F0BD91967018C4F0CB98E7EB41A046 /* Pods-RutgersSwiftRewrite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RutgersSwiftRewrite-dummy.m"; sourceTree = "<group>"; };
-		D8B95CC03197F8AF8D07E7DFEFBC7758 /* Pods-RutgersSwiftRewriteUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RutgersSwiftRewriteUITests-dummy.m"; sourceTree = "<group>"; };
-		EA3ABFA133C4595BDD52B67B7870B8DC /* Pods-RutgersSwiftRewrite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RutgersSwiftRewrite.debug.xcconfig"; sourceTree = "<group>"; };
-		F87E2FD9549CDC0B162F7CDBD63EDA64 /* Pods-RutgersSwiftRewriteUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RutgersSwiftRewriteUITests-frameworks.sh"; sourceTree = "<group>"; };
+		671320A6DF208B8083A1BE31E73261A2 /* Pods_RutgersSwiftRewrite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RutgersSwiftRewrite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		679C1142E385035D7DFBB34A1C778216 /* Pods-RutgersSwiftRewrite-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RutgersSwiftRewrite-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6F9AAD9D5E2ACFB3ADBB9A20E69424D7 /* Pods-RutgersSwiftRewriteTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RutgersSwiftRewriteTests.modulemap"; sourceTree = "<group>"; };
+		72705C07FA19B3B760A718B9ED48119E /* Pods-RutgersSwiftRewriteTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RutgersSwiftRewriteTests-umbrella.h"; sourceTree = "<group>"; };
+		72B1BFA8F66F31E849496ABDAE330905 /* Pods-RutgersSwiftRewrite-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RutgersSwiftRewrite-acknowledgements.plist"; sourceTree = "<group>"; };
+		88B4597E6B9BC97B03260273A0B37AC8 /* Pods-RutgersSwiftRewriteTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RutgersSwiftRewriteTests-frameworks.sh"; sourceTree = "<group>"; };
+		926E1EA319BB987C21237CE252707BB7 /* Pods-RutgersSwiftRewriteUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RutgersSwiftRewriteUITests-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1FBF35D482A58BE227D4FB0AEF6D401 /* Pods-RutgersSwiftRewriteTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RutgersSwiftRewriteTests-resources.sh"; sourceTree = "<group>"; };
+		A55580F5A771C13460EDB45D7638EA8E /* Pods-RutgersSwiftRewriteTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RutgersSwiftRewriteTests-dummy.m"; sourceTree = "<group>"; };
+		AED415AF5999A5D48E36D345D95858F8 /* Pods-RutgersSwiftRewriteUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RutgersSwiftRewriteUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AF2D9F8B130815318EEDB62B5322E437 /* Pods-RutgersSwiftRewrite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RutgersSwiftRewrite-dummy.m"; sourceTree = "<group>"; };
+		B7D437560F6142A4458F7C973631F32D /* Pods-RutgersSwiftRewrite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RutgersSwiftRewrite-umbrella.h"; sourceTree = "<group>"; };
+		C22F31571DCFB884C7ECC2A905C7A11B /* Pods-RutgersSwiftRewriteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RutgersSwiftRewriteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C393F8CB1D1309537FA1E54879256179 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4461D0AC818A5B0F243121A0A979817 /* Pods_RutgersSwiftRewriteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RutgersSwiftRewriteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2529EA6EE2852188D99FA1E3B5B4116 /* Pods-RutgersSwiftRewriteUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RutgersSwiftRewriteUITests.modulemap"; sourceTree = "<group>"; };
+		E9F9635243B9D1066EEA1F5952AB5F24 /* Pods-RutgersSwiftRewriteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RutgersSwiftRewriteTests.release.xcconfig"; sourceTree = "<group>"; };
+		ECEBF366E8EC0C1231FE06F4DDCD9A1F /* Pods-RutgersSwiftRewriteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RutgersSwiftRewriteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5A9B83B2609A575368FCB52477F01A7 /* Pods-RutgersSwiftRewriteUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RutgersSwiftRewriteUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FC0F6BE9E78BBC4CD8BB3E3742F3BB3B /* Pods-RutgersSwiftRewrite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RutgersSwiftRewrite.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,49 +65,84 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D41A3AAAA25D6D62DE75646C7D6F2727 /* Frameworks */ = {
+		92B9D47ED79EBB9968D8630260A5F085 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EE6205D3855EF790C24D92754473266 /* Foundation.framework in Frameworks */,
+				23135A96FE595E80CCED79BD4885EF0C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6236AA79AF55CAE32F7D0E81CE245F4 /* Frameworks */ = {
+		D340F94B1958F4998B2E97D2BE03436C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA30508E91D994FD62EE4279805BB401 /* Foundation.framework in Frameworks */,
+				CAF3D58D398AAD0E21DDFEA5236D71BE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06D79F80D9D31C65A09409C73292B7A5 /* Pods-RutgersSwiftRewriteTests */ = {
+			isa = PBXGroup;
+			children = (
+				C393F8CB1D1309537FA1E54879256179 /* Info.plist */,
+				6F9AAD9D5E2ACFB3ADBB9A20E69424D7 /* Pods-RutgersSwiftRewriteTests.modulemap */,
+				2C20DDAE2FBC803D4A7669F51FAB8B96 /* Pods-RutgersSwiftRewriteTests-acknowledgements.markdown */,
+				3FE253E250C6BBC11F356CB3A9CDB487 /* Pods-RutgersSwiftRewriteTests-acknowledgements.plist */,
+				A55580F5A771C13460EDB45D7638EA8E /* Pods-RutgersSwiftRewriteTests-dummy.m */,
+				88B4597E6B9BC97B03260273A0B37AC8 /* Pods-RutgersSwiftRewriteTests-frameworks.sh */,
+				A1FBF35D482A58BE227D4FB0AEF6D401 /* Pods-RutgersSwiftRewriteTests-resources.sh */,
+				72705C07FA19B3B760A718B9ED48119E /* Pods-RutgersSwiftRewriteTests-umbrella.h */,
+				ECEBF366E8EC0C1231FE06F4DDCD9A1F /* Pods-RutgersSwiftRewriteTests.debug.xcconfig */,
+				E9F9635243B9D1066EEA1F5952AB5F24 /* Pods-RutgersSwiftRewriteTests.release.xcconfig */,
+			);
+			name = "Pods-RutgersSwiftRewriteTests";
+			path = "Target Support Files/Pods-RutgersSwiftRewriteTests";
+			sourceTree = "<group>";
+		};
+		16948950514E54328368F379333F949D /* Pods-RutgersSwiftRewriteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				508C77F245EC9E89AE3BA497189829A0 /* Info.plist */,
+				E2529EA6EE2852188D99FA1E3B5B4116 /* Pods-RutgersSwiftRewriteUITests.modulemap */,
+				AED415AF5999A5D48E36D345D95858F8 /* Pods-RutgersSwiftRewriteUITests-acknowledgements.markdown */,
+				F5A9B83B2609A575368FCB52477F01A7 /* Pods-RutgersSwiftRewriteUITests-acknowledgements.plist */,
+				0FA9888429780735B16780BDF2DF3769 /* Pods-RutgersSwiftRewriteUITests-dummy.m */,
+				4C20868AE7136B7D0F299873719C4966 /* Pods-RutgersSwiftRewriteUITests-frameworks.sh */,
+				4DBF80A3A0716FA003D0CCEF4E3899FA /* Pods-RutgersSwiftRewriteUITests-resources.sh */,
+				926E1EA319BB987C21237CE252707BB7 /* Pods-RutgersSwiftRewriteUITests-umbrella.h */,
+				0CA0058EA4B7985382584DFBB55F2AA2 /* Pods-RutgersSwiftRewriteUITests.debug.xcconfig */,
+				C22F31571DCFB884C7ECC2A905C7A11B /* Pods-RutgersSwiftRewriteUITests.release.xcconfig */,
+			);
+			name = "Pods-RutgersSwiftRewriteUITests";
+			path = "Target Support Files/Pods-RutgersSwiftRewriteUITests";
+			sourceTree = "<group>";
+		};
+		2C1B2F118F5BE029E44DDBEF1308D5F2 /* Pods-RutgersSwiftRewrite */ = {
+			isa = PBXGroup;
+			children = (
+				602C3D5E973BC657B0AA320FAAC4CCB0 /* Info.plist */,
+				0159C1134BEB6BC18740BDA46CAB9903 /* Pods-RutgersSwiftRewrite.modulemap */,
+				679C1142E385035D7DFBB34A1C778216 /* Pods-RutgersSwiftRewrite-acknowledgements.markdown */,
+				72B1BFA8F66F31E849496ABDAE330905 /* Pods-RutgersSwiftRewrite-acknowledgements.plist */,
+				AF2D9F8B130815318EEDB62B5322E437 /* Pods-RutgersSwiftRewrite-dummy.m */,
+				1E00FF77D24F861A8DEA6DBE98452BBF /* Pods-RutgersSwiftRewrite-frameworks.sh */,
+				5E9FB8C5F947941E3C081DEA01A0394A /* Pods-RutgersSwiftRewrite-resources.sh */,
+				B7D437560F6142A4458F7C973631F32D /* Pods-RutgersSwiftRewrite-umbrella.h */,
+				3AB164439DBBC65E0C76680F874E4E41 /* Pods-RutgersSwiftRewrite.debug.xcconfig */,
+				FC0F6BE9E78BBC4CD8BB3E3742F3BB3B /* Pods-RutgersSwiftRewrite.release.xcconfig */,
+			);
+			name = "Pods-RutgersSwiftRewrite";
+			path = "Target Support Files/Pods-RutgersSwiftRewrite";
+			sourceTree = "<group>";
+		};
 		32A23E08346748F1793F899C5FF672C1 /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = SwiftLint;
 			path = SwiftLint;
-			sourceTree = "<group>";
-		};
-		349FE6AFEF9B720B861CDEB015133EE2 /* Pods-RutgersSwiftRewriteUITests */ = {
-			isa = PBXGroup;
-			children = (
-				13BE127F9710B6DA5A57B5B2BFED96D8 /* Info.plist */,
-				4AB8DD65E3A1590E7C37E912EB23D724 /* Pods-RutgersSwiftRewriteUITests.modulemap */,
-				6E780F92484FF09A2F99A6951BCFA7D9 /* Pods-RutgersSwiftRewriteUITests-acknowledgements.markdown */,
-				42CF45DF7E392C6990E42AE888DCDD59 /* Pods-RutgersSwiftRewriteUITests-acknowledgements.plist */,
-				D8B95CC03197F8AF8D07E7DFEFBC7758 /* Pods-RutgersSwiftRewriteUITests-dummy.m */,
-				F87E2FD9549CDC0B162F7CDBD63EDA64 /* Pods-RutgersSwiftRewriteUITests-frameworks.sh */,
-				27E41F89F5B66253CC0DF4E01B27E5CF /* Pods-RutgersSwiftRewriteUITests-resources.sh */,
-				933DBF06B71EA22288CCBB9D6D703B1A /* Pods-RutgersSwiftRewriteUITests-umbrella.h */,
-				BE2C2E527DAB3B4155A61611BC703564 /* Pods-RutgersSwiftRewriteUITests.debug.xcconfig */,
-				2421C806EDA0548762E429D2C6C93FC5 /* Pods-RutgersSwiftRewriteUITests.release.xcconfig */,
-			);
-			name = "Pods-RutgersSwiftRewriteUITests";
-			path = "Target Support Files/Pods-RutgersSwiftRewriteUITests";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -159,47 +177,11 @@
 		9C23A9D02561175E13E0030C7E057C0F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B7DBCAF24DD3F385E848AAFB6B418CD4 /* Pods-RutgersSwiftRewrite */,
-				B9BF6D46680AA69F361545A3E88D31EA /* Pods-RutgersSwiftRewriteTests */,
-				349FE6AFEF9B720B861CDEB015133EE2 /* Pods-RutgersSwiftRewriteUITests */,
+				2C1B2F118F5BE029E44DDBEF1308D5F2 /* Pods-RutgersSwiftRewrite */,
+				06D79F80D9D31C65A09409C73292B7A5 /* Pods-RutgersSwiftRewriteTests */,
+				16948950514E54328368F379333F949D /* Pods-RutgersSwiftRewriteUITests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B7DBCAF24DD3F385E848AAFB6B418CD4 /* Pods-RutgersSwiftRewrite */ = {
-			isa = PBXGroup;
-			children = (
-				CC367D4C86557642B872AE4630845196 /* Info.plist */,
-				45C7195DF0753664930AD0C56CDDEDF4 /* Pods-RutgersSwiftRewrite.modulemap */,
-				1D2D12A6C918AA05BBA82225EFE771F1 /* Pods-RutgersSwiftRewrite-acknowledgements.markdown */,
-				877E1338EE3910FA12DECBB0C6A5BB48 /* Pods-RutgersSwiftRewrite-acknowledgements.plist */,
-				D3F0BD91967018C4F0CB98E7EB41A046 /* Pods-RutgersSwiftRewrite-dummy.m */,
-				0F08AA684082C3DE63161553747E5870 /* Pods-RutgersSwiftRewrite-frameworks.sh */,
-				1436BC1AC26AB5E8F0FD969F924732AF /* Pods-RutgersSwiftRewrite-resources.sh */,
-				90B12BFEC127DAAC79F60DD0039E105D /* Pods-RutgersSwiftRewrite-umbrella.h */,
-				EA3ABFA133C4595BDD52B67B7870B8DC /* Pods-RutgersSwiftRewrite.debug.xcconfig */,
-				A6A0D34629822BB6BCB37FEB859D955E /* Pods-RutgersSwiftRewrite.release.xcconfig */,
-			);
-			name = "Pods-RutgersSwiftRewrite";
-			path = "Target Support Files/Pods-RutgersSwiftRewrite";
-			sourceTree = "<group>";
-		};
-		B9BF6D46680AA69F361545A3E88D31EA /* Pods-RutgersSwiftRewriteTests */ = {
-			isa = PBXGroup;
-			children = (
-				A476DAD1AA0FCDBDC39505D86D346376 /* Info.plist */,
-				65FBAF349BA6E837B1D8A9522BEDD259 /* Pods-RutgersSwiftRewriteTests.modulemap */,
-				6222DC75743AB332DA48E3ECC008985F /* Pods-RutgersSwiftRewriteTests-acknowledgements.markdown */,
-				864C3901C77F0B1E48E74A6E9E08F8CB /* Pods-RutgersSwiftRewriteTests-acknowledgements.plist */,
-				3148C5F68B6A4A4DB6DADE4EEC39CDF5 /* Pods-RutgersSwiftRewriteTests-dummy.m */,
-				B760BF46D1631CB6EE4A168906EFEFE2 /* Pods-RutgersSwiftRewriteTests-frameworks.sh */,
-				6292AB3C5B5E9A96CFDC2A6EF9FDDD82 /* Pods-RutgersSwiftRewriteTests-resources.sh */,
-				BCE277512FE74A145158AB8F947E495E /* Pods-RutgersSwiftRewriteTests-umbrella.h */,
-				0AD9FDB2469385ED4EC456A8FD0967AE /* Pods-RutgersSwiftRewriteTests.debug.xcconfig */,
-				A7F55563F7D0A2E2041D68A2531D16C2 /* Pods-RutgersSwiftRewriteTests.release.xcconfig */,
-			);
-			name = "Pods-RutgersSwiftRewriteTests";
-			path = "Target Support Files/Pods-RutgersSwiftRewriteTests";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -221,14 +203,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1DD735ACD56B6E13875900AA40A1769C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8A98E5414CF3930BB333950710F80AC0 /* Pods-RutgersSwiftRewriteTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4F929B155D5248FB709AFE35B3932265 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,29 +211,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC31E8C1D24E5F41E9062F08C69A079A /* Headers */ = {
+		83DB6575129809CAD2028E39B382111E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B11ED22207ABAEC797EA95F38700AC57 /* Pods-RutgersSwiftRewriteUITests-umbrella.h in Headers */,
+				4F8539503E90A2ADD6C76348B43A3F3D /* Pods-RutgersSwiftRewriteTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4BEE9D88C776796ED1BE4169DCA5DC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AEC1163F5F917EFBAF29156C86C79D2 /* Pods-RutgersSwiftRewriteUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		27BC3221D06DA8AC88EB4AD6F0B23E4B /* Pods-RutgersSwiftRewriteUITests */ = {
+		0C1016A1F6E8FD51ED04C12B4DDAC474 /* Pods-RutgersSwiftRewriteUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A365BC6CB36BE4904FB21BA84019A8D /* Build configuration list for PBXNativeTarget "Pods-RutgersSwiftRewriteUITests" */;
+			buildConfigurationList = 878FFEF68A9B473D50CBF5140AB53065 /* Build configuration list for PBXNativeTarget "Pods-RutgersSwiftRewriteUITests" */;
 			buildPhases = (
-				76B5C67C7B14D0F583F36AAE84CCD10E /* Sources */,
-				D41A3AAAA25D6D62DE75646C7D6F2727 /* Frameworks */,
-				EC31E8C1D24E5F41E9062F08C69A079A /* Headers */,
+				AC7F8EDA82BF5D0A763B9DDCEE126836 /* Sources */,
+				D340F94B1958F4998B2E97D2BE03436C /* Frameworks */,
+				C4BEE9D88C776796ED1BE4169DCA5DC1 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E52032FDC3FD0473EF253C0A2DEC88E9 /* PBXTargetDependency */,
 			);
 			name = "Pods-RutgersSwiftRewriteUITests";
 			productName = "Pods-RutgersSwiftRewriteUITests";
@@ -283,18 +264,17 @@
 			productReference = 671320A6DF208B8083A1BE31E73261A2 /* Pods_RutgersSwiftRewrite.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D398DD6CBA8478A8D6491EE9347CA5A9 /* Pods-RutgersSwiftRewriteTests */ = {
+		8DA5F52F6F2BD9E274FF877C0EC687B6 /* Pods-RutgersSwiftRewriteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA3E147C8A6B893327CA5E2FBD5B8E44 /* Build configuration list for PBXNativeTarget "Pods-RutgersSwiftRewriteTests" */;
+			buildConfigurationList = 91AE37AFC7649A883D6B13C5A7C4EA4D /* Build configuration list for PBXNativeTarget "Pods-RutgersSwiftRewriteTests" */;
 			buildPhases = (
-				EEDEE9600714DF286D5872DB4B8F7345 /* Sources */,
-				D6236AA79AF55CAE32F7D0E81CE245F4 /* Frameworks */,
-				1DD735ACD56B6E13875900AA40A1769C /* Headers */,
+				4075525F951E20A98DB53F18E8A3E39A /* Sources */,
+				92B9D47ED79EBB9968D8630260A5F085 /* Frameworks */,
+				83DB6575129809CAD2028E39B382111E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				15FFF0194F39DE5B1F57D4ACB1B0952F /* PBXTargetDependency */,
 			);
 			name = "Pods-RutgersSwiftRewriteTests";
 			productName = "Pods-RutgersSwiftRewriteTests";
@@ -307,8 +287,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -323,18 +303,18 @@
 			projectRoot = "";
 			targets = (
 				50909AF80887C816DE48A8BC0F4F9B09 /* Pods-RutgersSwiftRewrite */,
-				D398DD6CBA8478A8D6491EE9347CA5A9 /* Pods-RutgersSwiftRewriteTests */,
-				27BC3221D06DA8AC88EB4AD6F0B23E4B /* Pods-RutgersSwiftRewriteUITests */,
+				8DA5F52F6F2BD9E274FF877C0EC687B6 /* Pods-RutgersSwiftRewriteTests */,
+				0C1016A1F6E8FD51ED04C12B4DDAC474 /* Pods-RutgersSwiftRewriteUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		76B5C67C7B14D0F583F36AAE84CCD10E /* Sources */ = {
+		4075525F951E20A98DB53F18E8A3E39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2466ADA99EB1C64EA6F134BB86240E4B /* Pods-RutgersSwiftRewriteUITests-dummy.m in Sources */,
+				C11B747A9BE02AA1B04DECEDBF11FC07 /* Pods-RutgersSwiftRewriteTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,58 +326,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EEDEE9600714DF286D5872DB4B8F7345 /* Sources */ = {
+		AC7F8EDA82BF5D0A763B9DDCEE126836 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				383B281F33DC1032CAD03C3350E90E12 /* Pods-RutgersSwiftRewriteTests-dummy.m in Sources */,
+				96997682444260DFFE6FA33FEF345BA7 /* Pods-RutgersSwiftRewriteUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		15FFF0194F39DE5B1F57D4ACB1B0952F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-RutgersSwiftRewrite";
-			target = 50909AF80887C816DE48A8BC0F4F9B09 /* Pods-RutgersSwiftRewrite */;
-			targetProxy = 6610E7AAE1C45F02E9C5A7122CC26DDE /* PBXContainerItemProxy */;
-		};
-		E52032FDC3FD0473EF253C0A2DEC88E9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-RutgersSwiftRewrite";
-			target = 50909AF80887C816DE48A8BC0F4F9B09 /* Pods-RutgersSwiftRewrite */;
-			targetProxy = D79DC304AED74EA2ACF80BA7FD22FB9E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		12182E8197AB62C88BF016FB696025DA /* Debug */ = {
+		1DA6BF54671468CDDD3A8D21F7B3E683 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0AD9FDB2469385ED4EC456A8FD0967AE /* Pods-RutgersSwiftRewriteTests.debug.xcconfig */;
+			baseConfigurationReference = E9F9635243B9D1066EEA1F5952AB5F24 /* Pods-RutgersSwiftRewriteTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-RutgersSwiftRewriteTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RutgersSwiftRewriteTests/Pods-RutgersSwiftRewriteTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Pods_RutgersSwiftRewriteTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		20CB4014D4FBCDF7910D846337329952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB164439DBBC65E0C76680F874E4E41 /* Pods-RutgersSwiftRewrite.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RutgersSwiftRewrite/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RutgersSwiftRewrite/Pods-RutgersSwiftRewrite.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RutgersSwiftRewrite;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -406,23 +409,130 @@
 			};
 			name = Debug;
 		};
-		30D948AE62C04225F8DEF8734A4C5A26 /* Release */ = {
+		2F6C78ADF5FBCCFDDACF42E9D3658675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CA0058EA4B7985382584DFBB55F2AA2 /* Pods-RutgersSwiftRewriteUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RutgersSwiftRewriteUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RutgersSwiftRewriteUITests/Pods-RutgersSwiftRewriteUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RutgersSwiftRewriteUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		472A5A7705CFB381A4D46D50D638DAFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECEBF366E8EC0C1231FE06F4DDCD9A1F /* Pods-RutgersSwiftRewriteTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RutgersSwiftRewriteTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RutgersSwiftRewriteTests/Pods-RutgersSwiftRewriteTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RutgersSwiftRewriteTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A76918A323F901BA40F79A4A08347858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C22F31571DCFB884C7ECC2A905C7A11B /* Pods-RutgersSwiftRewriteUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RutgersSwiftRewriteUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RutgersSwiftRewriteUITests/Pods-RutgersSwiftRewriteUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RutgersSwiftRewriteUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ABC1C622E3A94D5EFA80B6DBB5E64193 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -431,56 +541,52 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		9E88537B08ED4D6EB44DBA7BC8D56A35 /* Debug */ = {
+		D72E489B59C3A70112D2342F402BD262 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -489,20 +595,17 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -511,221 +614,84 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		B85526D43603291601EC5C22D4A6C8AD /* Release */ = {
+		F64A73F6BF50B7E39F5B4F6EC1EF2F19 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6A0D34629822BB6BCB37FEB859D955E /* Pods-RutgersSwiftRewrite.release.xcconfig */;
+			baseConfigurationReference = FC0F6BE9E78BBC4CD8BB3E3742F3BB3B /* Pods-RutgersSwiftRewrite.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-RutgersSwiftRewrite/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RutgersSwiftRewrite/Pods-RutgersSwiftRewrite.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Pods_RutgersSwiftRewrite;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		C6545077451943739324490F9ADB3D36 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2421C806EDA0548762E429D2C6C93FC5 /* Pods-RutgersSwiftRewriteUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RutgersSwiftRewriteUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RutgersSwiftRewriteUITests/Pods-RutgersSwiftRewriteUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E3DFF817E6390EF073ED1AC9AE4191B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7F55563F7D0A2E2041D68A2531D16C2 /* Pods-RutgersSwiftRewriteTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RutgersSwiftRewriteTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RutgersSwiftRewriteTests/Pods-RutgersSwiftRewriteTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F06E5E72B1C01110A397D02B2AE1C89E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE2C2E527DAB3B4155A61611BC703564 /* Pods-RutgersSwiftRewriteUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RutgersSwiftRewriteUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RutgersSwiftRewriteUITests/Pods-RutgersSwiftRewriteUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F45F1812E14C0CE1F78C00175F43CB7E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA3ABFA133C4595BDD52B67B7870B8DC /* Pods-RutgersSwiftRewrite.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RutgersSwiftRewrite/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RutgersSwiftRewrite/Pods-RutgersSwiftRewrite.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A365BC6CB36BE4904FB21BA84019A8D /* Build configuration list for PBXNativeTarget "Pods-RutgersSwiftRewriteUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F06E5E72B1C01110A397D02B2AE1C89E /* Debug */,
-				C6545077451943739324490F9ADB3D36 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E88537B08ED4D6EB44DBA7BC8D56A35 /* Debug */,
-				30D948AE62C04225F8DEF8734A4C5A26 /* Release */,
+				D72E489B59C3A70112D2342F402BD262 /* Debug */,
+				ABC1C622E3A94D5EFA80B6DBB5E64193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA3E147C8A6B893327CA5E2FBD5B8E44 /* Build configuration list for PBXNativeTarget "Pods-RutgersSwiftRewriteTests" */ = {
+		878FFEF68A9B473D50CBF5140AB53065 /* Build configuration list for PBXNativeTarget "Pods-RutgersSwiftRewriteUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12182E8197AB62C88BF016FB696025DA /* Debug */,
-				E3DFF817E6390EF073ED1AC9AE4191B2 /* Release */,
+				2F6C78ADF5FBCCFDDACF42E9D3658675 /* Debug */,
+				A76918A323F901BA40F79A4A08347858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91AE37AFC7649A883D6B13C5A7C4EA4D /* Build configuration list for PBXNativeTarget "Pods-RutgersSwiftRewriteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				472A5A7705CFB381A4D46D50D638DAFA /* Debug */,
+				1DA6BF54671468CDDD3A8D21F7B3E683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -733,8 +699,8 @@
 		B85DE885A1D2BEE2A7B88ACB1E200434 /* Build configuration list for PBXNativeTarget "Pods-RutgersSwiftRewrite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F45F1812E14C0CE1F78C00175F43CB7E /* Debug */,
-				B85526D43603291601EC5C22D4A6C8AD /* Release */,
+				20CB4014D4FBCDF7910D846337329952 /* Debug */,
+				F64A73F6BF50B7E39F5B4F6EC1EF2F19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -26,7 +26,6 @@ struct OrderedContentItem: Codable {
 extension OrderedContentItem {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        
         self.handle = try container.decodeIfPresent(String.self, forKey: .handle)
         self.icon = try container.decodeIfPresent(String.self, forKey: .icon)
         self.grouped = try container.decodeIfPresent(Bool.self, forKey: .grouped)
