@@ -9,7 +9,10 @@
 import Foundation
 import UIKit
 
-class HomeDataSource<T>: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class HomeDataSource<T>: NSObject,
+                         UICollectionViewDataSource,
+                         UICollectionViewDelegate,
+                         UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         referenceSizeForHeaderInSection section: Int) -> CGSize {
@@ -23,9 +26,7 @@ class HomeDataSource<T>: NSObject, UICollectionViewDataSource, UICollectionViewD
     }
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        guard let cell =
-            collectionView.dequeueReusableCell(withReuseIdentifier: "homeCell",
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCell",
                                                for: indexPath) as? HomeCell
             else {return UICollectionViewCell()}
         cell.tableView.register(UINib(nibName: "SavedStopCell", bundle: nil), forCellReuseIdentifier: "savedStopCell")
@@ -33,11 +34,9 @@ class HomeDataSource<T>: NSObject, UICollectionViewDataSource, UICollectionViewD
 //        cell.tableView.isScrollEnabled = false
 //        cell.tableView.delegate = busStopDataSources
 //        cell.tableView.dataSource = busStopDataSources
-        
         LayoutViewManager.layoutCell(cell: cell as UICollectionViewCell)
         return cell
     }
-    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {

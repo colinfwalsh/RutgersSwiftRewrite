@@ -11,6 +11,5 @@ import UIKit
 
 protocol TableViewCompatible {
     var reuseIdentifier: String {get}
-    
     func cellForTableView(tableView: UITableView, atIndexPath indexPath: IndexPath) -> UITableViewCell
 }

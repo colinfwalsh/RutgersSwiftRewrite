@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47CF16A5288A9E8A0C5FB575 /* Pods_RutgersSwiftRewriteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26D11B8933F4853B9C7841C /* Pods_RutgersSwiftRewriteUITests.framework */; };
 		748F7591202B961200EFAA56 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748F7590202B961200EFAA56 /* WebViewController.swift */; };
 		74AFBB2420363F2D002862BB /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AFBB2320363F2D002862BB /* NavigationProtocol.swift */; };
 		74EA99DF203F6B0000FA23F1 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA99DE203F6B0000FA23F1 /* FoodViewController.swift */; };
@@ -15,6 +16,7 @@
 		74EA99E7203F77DF00FA23F1 /* FeedBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA99E6203F77DF00FA23F1 /* FeedBackViewController.swift */; };
 		74F57BD02033523F008D6C4F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F57BCF2033523F008D6C4F /* Model.swift */; };
 		74F57BD220336C8C008D6C4F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F57BD120336C8C008D6C4F /* Client.swift */; };
+		881B42669E91B1B199D82442 /* Pods_RutgersSwiftRewriteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65CAC4C63DC926C49913B502 /* Pods_RutgersSwiftRewriteTests.framework */; };
 		AF119884202E3499008DF7E0 /* ordered_content.json in Resources */ = {isa = PBXBuildFile; fileRef = AF119883202E3499008DF7E0 /* ordered_content.json */; };
 		AF2BAB02208AA94800885728 /* ModuleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BAB01208AA94800885728 /* ModuleDataSource.swift */; };
 		AF2BAB04208AA96200885728 /* CategoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BAB03208AA96200885728 /* CategoryDataSource.swift */; };
@@ -50,6 +52,7 @@
 		AFF94E4B201F7192001A15BD /* RutgersSwiftRewriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E4A201F7192001A15BD /* RutgersSwiftRewriteTests.swift */; };
 		AFF94E56201F7192001A15BD /* RutgersSwiftRewriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E55201F7192001A15BD /* RutgersSwiftRewriteUITests.swift */; };
 		AFF94E67201FB8D7001A15BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E66201FB8D7001A15BD /* HomeViewController.swift */; };
+		BE760B44D3F351D605C5E52C /* Pods_RutgersSwiftRewrite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402BC8A573528B0A2935F7F5 /* Pods_RutgersSwiftRewrite.framework */; };
 		C91CE29120869351002604B8 /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91CE29020869351002604B8 /* ModulesViewController.swift */; };
 		C9212DD420780DCF007DB663 /* NewsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9212DD320780DCF007DB663 /* NewsClient.swift */; };
 		C97A101A2051C9A1009F1C6D /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = C97A10192051C9A0009F1C6D /* news.json */; };
@@ -76,6 +79,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		366D7493C44F30F13CC39710 /* Pods-RutgersSwiftRewrite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RutgersSwiftRewrite.release.xcconfig"; path = "Pods/Target Support Files/Pods-RutgersSwiftRewrite/Pods-RutgersSwiftRewrite.release.xcconfig"; sourceTree = "<group>"; };
+		402BC8A573528B0A2935F7F5 /* Pods_RutgersSwiftRewrite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RutgersSwiftRewrite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F4C06C1FE539CFD8E156D3C /* Pods-RutgersSwiftRewriteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RutgersSwiftRewriteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RutgersSwiftRewriteUITests/Pods-RutgersSwiftRewriteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5206C880D376BB050AE328BD /* Pods-RutgersSwiftRewrite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RutgersSwiftRewrite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RutgersSwiftRewrite/Pods-RutgersSwiftRewrite.debug.xcconfig"; sourceTree = "<group>"; };
+		65CAC4C63DC926C49913B502 /* Pods_RutgersSwiftRewriteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RutgersSwiftRewriteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		748F7590202B961200EFAA56 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		74AFBB2320363F2D002862BB /* NavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProtocol.swift; sourceTree = "<group>"; };
 		74EA99DE203F6B0000FA23F1 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +92,9 @@
 		74EA99E6203F77DF00FA23F1 /* FeedBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackViewController.swift; sourceTree = "<group>"; };
 		74F57BCF2033523F008D6C4F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		74F57BD120336C8C008D6C4F /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		951898351D3B20EF7147185B /* Pods-RutgersSwiftRewriteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RutgersSwiftRewriteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RutgersSwiftRewriteTests/Pods-RutgersSwiftRewriteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A26D11B8933F4853B9C7841C /* Pods_RutgersSwiftRewriteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RutgersSwiftRewriteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A3B9B4F4E8B50FB3B892BF /* Pods-RutgersSwiftRewriteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RutgersSwiftRewriteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RutgersSwiftRewriteUITests/Pods-RutgersSwiftRewriteUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF119883202E3499008DF7E0 /* ordered_content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ordered_content.json; path = RutgersSwiftRewrite/ordered_content.json; sourceTree = SOURCE_ROOT; };
 		AF2BAB01208AA94800885728 /* ModuleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDataSource.swift; sourceTree = "<group>"; };
 		AF2BAB03208AA96200885728 /* CategoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDataSource.swift; sourceTree = "<group>"; };
@@ -131,6 +142,7 @@
 		C97A101B2051D1F4009F1C6D /* NewsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModels.swift; sourceTree = "<group>"; };
 		C97A101D2051E7DA009F1C6D /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		C97A101F2051E94D009F1C6D /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		E9936F71CB539AFA79D48DCE /* Pods-RutgersSwiftRewriteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RutgersSwiftRewriteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RutgersSwiftRewriteTests/Pods-RutgersSwiftRewriteTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE760B44D3F351D605C5E52C /* Pods_RutgersSwiftRewrite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				881B42669E91B1B199D82442 /* Pods_RutgersSwiftRewriteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,12 +166,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47CF16A5288A9E8A0C5FB575 /* Pods_RutgersSwiftRewriteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4594FF081A438985E971F6F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5206C880D376BB050AE328BD /* Pods-RutgersSwiftRewrite.debug.xcconfig */,
+				366D7493C44F30F13CC39710 /* Pods-RutgersSwiftRewrite.release.xcconfig */,
+				951898351D3B20EF7147185B /* Pods-RutgersSwiftRewriteTests.debug.xcconfig */,
+				E9936F71CB539AFA79D48DCE /* Pods-RutgersSwiftRewriteTests.release.xcconfig */,
+				A2A3B9B4F4E8B50FB3B892BF /* Pods-RutgersSwiftRewriteUITests.debug.xcconfig */,
+				4F4C06C1FE539CFD8E156D3C /* Pods-RutgersSwiftRewriteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		74F57BCE203351F1008D6C4F /* APIs */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +280,8 @@
 				AFF94E49201F7192001A15BD /* RutgersSwiftRewriteTests */,
 				AFF94E54201F7192001A15BD /* RutgersSwiftRewriteUITests */,
 				AFF94E33201F7191001A15BD /* Products */,
+				4594FF081A438985E971F6F0 /* Pods */,
+				B6967378FB9681BE7C097C69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -297,6 +327,16 @@
 				AFF94E57201F7192001A15BD /* Info.plist */,
 			);
 			path = RutgersSwiftRewriteUITests;
+			sourceTree = "<group>";
+		};
+		B6967378FB9681BE7C097C69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				402BC8A573528B0A2935F7F5 /* Pods_RutgersSwiftRewrite.framework */,
+				65CAC4C63DC926C49913B502 /* Pods_RutgersSwiftRewriteTests.framework */,
+				A26D11B8933F4853B9C7841C /* Pods_RutgersSwiftRewriteUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C91CE287208682A0002604B8 /* Modules Tab */ = {
@@ -522,10 +562,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFF94E5A201F7192001A15BD /* Build configuration list for PBXNativeTarget "RutgersSwiftRewrite" */;
 			buildPhases = (
+				655EF715D82EA3407EBFDA4E /* [CP] Check Pods Manifest.lock */,
 				AFF94E2E201F7191001A15BD /* Sources */,
 				AFF94E2F201F7191001A15BD /* Frameworks */,
 				AFF94E30201F7191001A15BD /* Resources */,
 				AFA296F92088E67D00F0B84C /* ShellScript */,
+				A899A15BA2F91AF154BCA0C8 /* [CP] Embed Pods Frameworks */,
+				6D00A773FCE61975B4A37C44 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -540,9 +583,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFF94E5D201F7192001A15BD /* Build configuration list for PBXNativeTarget "RutgersSwiftRewriteTests" */;
 			buildPhases = (
+				1924A4CEF71EDAA308D6D42B /* [CP] Check Pods Manifest.lock */,
 				AFF94E42201F7192001A15BD /* Sources */,
 				AFF94E43201F7192001A15BD /* Frameworks */,
 				AFF94E44201F7192001A15BD /* Resources */,
+				0DABC3585C270F6BEAFD647A /* [CP] Embed Pods Frameworks */,
+				6FCC899142CCE5B3E7558D2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -558,9 +604,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFF94E60201F7192001A15BD /* Build configuration list for PBXNativeTarget "RutgersSwiftRewriteUITests" */;
 			buildPhases = (
+				E6B4D08FAA0B98EE476E668C /* [CP] Check Pods Manifest.lock */,
 				AFF94E4D201F7192001A15BD /* Sources */,
 				AFF94E4E201F7192001A15BD /* Frameworks */,
 				AFF94E4F201F7192001A15BD /* Resources */,
+				1395396110CB0FFC959BAAE9 /* [CP] Embed Pods Frameworks */,
+				F05567D39DF2A425808432F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -652,6 +701,117 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0DABC3585C270F6BEAFD647A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutgersSwiftRewriteTests/Pods-RutgersSwiftRewriteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1395396110CB0FFC959BAAE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutgersSwiftRewriteUITests/Pods-RutgersSwiftRewriteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1924A4CEF71EDAA308D6D42B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RutgersSwiftRewriteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		655EF715D82EA3407EBFDA4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RutgersSwiftRewrite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D00A773FCE61975B4A37C44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutgersSwiftRewrite/Pods-RutgersSwiftRewrite-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FCC899142CCE5B3E7558D2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutgersSwiftRewriteTests/Pods-RutgersSwiftRewriteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A899A15BA2F91AF154BCA0C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutgersSwiftRewrite/Pods-RutgersSwiftRewrite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AFA296F92088E67D00F0B84C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -663,7 +823,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		E6B4D08FAA0B98EE476E668C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RutgersSwiftRewriteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F05567D39DF2A425808432F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutgersSwiftRewriteUITests/Pods-RutgersSwiftRewriteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -873,6 +1066,7 @@
 		};
 		AFF94E5B201F7192001A15BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5206C880D376BB050AE328BD /* Pods-RutgersSwiftRewrite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -890,6 +1084,7 @@
 		};
 		AFF94E5C201F7192001A15BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 366D7493C44F30F13CC39710 /* Pods-RutgersSwiftRewrite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -907,6 +1102,7 @@
 		};
 		AFF94E5E201F7192001A15BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 951898351D3B20EF7147185B /* Pods-RutgersSwiftRewriteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -924,6 +1120,7 @@
 		};
 		AFF94E5F201F7192001A15BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9936F71CB539AFA79D48DCE /* Pods-RutgersSwiftRewriteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -941,6 +1138,7 @@
 		};
 		AFF94E61201F7192001A15BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2A3B9B4F4E8B50FB3B892BF /* Pods-RutgersSwiftRewriteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -957,6 +1155,7 @@
 		};
 		AFF94E62201F7192001A15BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F4C06C1FE539CFD8E156D3C /* Pods-RutgersSwiftRewriteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

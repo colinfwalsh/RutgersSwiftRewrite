@@ -9,18 +9,17 @@
 import Foundation
 import UIKit
 
-class HomeBusCellDataSource <T: UICollectionViewDataSource & UICollectionViewDelegate>: NSObject, UITableViewDataSource, UITableViewDelegate {
-    
+class HomeBusCellDataSource <T: UICollectionViewDataSource & UICollectionViewDelegate>:
+                                NSObject,
+                                UITableViewDataSource,
+                                UITableViewDelegate {
     var stopTitles: [String] = []
     var stopDatasources: [T] = []
-
     //This doesn't need to be generic, but it was mainly to test out generics for future use.  Works as intended
-
     func add (dataSource: T, stop: String) {
         self.stopTitles.append(stop)
         self.stopDatasources.append(dataSource)
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell =
@@ -40,6 +39,4 @@ class HomeBusCellDataSource <T: UICollectionViewDataSource & UICollectionViewDel
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return stopDatasources.count
     }
-    
 }
-
