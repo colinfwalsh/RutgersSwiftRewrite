@@ -8,22 +8,17 @@
 
 import UIKit
 
+//So loading will be done here, before even ViewDidLoad via Dep Injection or something similar
 class HomeViewController: UIViewController, AnimationProtocol {
-    let busStopDataSources = HomeBusCellDataSource<RouteCollectionViewDataSource>()
-    let routeDataSource1 = RouteCollectionViewDataSource()
-    let routeDataSource2 = RouteCollectionViewDataSource()
-    let routeDataSource3 = RouteCollectionViewDataSource()
-    @IBOutlet weak var addItem: UIBarButtonItem!
-    @IBOutlet weak var collectionView: UICollectionView!
+    let stopTest = Stop(title: "Hill Center",
+                        routes: [Route(routeTitle: "A",
+                                       routeColor: UIColor.red,
+                                       routeEstimate: 5)])
+   @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let homeDS = HomeDataSource<String>()
-        collectionView.delegate = homeDS
-        collectionView.dataSource = homeDS
-        LayoutViewManager.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
-        busStopDataSources.add(dataSource: routeDataSource1, stop: "Hill Center")
-        busStopDataSources.add(dataSource: routeDataSource2, stop: "College Ave Student Center")
-        busStopDataSources.add(dataSource: routeDataSource3, stop: "Busch Student Center")
+        //This needs to be set with a custom model
+//        LayoutViewManager.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
         self.collectionView.register(UINib(nibName: "HomeCell", bundle: nil),
                                      forCellWithReuseIdentifier: "homeCell")
     }

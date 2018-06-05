@@ -14,4 +14,5 @@ class HomeCell: UICollectionViewCell {
             self.tableView.reloadData()
         }
     }
+    var data = [TableViewCompatible]()
 }

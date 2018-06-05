@@ -41,7 +41,6 @@
 		AFA471E620C07E15008272BA /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA471E520C07E15008272BA /* HomeDataSource.swift */; };
 		AFA471EA20C08757008272BA /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA471E920C08757008272BA /* Configurable.swift */; };
 		AFA471EC20C08EDD008272BA /* TableViewCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA471EB20C08EDD008272BA /* TableViewCompatible.swift */; };
-		AFA471EE20C0902B008272BA /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA471ED20C0902B008272BA /* TestModel.swift */; };
 		AFB5CFDF20236D420002AB7A /* AcademicsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5CFDE20236D420002AB7A /* AcademicsCell.swift */; };
 		AFB5CFE12023B2DB0002AB7A /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5CFE02023B2DB0002AB7A /* MapCell.swift */; };
 		AFB5CFE92023D5460002AB7A /* StudentServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */; };
@@ -52,6 +51,8 @@
 		AFF94E4B201F7192001A15BD /* RutgersSwiftRewriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E4A201F7192001A15BD /* RutgersSwiftRewriteTests.swift */; };
 		AFF94E56201F7192001A15BD /* RutgersSwiftRewriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E55201F7192001A15BD /* RutgersSwiftRewriteUITests.swift */; };
 		AFF94E67201FB8D7001A15BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF94E66201FB8D7001A15BD /* HomeViewController.swift */; };
+		BD4B8B9F20C5C41D0075A3DF /* TestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4B8B9E20C5C41D0075A3DF /* TestModels.swift */; };
+		BD4B8BA120C5F6FC0075A3DF /* CollectionViewCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4B8BA020C5F6FC0075A3DF /* CollectionViewCompatible.swift */; };
 		BE760B44D3F351D605C5E52C /* Pods_RutgersSwiftRewrite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402BC8A573528B0A2935F7F5 /* Pods_RutgersSwiftRewrite.framework */; };
 		C91CE29120869351002604B8 /* ModulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91CE29020869351002604B8 /* ModulesViewController.swift */; };
 		C9212DD420780DCF007DB663 /* NewsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9212DD320780DCF007DB663 /* NewsClient.swift */; };
@@ -119,7 +120,6 @@
 		AFA471E520C07E15008272BA /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
 		AFA471E920C08757008272BA /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		AFA471EB20C08EDD008272BA /* TableViewCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCompatible.swift; sourceTree = "<group>"; };
-		AFA471ED20C0902B008272BA /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		AFB5CFDE20236D420002AB7A /* AcademicsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicsCell.swift; sourceTree = "<group>"; };
 		AFB5CFE02023B2DB0002AB7A /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
 		AFB5CFE82023D5460002AB7A /* StudentServicesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentServicesCell.swift; sourceTree = "<group>"; };
@@ -136,6 +136,8 @@
 		AFF94E55201F7192001A15BD /* RutgersSwiftRewriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutgersSwiftRewriteUITests.swift; sourceTree = "<group>"; };
 		AFF94E57201F7192001A15BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFF94E66201FB8D7001A15BD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BD4B8B9E20C5C41D0075A3DF /* TestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModels.swift; sourceTree = "<group>"; };
+		BD4B8BA020C5F6FC0075A3DF /* CollectionViewCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCompatible.swift; sourceTree = "<group>"; };
 		C91CE29020869351002604B8 /* ModulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesViewController.swift; sourceTree = "<group>"; };
 		C9212DD320780DCF007DB663 /* NewsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsClient.swift; sourceTree = "<group>"; };
 		C97A10192051C9A0009F1C6D /* news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news.json; sourceTree = SOURCE_ROOT; };
@@ -470,7 +472,8 @@
 			children = (
 				AFA471E920C08757008272BA /* Configurable.swift */,
 				AFA471EB20C08EDD008272BA /* TableViewCompatible.swift */,
-				AFA471ED20C0902B008272BA /* TestModel.swift */,
+				BD4B8BA020C5F6FC0075A3DF /* CollectionViewCompatible.swift */,
+				BD4B8B9E20C5C41D0075A3DF /* TestModels.swift */,
 				C9212DD820780E62007DB663 /* Controller */,
 				C9212DD720780E5D007DB663 /* View */,
 			);
@@ -865,8 +868,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4B8BA120C5F6FC0075A3DF /* CollectionViewCompatible.swift in Sources */,
 				C97A101C2051D1F4009F1C6D /* NewsModels.swift in Sources */,
-				AFA471EE20C0902B008272BA /* TestModel.swift in Sources */,
+				BD4B8B9F20C5C41D0075A3DF /* TestModels.swift in Sources */,
 				AF82EDFB202252E6005916BD /* ServicesCollectionViewController.swift in Sources */,
 				AFF94E36201F7191001A15BD /* AppDelegate.swift in Sources */,
 				AFF94E67201FB8D7001A15BD /* HomeViewController.swift in Sources */,
