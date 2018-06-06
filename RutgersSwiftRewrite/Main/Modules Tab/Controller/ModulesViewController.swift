@@ -13,6 +13,11 @@ class ModulesViewController: UIViewController {
     @IBOutlet weak var segmentedController: UISegmentedControl!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
+    var didTap: Bool = false {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
     var modules: [OrderedContentItem] = []
     var links: [OrderedContentItem] = []
     override func viewDidLoad() {
@@ -30,6 +35,9 @@ class ModulesViewController: UIViewController {
             collectionView.reloadData()
         }
     }
+    @IBAction func editTapped(_ sender: Any) {
+        didTap = !didTap
+    }
 }
 extension ModulesViewController: UICollectionViewDelegate,
                                  UICollectionViewDataSource,
@@ -45,7 +53,10 @@ extension ModulesViewController: UICollectionViewDelegate,
             else {return UICollectionViewCell()}
         HomeViewController.layoutCell(cell: cell as UICollectionViewCell)
         cell.titleLabel.text = modules[indexPath.row].title?.text
+        cell.addButton.isHidden = didTap == true ? false : true
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     }
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,

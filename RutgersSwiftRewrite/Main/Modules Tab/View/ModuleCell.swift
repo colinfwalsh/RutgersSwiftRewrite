@@ -10,6 +10,7 @@ import UIKit
 
 class ModuleCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var addButton: UIButton!
     func setUpCell() {
         self.layer.cornerRadius = 10
         self.backgroundColor =  .white
