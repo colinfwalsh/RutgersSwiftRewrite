@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-class HomeBusCell: CollectionViewCompatabile {
+class HomeCellModel: CollectionViewCompatabile {
     var reuseIdentifier: String {
         return "homeCell"
     }
-    var stops: [Stop]
-    init(stops: [Stop]) {
-        self.stops = stops
+    var homeCellElements: [TableViewCompatible]
+    init(elements: [TableViewCompatible]) {
+        self.homeCellElements = elements
     }
     func cellForCollectionView(collectionView: UICollectionView,
                                atIndexPath indexPath: IndexPath) -> UICollectionViewCell {
@@ -23,7 +23,8 @@ class HomeBusCell: CollectionViewCompatabile {
                                                             for: indexPath) as? HomeCell else {
             return UICollectionViewCell()
         }
-        cell.data = stops
+        cell.configureWithModel(homeCellElements)
+        LayoutViewManager.layoutCell(cell: cell)
         return cell
     }
 }
@@ -40,9 +41,9 @@ class Stop: TableViewCompatible {
         self.routes = routes
     }
     func cellForTableView(tableView: UITableView, atIndexPath indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
-        cell.textLabel?.text = self.title
-        //cell.collectionView DATA = self.routes
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier,
+                                                       for: indexPath) as? SavedStopCell else {return UITableViewCell()}
+        cell.configureWithModel(self)
         return cell
     }
 }

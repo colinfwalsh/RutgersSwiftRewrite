@@ -9,52 +9,25 @@
 import Foundation
 import UIKit
 
-//Redo this
-//class HomeDataSource<T>: NSObject,
-//                         UICollectionViewDataSource,
-//                         UICollectionViewDelegate,
-//                         UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView,
-//                        layout collectionViewLayout: UICollectionViewLayout,
-//                        referenceSizeForHeaderInSection section: Int) -> CGSize {
-//        return CGSize(width: collectionView.frame.width, height: 50)
-//    }
-//    func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        return 1
-//    }
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return 1
-//    }
-//    func collectionView(_ collectionView: UICollectionView,
-//                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCell",
-//                                               for: indexPath) as? HomeCell
-//            else {return UICollectionViewCell()}
-//        cell.tableView.register(UINib(nibName: "SavedStopCell", bundle: nil), forCellReuseIdentifier: "savedStopCell")
-//        //Fix these
-////        cell.tableView.isScrollEnabled = false
-////        cell.tableView.delegate = busStopDataSources
-////        cell.tableView.dataSource = busStopDataSources
-//        LayoutViewManager.layoutCell(cell: cell as UICollectionViewCell)
-//        return cell
-//    }
-//    func collectionView(_ collectionView: UICollectionView,
-//                        layout collectionViewLayout: UICollectionViewLayout,
-//                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let size = indexPath.section == 0 ?
-//            CGSize(width: collectionView.frame.width * 0.85,
-//                   height: (collectionView.frame.height/5) * CGFloat(3)) :
-//            CGSize(width: collectionView.frame.width * 0.85,
-//                   height: collectionView.frame.height/13)
-//        return size
-//    }
-//}
 class HomeDataSource: NSObject, UICollectionViewDataSource {
+    var data: [HomeCellModel]
+    init(_ data: [HomeCellModel]) {
+        self.data = data
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return data.count
     }
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return HomeCell()
+        let model = data[indexPath.row]
+        return model.cellForCollectionView(collectionView: collectionView, atIndexPath: indexPath)
+    }
+    static func initLayout(_ collectionView: UICollectionView) {
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5)
+        flowLayout.itemSize =
+            CGSize(width: collectionView.frame.width * 0.85,
+                   height: (collectionView.frame.height/5))
+        collectionView.collectionViewLayout = flowLayout
     }
 }

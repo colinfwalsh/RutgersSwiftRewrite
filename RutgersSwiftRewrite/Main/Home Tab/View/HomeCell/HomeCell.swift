@@ -8,11 +8,15 @@
 
 import UIKit
 
-class HomeCell: UICollectionViewCell {
-    @IBOutlet weak var tableView: UITableView! {
-        didSet {
-            self.tableView.reloadData()
-        }
+class HomeCell: UICollectionViewCell, Configurable {
+    typealias ModelData = [TableViewCompatible]
+    var model: [TableViewCompatible]?
+    @IBOutlet weak var tableView: UITableView!
+    func configureWithModel(_ model: [TableViewCompatible]) {
+        self.model = model
+        // swiftlint:disable force_cast
+        tableView.dataSource = HomeBusCellDataSource(data: self.model! as! [Stop])
+        tableView.reloadData()
     }
-    var data = [TableViewCompatible]()
+
 }

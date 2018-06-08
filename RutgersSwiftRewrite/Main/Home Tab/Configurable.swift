@@ -9,7 +9,7 @@
 import Foundation
 
 protocol Configurable {
-    associatedtype Prototype
-    var model: Prototype? {get set}
-    func configureWithModel(_ model: Prototype)
+    associatedtype ModelData
+    var model: ModelData? {get set}
+    func configureWithModel(_ model: ModelData)
 }

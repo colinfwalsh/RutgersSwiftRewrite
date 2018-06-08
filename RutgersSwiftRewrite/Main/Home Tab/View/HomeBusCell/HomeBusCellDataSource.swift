@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class HomeBusCellDataSource: NSObject, UITableViewDataSource {
-    var data: [TableViewCompatible]
-    init(data: [TableViewCompatible]) {
+class HomeBusCellDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
+    var data: [Stop]
+    init(data: [Stop]) {
         self.data = data
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -20,5 +20,8 @@ class HomeBusCellDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = data[indexPath.row]
         return model.cellForTableView(tableView: tableView, atIndexPath: indexPath)
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.frame.height/CGFloat(data.count)
     }
 }

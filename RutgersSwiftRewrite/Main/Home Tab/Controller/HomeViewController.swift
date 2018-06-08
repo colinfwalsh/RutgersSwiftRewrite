@@ -10,10 +10,10 @@ import UIKit
 
 //So loading will be done here, before even ViewDidLoad via Dep Injection or something similar
 class HomeViewController: UIViewController, AnimationProtocol {
-    let stopTest = Stop(title: "Hill Center",
-                        routes: [Route(routeTitle: "A",
-                                       routeColor: UIColor.red,
-                                       routeEstimate: 5)])
+    let homeDataSource = HomeDataSource([HomeCellModel(elements: [Stop(title: "Hill Center",
+                                                  routes: [Route(routeTitle: "A",
+                                                                 routeColor: UIColor.red,
+                                                                 routeEstimate: 5)])])])
    @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +21,8 @@ class HomeViewController: UIViewController, AnimationProtocol {
 //        LayoutViewManager.addLeftBarIcon(named: "logo", navigationItem: navigationItem)
         self.collectionView.register(UINib(nibName: "HomeCell", bundle: nil),
                                      forCellWithReuseIdentifier: "homeCell")
+        self.collectionView.dataSource = homeDataSource
+        HomeDataSource.initLayout(self.collectionView)
+        collectionView.reloadData()
     }
 }
