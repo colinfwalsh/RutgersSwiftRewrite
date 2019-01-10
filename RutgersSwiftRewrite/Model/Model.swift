@@ -51,9 +51,9 @@ enum Title: Codable {
     init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         do {
-           self = try .string(container.decode(String.self))
+            self = try .string(container.decode(String.self))
         } catch DecodingError.typeMismatch {
-           self = try .object(container.decode(MultiTitle.self))
+            self = try .object(container.decode(MultiTitle.self))
         }
     }
     func encode(to encoder: Encoder) throws {

@@ -433,8 +433,6 @@
 				AFF94E2F201F7191001A15BD /* Frameworks */,
 				AFF94E30201F7191001A15BD /* Resources */,
 				AFA296F92088E67D00F0B84C /* ShellScript */,
-				D7D5BEF02F22AC5A73B8D58C /* [CP] Embed Pods Frameworks */,
-				AF598A19957C84F424C7A658 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -453,8 +451,6 @@
 				AFF94E42201F7192001A15BD /* Sources */,
 				AFF94E43201F7192001A15BD /* Frameworks */,
 				AFF94E44201F7192001A15BD /* Resources */,
-				C0765726E782B9CA7910DA8F /* [CP] Embed Pods Frameworks */,
-				15E9188DE484E556D967EBE2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -474,8 +470,6 @@
 				AFF94E4D201F7192001A15BD /* Sources */,
 				AFF94E4E201F7192001A15BD /* Frameworks */,
 				AFF94E4F201F7192001A15BD /* Resources */,
-				5F80E46926D413D2275A425D /* [CP] Embed Pods Frameworks */,
-				6CA77A54E48B19FE17D7092F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -582,36 +576,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		15E9188DE484E556D967EBE2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutgersSwiftRewriteTests/Pods-RutgersSwiftRewriteTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5F80E46926D413D2275A425D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutgersSwiftRewriteUITests/Pods-RutgersSwiftRewriteUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6B0BE9A519F435B6458277A7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -628,21 +592,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6CA77A54E48B19FE17D7092F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutgersSwiftRewriteUITests/Pods-RutgersSwiftRewriteUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		811EA2369E10419A02ACC5F8 /* [CP] Check Pods Manifest.lock */ = {
@@ -663,21 +612,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AF598A19957C84F424C7A658 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutgersSwiftRewrite/Pods-RutgersSwiftRewrite-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AFA296F92088E67D00F0B84C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -690,36 +624,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
-		};
-		C0765726E782B9CA7910DA8F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutgersSwiftRewriteTests/Pods-RutgersSwiftRewriteTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D7D5BEF02F22AC5A73B8D58C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RutgersSwiftRewrite/Pods-RutgersSwiftRewrite-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
